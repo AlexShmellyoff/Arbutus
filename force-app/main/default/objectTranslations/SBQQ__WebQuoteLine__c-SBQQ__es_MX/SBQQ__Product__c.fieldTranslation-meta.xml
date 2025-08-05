@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Product quoted by this line item. --></help>
+    <label>Producto</label>
+    <name>SBQQ__Product__c</name>
+    <relationshipLabel>Partidas de presupuestos web</relationshipLabel>
+</CustomFieldTranslation>

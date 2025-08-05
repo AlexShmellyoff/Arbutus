@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partida de presupuesto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partidas de presupuesto</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ArbutusFieldSet --></label>
+        <name>ArbutusFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- FundamentalFieldSet --></label>
+        <name>FundamentalFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label>ConsumptionSchedule</label>
+        <name>SBQQ__ConsumptionSchedule</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Editor de partidas</label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Campos bloqueados de partida de presupuesto no actuales</label>
+        <name>SBQQ__NonCurrentQuoteLineLockedFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Editor de partidas segmentadas</label>
+        <name>SBQQ__SegmentedLineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Resumen de Editor de partidas segmentadas</label>
+        <name>SBQQ__SegmentedLineEditorSummary</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Cajón de partidas estándar</label>
+        <name>SBQQ__StandardLineItemDrawer</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Campos de resumen</label>
+        <name>SBQQ__SummaryFields</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre de partida</nameFieldLabel>
+    <validationRules>
+        <errorMessage>No puede especificar descuentos adicionales como porcentajes e importes absolutos conjuntamente.</errorMessage>
+        <name>SBQQ__Additional_discount_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El plazo de la suscripción debe ser un número positivo.</errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No puede especificar sobreprecios como porcentajes e importes absolutos conjuntamente.</errorMessage>
+        <name>SBQQ__Markup_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cuando el Tipo de cargo es Recurrente, debe seleccionarse un Tipo de facturación.</errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cuando el Tipo de cargo es Puntual, no puede seleccionarse un valor de Frecuencia de facturación.</errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Cuando el Tipo de cargo es Puntual o Uso, no puede seleccionarse un valor de Tipo de facturación.</errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <webLinks>
+        <label>Calcular presupuesto</label>
+        <name>SBQQ__CalculateQuoteFromQuoteLine</name>
+    </webLinks>
+</CustomObjectTranslation>

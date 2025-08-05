@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Devis</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ArbutusFieldSet --></label>
+        <name>ArbutusFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ArbutusWestAgency --></label>
+        <name>ArbutusWestAgency</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- FundamentalFieldSet --></label>
+        <name>FundamentalFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Calculating Fields --></label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Line Editor --></label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Non-Current Quote Locked Fields --></label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Numéro du devis</nameFieldLabel>
+    <quickActions>
+        <label><!-- Configure Notes --></label>
+        <name>Configure_Notes</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Arbutus Quotes --></description>
+        <label><!-- Arbutus Quotes --></label>
+        <name>Arbutus_Quotes</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Fundamental Quotes --></description>
+        <label><!-- Fundamental Quotes --></label>
+        <name>Fundamental_Quotes</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>
+            <!-- The account selected is not flagged as a Fundamental Account. Please go into the record and review the Fundamental Account Checkbox.
+
+You must populate the Tax Code, Billing State, Billing Country, Shipping State and Shipping Country -->
+        </errorMessage>
+        <name>Account_Segment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account must be selected before creating a quote. --></errorMessage>
+        <name>Account_must_be_selected_before_creating</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quote must have an opportunity to move the status to Accepted --></errorMessage>
+        <name>Quote_Must_Have_An_Opportunity_to_Accept</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The End Date must come after the Start Date. --></errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Segment Term End Date must fall between Quote Start Date and Quote End Date --></errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The subscription term must be a positive number. --></errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CalculateQuote --></label>
+        <name>SBQQ__CalculateQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelated --></label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloneWithRelatedClassic --></label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrderFromQuote --></label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportLines --></label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IncludeDocument --></label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ModifyQuoteTerms --></label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshMultiplePrices --></label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RefreshPrices --></label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

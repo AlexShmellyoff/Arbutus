@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Designate this contract as the master evergreen contract for the quote. --></help>
+    <label>Contrato perenne principal</label>
+    <name>SBQQ__MasterEvergreenContract__c</name>
+    <relationshipLabel>Presupuestos con terminación compartida (Contrato perenne principal)</relationshipLabel>
+</CustomFieldTranslation>

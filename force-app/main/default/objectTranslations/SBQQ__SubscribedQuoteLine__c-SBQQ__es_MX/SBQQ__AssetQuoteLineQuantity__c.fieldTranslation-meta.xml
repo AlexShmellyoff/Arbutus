@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Quantity quoted on the Asset Quote Line. --></help>
+    <label>Cantidad partida presupuesto de activo</label>
+    <name>SBQQ__AssetQuoteLineQuantity__c</name>
+</CustomFieldTranslation>

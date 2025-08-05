@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Subscription quote line that covers the asset quote line. --></help>
+    <label>Ligne de devis de souscription</label>
+    <name>SBQQ__SubscriptionQuoteLine__c</name>
+    <relationshipLabel>Lignes de devis souscrites (ligne de devis de souscription)</relationshipLabel>
+</CustomFieldTranslation>

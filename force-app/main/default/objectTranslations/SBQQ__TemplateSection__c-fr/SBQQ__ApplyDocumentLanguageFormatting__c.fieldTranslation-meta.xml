@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Sélectionnez cette case à cocher pour appliquer la mise en forme de la langue du document. Applicable uniquement aux sections qui pointent vers un contenu de modèle de type « HTML ».</help>
+    <label><!-- Apply Document Language Formatting --></label>
+    <name>SBQQ__ApplyDocumentLanguageFormatting__c</name>
+</CustomFieldTranslation>

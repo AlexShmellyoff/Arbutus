@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ligne de devis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lignes de devis</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ArbutusFieldSet --></label>
+        <name>ArbutusFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- FundamentalFieldSet --></label>
+        <name>FundamentalFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label>ConsumptionSchedule</label>
+        <name>SBQQ__ConsumptionSchedule</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Éditeur de ligne</label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Champs verrouillés de ligne de devis non actuels</label>
+        <name>SBQQ__NonCurrentQuoteLineLockedFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Éditeur de ligne segmenté</label>
+        <name>SBQQ__SegmentedLineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Résumé de l&apos;éditeur de ligne segmenté</label>
+        <name>SBQQ__SegmentedLineEditorSummary</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Tiroir d&apos;élément de ligne standard</label>
+        <name>SBQQ__StandardLineItemDrawer</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Champs récapitulatifs</label>
+        <name>SBQQ__SummaryFields</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom de la ligne</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Vous ne pouvez pas spécifier une remise supplémentaire à la fois en tant que pourcentage et montant absolu.</errorMessage>
+        <name>SBQQ__Additional_discount_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La durée d’abonnement doit être un nombre entier positif.</errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vous ne pouvez pas spécifier la marge en tant que pourcentage et montant absolu.</errorMessage>
+        <name>SBQQ__Markup_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lorsque le Type de frais est Récurrent, un Type de facturation doit être sélectionné.</errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lorsque le Type de frais est Unique, la valeur de Fréquence de facturation ne peut pas être sélectionnée.</errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Lorsque le Type de frais est Unique ou Utilisation, la valeur de Type de facturation ne peut pas être sélectionnée.</errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <webLinks>
+        <label>Calculer le devis</label>
+        <name>SBQQ__CalculateQuoteFromQuoteLine</name>
+    </webLinks>
+</CustomObjectTranslation>

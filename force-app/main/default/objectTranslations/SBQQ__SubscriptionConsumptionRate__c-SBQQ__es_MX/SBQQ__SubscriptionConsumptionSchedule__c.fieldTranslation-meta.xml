@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This rate is a part of of this schedule. --></help>
+    <label>Programación de consumo de suscripción</label>
+    <name>SBQQ__SubscriptionConsumptionSchedule__c</name>
+    <relationshipLabel>Índices de consumo de suscripción</relationshipLabel>
+</CustomFieldTranslation>

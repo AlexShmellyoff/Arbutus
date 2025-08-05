@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Template related to this content. --></help>
+    <label>見積テンプレート</label>
+    <name>SBQQ__QuoteTemplate__c</name>
+    <relationshipLabel>追加ドキュメント</relationshipLabel>
+</CustomFieldTranslation>

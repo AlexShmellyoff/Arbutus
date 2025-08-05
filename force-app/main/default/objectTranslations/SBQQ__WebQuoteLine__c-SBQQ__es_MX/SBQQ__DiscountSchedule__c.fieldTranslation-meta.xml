@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Discount schedule to be used in computing volume unit price. This field is copied from the corresponding product. --></help>
+    <label>Programación de descuentos</label>
+    <name>SBQQ__DiscountSchedule__c</name>
+    <relationshipLabel>Partidas de presupuestos web</relationshipLabel>
+</CustomFieldTranslation>

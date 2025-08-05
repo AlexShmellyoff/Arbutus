@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Linha de cotação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Linhas de cotação</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ArbutusFieldSet --></label>
+        <name>ArbutusFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- FundamentalFieldSet --></label>
+        <name>FundamentalFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label>ConsumptionSchedule</label>
+        <name>SBQQ__ConsumptionSchedule</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Editor de linha</label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Campos bloqueados de linha de cotação não atual</label>
+        <name>SBQQ__NonCurrentQuoteLineLockedFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Editor de linha segmentado</label>
+        <name>SBQQ__SegmentedLineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Resumo do editor de linha segmentado</label>
+        <name>SBQQ__SegmentedLineEditorSummary</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Gaveta de item de linha padrão</label>
+        <name>SBQQ__StandardLineItemDrawer</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Campos de resumo</label>
+        <name>SBQQ__SummaryFields</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome da linha</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Você não pode especificar desconto adicional tanto como percentual quanto como valor absoluto.</errorMessage>
+        <name>SBQQ__Additional_discount_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O termo da assinatura deve ser um número positivo.</errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Você não pode especificar aumento tanto como percentual quanto como valor absoluto.</errorMessage>
+        <name>SBQQ__Markup_percent_or_amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Quando o Tipo de encargo é Recorrente, um Tipo de faturamento deve ser selecionado.</errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Quando o Tipo de encargo é Ocorrência única, não é possível selecionar um valor de Frequência de faturamento.</errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Quando o Tipo de encargo é Ocorrência única ou Uso, não é possível selecionar um valor de Tipo de faturamento.</errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <webLinks>
+        <label>Cálculo de cotação</label>
+        <name>SBQQ__CalculateQuoteFromQuoteLine</name>
+    </webLinks>
+</CustomObjectTranslation>

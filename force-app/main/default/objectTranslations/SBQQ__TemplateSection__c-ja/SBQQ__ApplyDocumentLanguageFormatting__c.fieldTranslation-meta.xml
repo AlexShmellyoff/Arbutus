@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>ドキュメント言語形式を適用する場合は、チェックボックスをオンにします。タイプが [HTML] のテンプレートコンテンツを指し示すセクションにのみ適用されます。</help>
+    <label><!-- Apply Document Language Formatting --></label>
+    <name>SBQQ__ApplyDocumentLanguageFormatting__c</name>
+</CustomFieldTranslation>

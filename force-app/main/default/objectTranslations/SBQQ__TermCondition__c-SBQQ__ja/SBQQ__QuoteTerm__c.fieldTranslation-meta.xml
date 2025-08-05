@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Parent term for this term. --></help>
+    <label>見積規約</label>
+    <name>SBQQ__QuoteTerm__c</name>
+    <relationshipLabel>契約条件</relationshipLabel>
+</CustomFieldTranslation>

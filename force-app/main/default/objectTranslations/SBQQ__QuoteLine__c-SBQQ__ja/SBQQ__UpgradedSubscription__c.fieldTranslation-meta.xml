@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Subscription being upgraded by this quote line. When the quote is contracted this subscription will have its Terminated Date field populated. --></help>
+    <label>アップグレード対象のサブスクリプション</label>
+    <name>SBQQ__UpgradedSubscription__c</name>
+    <relationshipLabel>見積品目 (アップグレード)</relationshipLabel>
+</CustomFieldTranslation>

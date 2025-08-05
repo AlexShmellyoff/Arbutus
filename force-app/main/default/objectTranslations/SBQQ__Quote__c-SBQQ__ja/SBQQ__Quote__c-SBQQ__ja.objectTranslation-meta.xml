@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ArbutusFieldSet --></label>
+        <name>ArbutusFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ArbutusWestAgency --></label>
+        <name>ArbutusWestAgency</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- FundamentalFieldSet --></label>
+        <name>FundamentalFieldSet</name>
+    </fieldSets>
+    <fieldSets>
+        <label>計算項目</label>
+        <name>SBQQ__CalculatingFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label>品目エディター</label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <fieldSets>
+        <label>長期見積ロック済み項目</label>
+        <name>SBQQ__NonCurrentQuoteLockedFields</name>
+    </fieldSets>
+    <nameFieldLabel>見積番号</nameFieldLabel>
+    <quickActions>
+        <label><!-- Configure Notes --></label>
+        <name>Configure_Notes</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Arbutus Quotes --></description>
+        <label><!-- Arbutus Quotes --></label>
+        <name>Arbutus_Quotes</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Fundamental Quotes --></description>
+        <label><!-- Fundamental Quotes --></label>
+        <name>Fundamental_Quotes</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>
+            <!-- The account selected is not flagged as a Fundamental Account. Please go into the record and review the Fundamental Account Checkbox.
+
+You must populate the Tax Code, Billing State, Billing Country, Shipping State and Shipping Country -->
+        </errorMessage>
+        <name>Account_Segment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account must be selected before creating a quote. --></errorMessage>
+        <name>Account_must_be_selected_before_creating</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quote must have an opportunity to move the status to Accepted --></errorMessage>
+        <name>Quote_Must_Have_An_Opportunity_to_Accept</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>終了日は開始日の後の日付に設定する必要があります。</errorMessage>
+        <name>SBQQ__End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>最初のセグメント期間の終了日は、見積開始日と見積終了日の間にある必要があります。</errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>サブスクリプション期間は整数にする必要があります。</errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <webLinks>
+        <label>計算</label>
+        <name>SBQQ__CalculateQuote</name>
+    </webLinks>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label>注文の作成</label>
+        <name>SBQQ__CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label>品目の編集</label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label>ドキュメントを作成</label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>品目をインポート</label>
+        <name>SBQQ__ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label>ドキュメントを含める</label>
+        <name>SBQQ__IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>見積期間を変更</label>
+        <name>SBQQ__ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label>ドキュメントのプレビュー</label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>価格を更新</label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label>価格を更新</label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

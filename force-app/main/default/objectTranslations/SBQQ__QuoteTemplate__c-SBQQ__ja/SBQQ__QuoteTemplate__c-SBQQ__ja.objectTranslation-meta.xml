@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積テンプレート</value>
+    </caseValues>
+    <nameFieldLabel>テンプレート名</nameFieldLabel>
+    <validationRules>
+        <errorMessage>[ページ番号の位置] が [フッター] に設定されている場合、[フッターの高さ] を空白にはできません。</errorMessage>
+        <name>SBQQ__Blank_Footer_Height</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>[ページ番号の位置] が [ヘッダー] に設定されている場合、[ヘッダーの高さ] を空白にはできません。</errorMessage>
+        <name>SBQQ__Blank_Header_Height</name>
+    </validationRules>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label>翻訳</label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

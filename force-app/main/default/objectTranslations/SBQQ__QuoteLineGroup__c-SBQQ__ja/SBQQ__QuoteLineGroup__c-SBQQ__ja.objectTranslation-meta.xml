@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積品目グループ</value>
+    </caseValues>
+    <fieldSets>
+        <label>品目エディター</label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <nameFieldLabel>グループ名</nameFieldLabel>
+    <validationRules>
+        <errorMessage>サブスクリプション期間は整数にする必要があります。</errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <webLinks>
+        <label>見積を計算</label>
+        <name>SBQQ__CalculateQuoteFromQuoteLineGroup</name>
+    </webLinks>
+</CustomObjectTranslation>

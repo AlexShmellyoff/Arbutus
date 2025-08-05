@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condición</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Condiciones</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nº de condición</nameFieldLabel>
+    <validationRules>
+        <errorMessage>No puede seleccionar el campo y la variable conjuntamente para realizar la prueba. Cree condiciones separadas para realizar la prueba con campo y con variable.</errorMessage>
+        <name>SBQQ__Field_and_Variable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Debe seleccionar un campo o una variable para realizar la prueba.</errorMessage>
+        <name>SBQQ__Field_or_Variable</name>
+    </validationRules>
+</CustomObjectTranslation>

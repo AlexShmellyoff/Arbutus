@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- 28 Days Cycle Invoiced --></label>
+    <name>X28_Days_Cycle_Invoiced__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Grupo de linhas de cotação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Grupos de linhas de cotação</value>
+    </caseValues>
+    <fieldSets>
+        <label>Editor de linha</label>
+        <name>SBQQ__LineEditor</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome do grupo</nameFieldLabel>
+    <validationRules>
+        <errorMessage>O termo da assinatura deve ser um número positivo.</errorMessage>
+        <name>SBQQ__Invalid_Subscription_Term</name>
+    </validationRules>
+    <webLinks>
+        <label>Cálculo de cotação</label>
+        <name>SBQQ__CalculateQuoteFromQuoteLineGroup</name>
+    </webLinks>
+</CustomObjectTranslation>

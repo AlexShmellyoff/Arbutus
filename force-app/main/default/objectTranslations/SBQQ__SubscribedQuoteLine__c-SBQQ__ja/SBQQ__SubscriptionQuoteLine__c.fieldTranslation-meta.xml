@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Subscription quote line that covers the asset quote line. --></help>
+    <label>サブスクリプション見積品目</label>
+    <name>SBQQ__SubscriptionQuoteLine__c</name>
+    <relationshipLabel>サブスクリプション対象見積品目 (サブスクリプション見積品目)</relationshipLabel>
+</CustomFieldTranslation>

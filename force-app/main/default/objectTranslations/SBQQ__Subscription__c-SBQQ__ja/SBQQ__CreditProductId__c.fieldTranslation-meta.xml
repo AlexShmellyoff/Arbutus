@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ID of upgrade credit product for this subscription. --></help>
+    <label>クレジット商品 ID</label>
+    <name>SBQQ__CreditProductId__c</name>
+</CustomFieldTranslation>

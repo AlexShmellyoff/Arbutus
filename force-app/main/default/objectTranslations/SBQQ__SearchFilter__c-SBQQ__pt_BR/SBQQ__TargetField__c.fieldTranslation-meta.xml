@@ -4,6 +4,10 @@
     <label>Campo de destino</label>
     <name>SBQQ__TargetField__c</name>
     <picklistValues>
+        <masterLabel>Manufacturer__c</masterLabel>
+        <translation><!-- Manufacturer__c --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Name</masterLabel>
         <translation><!-- Name --></translation>
     </picklistValues>

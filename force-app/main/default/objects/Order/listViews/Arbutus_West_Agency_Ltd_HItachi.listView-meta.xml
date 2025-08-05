@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arbutus_West_Agency_Ltd_HItachi</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>Primary_Contact__c</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>SALES.ACCOUNT.OWNERALIAS</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Manufacturer__c</field>
+        <operation>contains</operation>
+        <value>Hitachi</value>
+    </filters>
+    <label>Hitachi Energy</label>
+</ListView>

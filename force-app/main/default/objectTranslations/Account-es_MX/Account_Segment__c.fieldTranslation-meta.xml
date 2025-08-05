@@ -34,4 +34,8 @@
         <masterLabel>Manufacturer</masterLabel>
         <translation><!-- Manufacturer --></translation>
     </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplier</masterLabel>
+        <translation><!-- Supplier --></translation>
+    </picklistValues>
 </CustomFieldTranslation>

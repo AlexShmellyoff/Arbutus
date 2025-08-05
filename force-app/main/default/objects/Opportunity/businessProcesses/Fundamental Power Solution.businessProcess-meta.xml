@@ -4,11 +4,11 @@
     <description>Sales Process For Fundamental Power Record Type.</description>
     <isActive>true</isActive>
     <values>
-        <fullName>Closed Lost</fullName>
+        <fullName>Closed Won</fullName>
         <default>false</default>
     </values>
     <values>
-        <fullName>Closed Won</fullName>
+        <fullName>Closed%2FLost</fullName>
         <default>false</default>
     </values>
     <values>

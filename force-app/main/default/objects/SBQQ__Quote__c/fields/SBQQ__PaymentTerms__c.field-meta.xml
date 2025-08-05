@@ -18,29 +18,34 @@
                 <label>Due on receipt</label>
             </value>
             <value>
-                <fullName>Net 15</fullName>
+                <fullName>NET 15</fullName>
                 <default>false</default>
-                <label>Net 15</label>
+                <label>NET 15</label>
             </value>
             <value>
-                <fullName>Net 30</fullName>
+                <fullName>NET 30</fullName>
                 <default>true</default>
-                <label>Net 30</label>
+                <label>NET 30</label>
             </value>
             <value>
-                <fullName>Net 45</fullName>
+                <fullName>NET 45</fullName>
                 <default>false</default>
-                <label>Net 45</label>
+                <label>NET 45</label>
             </value>
             <value>
-                <fullName>Net 60</fullName>
+                <fullName>NET 60</fullName>
                 <default>false</default>
-                <label>Net 60</label>
+                <label>NET 60</label>
             </value>
             <value>
-                <fullName>Net 90</fullName>
+                <fullName>NET 90</fullName>
                 <default>false</default>
-                <label>Net 90</label>
+                <label>NET 90</label>
+            </value>
+            <value>
+                <fullName>CONVERSION</fullName>
+                <default>false</default>
+                <label>CONVERSION</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -72,6 +72,30 @@
             <fullName>None</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>Rental Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Load Bank Auto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Load Bank Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental The Re-Rental Class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental Trailer</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Location__c</picklist>

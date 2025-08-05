@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Services = 1, All others = 21. Used for Skyvia integration.RetryClaude can make mistakes. Please double-check responses. --></help>
+    <label><!-- Product Family Code --></label>
+    <name>Product_Family_Code__c</name>
+</CustomFieldTranslation>

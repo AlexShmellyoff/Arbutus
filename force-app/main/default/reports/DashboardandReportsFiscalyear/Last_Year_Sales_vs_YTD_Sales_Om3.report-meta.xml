@@ -61,7 +61,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Closed Won</value>
+            <value>Closed Won,PO Issued</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

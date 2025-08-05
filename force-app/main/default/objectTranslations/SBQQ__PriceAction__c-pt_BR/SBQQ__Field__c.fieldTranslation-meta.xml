@@ -32,6 +32,10 @@
         <translation>Norma (%)</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>QuotelineDuration__c</masterLabel>
+        <translation><!-- QuotelineDuration__c --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Target (%)</masterLabel>
         <translation>Destino (%)</translation>
     </picklistValues>

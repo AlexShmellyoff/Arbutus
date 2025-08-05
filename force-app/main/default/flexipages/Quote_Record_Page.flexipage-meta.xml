@@ -66,6 +66,9 @@
                         <valueListItems>
                             <value>CustomButton.SBQQ__Quote__c.SBQQ__CalculateQuote</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.SBQQ__Quote__c.SBQQ__CloneWithRelatedClassic</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -155,6 +158,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Contract__c</fieldItem>
                 <identifier>RecordContract__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Notes_for_Scope_of_Work_Bill_of_Material__c</fieldItem>
+                <identifier>RecordNotes_for_Scope_of_Work_Bill_of_Material_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-29806a4b-397a-4f33-8ef5-1526ab4e79ea</name>

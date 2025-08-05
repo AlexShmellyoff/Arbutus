@@ -5,8 +5,8 @@
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <label>ArbutusServiceQuoteDetailsPage</label>
     <packageVersions>
-        <majorNumber>254</majorNumber>
-        <minorNumber>1</minorNumber>
+        <majorNumber>256</majorNumber>
+        <minorNumber>0</minorNumber>
         <namespace>SBQQ</namespace>
     </packageVersions>
 </ApexPage>

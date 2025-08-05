@@ -72,7 +72,39 @@
     <picklistValues>
         <picklist>Status</picklist>
         <values>
+            <fullName>Documentation Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawings Issued to Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESD%2FTracking Issued to Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Released into Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partly Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue recognition%2FClosed Archived</fullName>
             <default>false</default>
         </values>
     </picklistValues>

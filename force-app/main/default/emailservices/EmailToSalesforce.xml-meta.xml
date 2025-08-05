@@ -5,11 +5,11 @@
     <authenticationFailureAction>Discard</authenticationFailureAction>
     <authorizationFailureAction>Bounce</authorizationFailureAction>
     <emailServicesAddresses>
-        <authorizedSenders>drew@arbutuswest.com</authorizedSenders>
+        <authorizedSenders>stevee@fundamentalpower.com</authorizedSenders>
         <developerName>emailtosalesforce</developerName>
         <isActive>true</isActive>
         <localPart>emailtosalesforce</localPart>
-        <runAsUser>drew.gelley@arbutuswest.com</runAsUser>
+        <runAsUser>stevee@fundamentalpower.com</runAsUser>
     </emailServicesAddresses>
     <functionInactiveAction>Bounce</functionInactiveAction>
     <functionName>EmailToSalesforce</functionName>

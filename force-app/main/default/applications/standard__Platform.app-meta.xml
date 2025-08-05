@@ -11,4 +11,8 @@
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-Chatter</tabs>
     <tabs>standard-File</tabs>
+    <tabs>Tax_Rate__c</tabs>
+    <tabs>SBQQ__LookupData__c</tabs>
+    <tabs>Pre_Defined_Quote_Notes__c</tabs>
+    <tabs>Predefined_Qts__c</tabs>
 </CustomApplication>

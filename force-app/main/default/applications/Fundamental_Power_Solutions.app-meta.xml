@@ -124,74 +124,6 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Arbutus_Product_Layout</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Arbutus_Products</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CSSP</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.CSSP_Service_Contract</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Arbutus_Product_Layout</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-        <recordType>Product2.Arbutus_Products</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page2</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Fundamentals Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page2</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Fundamentals Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page2</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page2</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Fundamental_Quote</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
-        <recordType>SBQQ__Quote__c.Fundamental_Quotes</recordType>
-        <type>Flexipage</type>
-        <profile>Fundamentals Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>Subscription_Record_Page2</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
@@ -232,51 +164,6 @@
         <recordType>Contract.Fundamental_Contracts</recordType>
         <type>Flexipage</type>
         <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CPQ_Account_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Company_Account</recordType>
-        <type>Flexipage</type>
-        <profile>Fundamentals Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Fundamental_Quote</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
-        <recordType>SBQQ__Quote__c.Fundamental_Quotes</recordType>
-        <type>Flexipage</type>
-        <profile>Fundamentals Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Fundamental_Quote</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
-        <recordType>SBQQ__Quote__c.Fundamental_Quotes</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Fundamental_Quote</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
-        <recordType>SBQQ__Quote__c.Fundamental_Quotes</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CPQ_Account_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Company_Account</recordType>
-        <type>Flexipage</type>
-        <profile>Fundamentals Standard User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -331,15 +218,6 @@
         <recordType>Opportunity.Fundamental_Power</recordType>
         <type>Flexipage</type>
         <profile>Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CSSP</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.CSSP_Service_Contract</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -442,11 +320,47 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>CSSP</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.CSSP_Service_Contract</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CSSP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.CSSP_Service_Contract</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Arbutus_Product_Layout</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Arbutus_Products</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Arbutus_Product_Layout</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
+        <recordType>Product2.Arbutus_Products</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>Subscription_Record_Page2</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
+        <profile>Fundamentals Standard User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -454,7 +368,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
+        <profile>Fundamentals Standard User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -462,7 +376,7 @@
         <formFactor>Small</formFactor>
         <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Arbutus Standard User</profile>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -470,7 +384,61 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>Arbutus Standard User</profile>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Fundamental_Quote</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
+        <recordType>SBQQ__Quote__c.Fundamental_Quotes</recordType>
+        <type>Flexipage</type>
+        <profile>Fundamentals Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Fundamental_Quote</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
+        <recordType>SBQQ__Quote__c.Fundamental_Quotes</recordType>
+        <type>Flexipage</type>
+        <profile>Fundamentals Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Fundamental_Quote</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
+        <recordType>SBQQ__Quote__c.Fundamental_Quotes</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Fundamental_Quote</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
+        <recordType>SBQQ__Quote__c.Fundamental_Quotes</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CPQ_Account_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Company_Account</recordType>
+        <type>Flexipage</type>
+        <profile>Fundamentals Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CPQ_Account_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Company_Account</recordType>
+        <type>Flexipage</type>
+        <profile>Fundamentals Standard User</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Lead</tabs>

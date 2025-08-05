@@ -5,6 +5,17 @@
     <description>This is specific to creating Manufacturer records for the Arbutus Group</description>
     <label>Manufacturer</label>
     <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Arbutus West Agency Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamentals Power Group</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Account_Segment__c</picklist>
         <values>
             <fullName>Consultant</fullName>
@@ -98,11 +109,23 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Equipment Rental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Rental%2C Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Finance</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forestry</fullName>
             <default>false</default>
         </values>
         <values>
@@ -134,7 +157,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Mining%2FMaterials</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oil and Gas</fullName>
             <default>false</default>
         </values>
         <values>
@@ -142,7 +173,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Power Generation</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewables</fullName>
             <default>false</default>
         </values>
         <values>
@@ -162,11 +201,19 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Transportation</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale</fullName>
             <default>false</default>
         </values>
     </picklistValues>

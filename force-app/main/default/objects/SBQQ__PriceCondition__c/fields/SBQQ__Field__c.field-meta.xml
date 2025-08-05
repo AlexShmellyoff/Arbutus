@@ -16,6 +16,16 @@
                 <default>false</default>
                 <label>Product Code</label>
             </value>
+            <value>
+                <fullName>Duration__c</fullName>
+                <default>false</default>
+                <label>Duration__c</label>
+            </value>
+            <value>
+                <fullName>SBQQ__ProductFamily__c</fullName>
+                <default>false</default>
+                <label>SBQQ__ProductFamily__c</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

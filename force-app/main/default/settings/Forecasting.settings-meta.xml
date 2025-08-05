@@ -252,19 +252,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -272,115 +272,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -388,7 +412,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -453,41 +477,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -660,19 +690,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -680,115 +710,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -796,7 +850,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -861,41 +915,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1072,19 +1132,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1092,115 +1152,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1208,7 +1292,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1274,41 +1358,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1481,19 +1571,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1501,115 +1591,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1617,7 +1731,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1682,41 +1796,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1893,19 +2013,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -1913,115 +2033,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -2029,7 +2173,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -2095,41 +2239,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2302,19 +2452,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -2322,115 +2472,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -2438,7 +2612,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -2503,41 +2677,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2714,19 +2894,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -2734,115 +2914,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -2850,7 +3054,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -2916,41 +3120,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3123,19 +3333,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3143,115 +3353,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3259,7 +3493,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3324,41 +3558,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3535,19 +3775,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3555,115 +3795,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3671,7 +3935,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3737,41 +4001,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3944,19 +4214,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -3964,115 +4234,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4080,7 +4374,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4145,41 +4439,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -4356,19 +4656,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4376,115 +4676,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4492,7 +4816,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4558,41 +4882,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -4765,19 +5095,19 @@
             <label>Manager Judgment</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaII</field>
+            <field>00NDK00000JUa5V</field>
             <label>Amended Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaZ</field>
+            <field>00NDK00000Qtj8y</field>
             <label>Arbutus Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlY</field>
+            <field>00NDK00000LkAOk</field>
             <label>AWL Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000LkAOg</field>
             <label>AWL Opportunity Number Related to Flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4785,115 +5115,139 @@
             <label>Budget Confirmed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkK</field>
+            <field>00NDK00000LBzmF</field>
             <label>Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkL</field>
+            <field>00NDK00000KfBXf</field>
             <label>Commission Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIJ</field>
+            <field>00NDK00000JUa5W</field>
             <label>Contracted</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIK</field>
+            <field>00NDK00000JUa5X</field>
             <label>Create Contracted Prices</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000MEQ8e</field>
             <label>CSSP Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuOWm</field>
+            <label>CSSP Order</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000P3yGe</field>
+            <label>Custom Close Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnl</field>
             <label>Discovery Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkM</field>
+            <field>00NDK00000KfBXh</field>
             <label>Estimated Ship Date (ESD)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltlZ</field>
+            <field>00NDK00000LkAOl</field>
             <label>FPS Opportunity Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkN</field>
+            <field>00NDK00000LkAOh</field>
             <label>FPS Opportunity Number Used in flow</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00001BMHaa</field>
+            <field>00NDK00000Qtj93</field>
             <label>Fundamental Account</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000P2nVk</field>
             <label>Invoice Fully Paid</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONpue</field>
+            <label>Invoice Service Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QPuVz</field>
+            <label>Is Closed Today</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000NjVSL</field>
+            <label>Legacy Associated Contact</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NKj00000jYtnn</field>
             <label>Loss Reason</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkO</field>
+            <field>00NDK00000KfBXm</field>
             <label>Loss Reason (Other)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkP</field>
+            <field>00NDK00000KfBXt</field>
             <label>Manufacturer reference number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000012MrcC</field>
+            <field>00NDK00000Qu8wG</field>
+            <label>Mark Up Amount</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000ONoe0</field>
             <label>One-Time Amount</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkQ</field>
+            <field>00NDK00000LkAOi</field>
             <label>Opp Integer_Arbutus</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkR</field>
+            <field>00NDK00000LkAOj</field>
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIM</field>
+            <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIL</field>
+            <field>00NDK00000JUa5Y</field>
             <label>Order Group ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkS</field>
+            <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkT</field>
+            <field>00NDK00000MGkKt</field>
             <label>Primary Manufacturer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIN</field>
+            <field>00NDK00000JUa5a</field>
             <label>Primary Quote</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvh</field>
+            <field>00NDK00000P1aPp</field>
             <label>Quickbooks Invoice Balance</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvi</field>
+            <field>00NDK00000P1aPk</field>
             <label>Quickbooks Invoice ID</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIO</field>
+            <field>00NDK00000JUa5b</field>
             <label>Quote Pricebook Id</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIP</field>
+            <field>00NDK00000JUa5c</field>
             <label>Renewal</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xlaIQ</field>
+            <field>00NDK00000JUa5d</field>
             <label>Renewed Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXq</field>
             <label>RFQ Due Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4901,7 +5255,7 @@
             <label>ROI Analysis Completed</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
@@ -4966,41 +5320,47 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>FORECASTEDMFJVALUE</field>
-            <field>00NKj00000xlaII</field>
-            <field>00NKj00001BMHaZ</field>
-            <field>00NKj00000xltlY</field>
-            <field>00NKj00000xltkI</field>
+            <field>00NDK00000JUa5V</field>
+            <field>00NDK00000Qtj8y</field>
+            <field>00NDK00000LkAOk</field>
+            <field>00NDK00000LkAOg</field>
             <field>00NKj00000jYtnk</field>
-            <field>00NKj00000xltkK</field>
-            <field>00NKj00000xltkL</field>
-            <field>00NKj00000xlaIJ</field>
-            <field>00NKj00000xlaIK</field>
-            <field>00NKj00000xltkJ</field>
+            <field>00NDK00000LBzmF</field>
+            <field>00NDK00000KfBXf</field>
+            <field>00NDK00000JUa5W</field>
+            <field>00NDK00000JUa5X</field>
+            <field>00NDK00000MEQ8e</field>
+            <field>00NDK00000QuOWm</field>
+            <field>00NDK00000P3yGe</field>
             <field>00NKj00000jYtnl</field>
-            <field>00NKj00000xltkM</field>
-            <field>00NKj00000xltlZ</field>
-            <field>00NKj00000xltkN</field>
-            <field>00NKj00001BMHaa</field>
-            <field>00NKj000015exvn</field>
+            <field>00NDK00000KfBXh</field>
+            <field>00NDK00000LkAOl</field>
+            <field>00NDK00000LkAOh</field>
+            <field>00NDK00000Qtj93</field>
+            <field>00NDK00000P2nVk</field>
+            <field>00NDK00000ONpue</field>
+            <field>00NDK00000QPuVz</field>
+            <field>00NDK00000NjVSL</field>
             <field>00NKj00000jYtnn</field>
-            <field>00NKj00000xltkO</field>
-            <field>00NKj00000xltkP</field>
-            <field>00NKj000012MrcC</field>
-            <field>00NKj00000xltkQ</field>
-            <field>00NKj00000xltkR</field>
-            <field>00NKj00000xlaIM</field>
-            <field>00NKj00000xlaIL</field>
-            <field>00NKj00000xltkS</field>
-            <field>00NKj00000xltkT</field>
-            <field>00NKj00000xlaIN</field>
-            <field>00NKj000015exvh</field>
-            <field>00NKj000015exvi</field>
-            <field>00NKj00000xlaIO</field>
-            <field>00NKj00000xlaIP</field>
-            <field>00NKj00000xlaIQ</field>
-            <field>00NKj00000xltkU</field>
+            <field>00NDK00000KfBXm</field>
+            <field>00NDK00000KfBXt</field>
+            <field>00NDK00000Qu8wG</field>
+            <field>00NDK00000ONoe0</field>
+            <field>00NDK00000LkAOi</field>
+            <field>00NDK00000LkAOj</field>
+            <field>00NDK00000JUa5Z</field>
+            <field>00NDK00000JUa5Y</field>
+            <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000MGkKt</field>
+            <field>00NDK00000JUa5a</field>
+            <field>00NDK00000P1aPp</field>
+            <field>00NDK00000P1aPk</field>
+            <field>00NDK00000JUa5b</field>
+            <field>00NDK00000JUa5c</field>
+            <field>00NDK00000JUa5d</field>
+            <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
-            <field>00NKj000015exvc</field>
+            <field>00NDK00000P2nrS</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>

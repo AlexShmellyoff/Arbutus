@@ -43,6 +43,7 @@
             <value>
                 <fullName>6</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>6</label>
             </value>
         </valueSetDefinition>

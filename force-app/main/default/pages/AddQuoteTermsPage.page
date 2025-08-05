@@ -1,0 +1,17 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="QuoteTermSelectorController">
+    <apex:form >
+        <apex:pageBlock title="Add Existing Quote Terms">
+            <apex:pageMessages />
+
+            <apex:pageBlockTable value="{!terms}" var="tw">
+                <apex:column >
+                    <apex:inputCheckbox value="{!tw.selected}" />
+                </apex:column>
+                <apex:column value="{!tw.term.Name}" />
+                <apex:column value="{!tw.term.SBQQ__Body__c}" />
+            </apex:pageBlockTable>
+
+            <apex:commandButton value="Add Selected Terms" action="{!addSelectedTerms}" />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

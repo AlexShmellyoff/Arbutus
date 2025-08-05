@@ -32,6 +32,15 @@
         Service Plan Period: {!quoteStartAndEndDate}
     </block>
 
+    <apex:outputPanel layout="none" rendered="{!notesForScopeOfWork.size > 0}">
+        <block font-size="12pt" font-weight="bold" padding-bottom="5pt" padding-top="10">Notes for Scope of Work/Bill of Material:</block>
+        <apex:repeat value="{!notesForScopeOfWork}" var="nSOW">
+            <block >
+            <apex:outputText value="{!nSOW}"/>
+            </block>
+        </apex:repeat>
+    </apex:outputPanel>
+
     <apex:outputPanel layout="none" rendered="{!serviceIncluded.size > 0}">
         <block font-size="12pt" font-weight="bold" padding-bottom="5pt" padding-top="10">Proposal Overview:</block>
         <apex:repeat value="{!serviceIncluded}" var="sI">

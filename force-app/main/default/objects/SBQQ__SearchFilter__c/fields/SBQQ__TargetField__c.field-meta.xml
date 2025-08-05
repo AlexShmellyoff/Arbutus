@@ -42,6 +42,11 @@
                 <default>false</default>
                 <label>Status</label>
             </value>
+            <value>
+                <fullName>Manufacturer__c</fullName>
+                <default>false</default>
+                <label>Manufacturer__c</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Product</controllingFieldValue>
@@ -63,6 +68,10 @@
             <controllingFieldValue>Product</controllingFieldValue>
             <controllingFieldValue>Asset</controllingFieldValue>
             <valueName>Product Description</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product</controllingFieldValue>
+            <valueName>Manufacturer__c</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Asset</controllingFieldValue>

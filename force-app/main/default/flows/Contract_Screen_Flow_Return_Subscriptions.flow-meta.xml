@@ -27,7 +27,7 @@
             <assignToReference>LoopSubscriptions.Return_Date__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$Flow.CurrentDate</elementReference>
+                <elementReference>Return_Date</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -83,7 +83,7 @@
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>GetSubscriptions</targetReference>
+            <targetReference>Return_Screen</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -121,6 +121,13 @@
                 <booleanValue>true</booleanValue>
             </value>
         </filters>
+        <filters>
+            <field>SBQQ__TerminatedDate__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>SBQQ__Subscription__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -136,6 +143,39 @@
         <inputReference>SubscriptionCollection</inputReference>
     </recordUpdates>
     <screens>
+        <name>Return_Screen</name>
+        <label>Return Screen</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>GetSubscriptions</targetReference>
+        </connector>
+        <fields>
+            <name>Return_Date</name>
+            <dataType>Date</dataType>
+            <defaultValue>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </defaultValue>
+            <fieldText>Return Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
         <name>Success</name>
         <label>Success!</label>
         <locationX>0</locationX>
@@ -145,7 +185,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>ReturnText</name>
-            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;All products are now marked with Return Date = TODAY&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;All Products are Now Returned with Date: {!Return_Date}&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>

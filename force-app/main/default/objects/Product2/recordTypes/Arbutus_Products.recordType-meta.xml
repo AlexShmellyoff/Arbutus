@@ -269,7 +269,171 @@
     <picklistValues>
         <picklist>Family</picklist>
         <values>
+            <fullName>Advantage Service Plan for 3-Phase UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advantage Service Plan for Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery Replacement Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Critical Facility Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center Assessment Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center Operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center Operation%3A Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center Operation%3A Energy Efficiency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center Operation%3A IT Optimize</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispatch Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoCare for Modular Data Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoCare for Single-Phase UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoFitâ%E2%80%9E%C2%A2 Life Extension Advanced for UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoFitâ%E2%80%9E%C2%A2 Life Extension Essential for UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoFitâ%E2%80%9E%C2%A2 Replacement for Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoStruxure Asset Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoStruxure Service Plan for 3-Phase UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoStruxureâ%E2%80%9E%C2%A2 IT Data Center Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoStruxureâ%E2%80%9E%C2%A2 IT Expert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EcoStruxureâ%E2%80%9E%C2%A2 IT SmartConnect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended Warranties - Critical Power %26 Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Services for Critical Power %26 Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MGE Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MGE EPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MGE Galaxy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Maintenance Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring and Dispatch Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Management Cards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NetworkAIR Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Site Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-demand Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Warranty Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preventative Maintenance Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spare Parts Kits for UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start-Up Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Hardware Procurement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor Management Services</fullName>
             <default>false</default>
         </values>
     </picklistValues>

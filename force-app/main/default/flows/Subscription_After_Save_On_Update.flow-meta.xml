@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Copy_1_of_RemoveHTMLTag</name>
+        <label>Copy 1 of RemoveHTMLTag</label>
+        <locationX>50</locationX>
+        <locationY>1139</locationY>
+        <actionName>RemoveHTMLTags</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Return_Date_Verification</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>richTextList</name>
+            <value>
+                <elementReference>$Record.SBQQ__QuoteLine__r.SBQQ__Description__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>RemoveHTMLTags</nameSegment>
+        <offset>0</offset>
+        <outputParameters>
+            <assignToReference>PlainText</assignToReference>
+            <name>output</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>RemoveHTMLTag</name>
+        <label>RemoveHTMLTag</label>
+        <locationX>490</locationX>
+        <locationY>1139</locationY>
+        <actionName>RemoveHTMLTags</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Copy_1_of_Return_Date_Verification</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>richTextList</name>
+            <value>
+                <elementReference>$Record.SBQQ__QuoteLine__r.SBQQ__Description__c</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>RemoveHTMLTags</nameSegment>
+        <offset>0</offset>
+        <outputParameters>
+            <assignToReference>PlainText</assignToReference>
+            <name>output</name>
+        </outputParameters>
+    </actionCalls>
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Copy_1_of_Return_Date_Verification</name>
+        <label>Copy 1 of Return Date Verification</label>
+        <locationX>490</locationX>
+        <locationY>1247</locationY>
+        <defaultConnector>
+            <targetReference>Set_Return_Date_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Empty Return Date</defaultConnectorLabel>
+        <rules>
+            <name>Copy_1_of_Populated_Return_Date</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Return_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Return_Date__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Maintenance_Set_Status_Closed_0</targetReference>
+            </connector>
+            <label>Copy 1 of Populated Return Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Expected_End_Date_Changed</name>
+        <label>Expected End Date Changed</label>
+        <locationX>446</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Return_Date_Populated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Expected_End_Date__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Expected_End_Date__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Expected_End_Date__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Rental_or_Not_Rental_Accessory</name>
+        <label>Rental or Not Rental Accessory - Status</label>
+        <locationX>446</locationX>
+        <locationY>1031</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Rental</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__Product__r.Family</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Rental Accessories</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Returned</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_RemoveHTMLTag</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Rental - Return</label>
+        </rules>
+        <rules>
+            <name>Not_Rental</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__Product__r.Family</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Rental Accessories</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Returned</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>RemoveHTMLTag</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Not Rental - Return</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Return_Date_Populated</name>
+        <label>Return Date Populated</label>
+        <locationX>446</locationX>
+        <locationY>731</locationY>
+        <defaultConnector>
+            <targetReference>Rental_or_Not_Rental_Accessory</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Return_Date__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Return_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Change_Status_to_Returned</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Return_Date_Verification</name>
+        <label>Return Date Verification</label>
+        <locationX>50</locationX>
+        <locationY>1247</locationY>
+        <defaultConnector>
+            <targetReference>Set_Return_Date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Empty Return Date</defaultConnectorLabel>
+        <rules>
+            <name>Populated_Return_Date</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Return_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Return_Date__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Maintenance_Set_Status_Closed</targetReference>
+            </connector>
+            <label>Populated Return Date</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>DurationCalculation</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Expected_End_Date__c} - {!$Record.SBQQ__SubscriptionStartDate__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>OverageAmountFormula</name>
+        <dataType>Currency</dataType>
+        <expression>IF(
+  {!$Record.Overage_Days__c} &gt; 0,
+  CASE(
+    {!$Record.Overage_Days__c},
+    1, {!$Record.Daily__c},
+    2, {!$Record.Daily__c},
+    3, {!$Record.Week_7_DAY__c},
+    4, {!$Record.Week_7_DAY__c},
+    5, {!$Record.Week_7_DAY__c},
+    6, {!$Record.Week_7_DAY__c},
+    7, {!$Record.Week_7_DAY__c},
+    8, {!$Record.Week_7_DAY__c},
+    9, {!$Record.Week_7_DAY__c} + ({!$Record.Week_7_DAY__c} / 5),
+    10, {!$Record.Week_7_DAY__c} + ({!$Record.Week_7_DAY__c} / 5) * 2,
+    11, {!$Record.Week_7_DAY__c} + ({!$Record.Week_7_DAY__c} / 5) * 3,
+    12, {!$Record.Week_7_DAY__c} + ({!$Record.Week_7_DAY__c} / 5) * 4,
+    13, {!$Record.Week_7_DAY__c} * 2,
+    14, {!$Record.Week_7_DAY__c} * 2,
+    15, {!$Record.Week_7_DAY__c} * 2,
+    16, ({!$Record.Week_7_DAY__c} * 2) + ({!$Record.Week_7_DAY__c} / 5),
+    17, ({!$Record.Week_7_DAY__c} * 2) + ({!$Record.Week_7_DAY__c} / 5) * 2,
+    18, ({!$Record.Week_7_DAY__c} * 2) + ({!$Record.Week_7_DAY__c} / 5) * 3,
+    19, ({!$Record.Week_7_DAY__c} * 2) + ({!$Record.Week_7_DAY__c} / 5) * 4,
+    20, {!$Record.Week_7_DAY__c} * 3,
+    21, {!$Record.Week_7_DAY__c} * 3,
+    22, {!$Record.Week_7_DAY__c} * 3,
+    23, {!$Record.Week_7_DAY__c} * 3,
+    24, {!$Record.Week_7_DAY__c} * 3,
+    25, {!$Record.Week_7_DAY__c} * 3,
+    26, {!$Record.Week_7_DAY__c} * 3,
+    27, {!$Record.Week_7_DAY__c} * 3,
+    28, {!$Record.Week_7_DAY__c} * 3,
+    29, {!$Record.Week_7_DAY__c} * 3,
+    30, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20),
+    31, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 2,
+    32, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 3,
+    33, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 5,
+    34, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 5,
+    35, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 5,
+    36, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 5,
+    37, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 6,
+    38, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 7,
+    39, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 8,
+    40, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 9,
+    41, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 10,
+    42, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 10,
+    43, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 10,
+    44, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 11,
+    45, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 12,
+    46, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 13,
+    47, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 14,
+    48, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 15,
+    49, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 15,
+    50, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 15,
+    51, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 16,
+    52, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 17,
+    53, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 18,
+    54, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 19,
+    55, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 20,
+    56, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 20,
+    57, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 20,
+    58, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 20,
+    59, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20) * 21,
+    NULL
+  ) * {!$Record.SBQQ__Quantity__c},
+  NULL
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>OverageAmountMultiplyQuantity</name>
+        <dataType>Currency</dataType>
+        <expression>{!OverageAmountFormula}*{!$Record.SBQQ__Quantity__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>PricingCalculation</name>
+        <dataType>Currency</dataType>
+        <expression>IF({!$Record.Duration__c} &lt;= 1, {!$Record.Daily__c},
+IF({!$Record.Duration__c} &lt;= 2, {!$Record.Daily__c} * 2,
+IF({!$Record.Duration__c} &lt;= 8, {!$Record.Week_7_DAY__c},
+IF({!$Record.Duration__c} &lt;= 13, {!$Record.Week_7_DAY__c} + (({!$Record.Duration__c} - 8) * ({!$Record.Week_7_DAY__c} / 5)),
+IF({!$Record.Duration__c} &lt;= 15, {!$Record.Week_7_DAY__c} * 2,
+IF({!$Record.Duration__c} &lt;= 20, ({!$Record.Week_7_DAY__c} * 2) + (({!$Record.Duration__c} - 15) * ({!$Record.Week_7_DAY__c} / 5)),
+IF({!$Record.Duration__c} &lt;= 29, {!$Record.Week_7_DAY__c} * 3,
+IF({!$Record.Duration__c} = 30, ({!$Record.Month_28_DAY__c} / 20) * 21,
+IF({!$Record.Duration__c} = 31, ({!$Record.Month_28_DAY__c} / 20) * 22,
+IF({!$Record.Duration__c} = 32, ({!$Record.Month_28_DAY__c} / 20) * 23,
+IF({!$Record.Duration__c} &lt;= 36, ({!$Record.Month_28_DAY__c} / 20) * 25,
+IF({!$Record.Duration__c} = 37, ({!$Record.Month_28_DAY__c} / 20) * 26,
+IF({!$Record.Duration__c} = 38, ({!$Record.Month_28_DAY__c} / 20) * 27,
+IF({!$Record.Duration__c} = 39, ({!$Record.Month_28_DAY__c} / 20) * 28,
+IF({!$Record.Duration__c} = 40, ({!$Record.Month_28_DAY__c} / 20) * 29,
+IF({!$Record.Duration__c} &lt;= 43, ({!$Record.Month_28_DAY__c} / 20) * 30,
+IF({!$Record.Duration__c} = 44, ({!$Record.Month_28_DAY__c} / 20) * 31,
+IF({!$Record.Duration__c} = 45, ({!$Record.Month_28_DAY__c} / 20) * 32,
+IF({!$Record.Duration__c} = 46, ({!$Record.Month_28_DAY__c} / 20) * 33,
+IF({!$Record.Duration__c} = 47, ({!$Record.Month_28_DAY__c} / 20) * 34,
+IF({!$Record.Duration__c} &lt;= 50, ({!$Record.Month_28_DAY__c} / 20) * 35,
+IF({!$Record.Duration__c} = 51, ({!$Record.Month_28_DAY__c} / 20) * 36,
+IF({!$Record.Duration__c} = 52, ({!$Record.Month_28_DAY__c} / 20) * 37,
+IF({!$Record.Duration__c} = 53, ({!$Record.Month_28_DAY__c} / 20) * 38,
+IF({!$Record.Duration__c} = 54, ({!$Record.Month_28_DAY__c} / 20) * 39,
+IF({!$Record.Duration__c} &lt;= 58, ({!$Record.Month_28_DAY__c} / 20) * 40,
+IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
+)))))))))))))))))))))))))))</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>TaxChargeFormula</name>
+        <dataType>Currency</dataType>
+        <expression>IF(
+  {!$Record.Overage_Days__c} &gt; 0,
+  ({!$Record.SBQQ__NetPrice__c} + {!$Record.Overage_Charge__c}) * ({!$Record.Quote__r.Total_Tax_Rate__c} / 100),
+  {!$Record.SBQQ__NetPrice__c} * ({!$Record.Quote__r.Total_Tax_Rate__c} / 100)
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>[Subscription] [After-Save] - On Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>[Subscription] [After-Save] - On Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Maintenance_Set_Status_Closed</name>
+        <label>Create Maintenance - Set Status = Closed</label>
+        <locationX>50</locationX>
+        <locationY>1547</locationY>
+        <inputAssignments>
+            <field>Contract__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__Contract__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>PlainText</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__Product__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Complete</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Maintenance__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Maintenance_Set_Status_Closed_0</name>
+        <label>Create Maintenance - Set Status = Closed</label>
+        <locationX>490</locationX>
+        <locationY>1547</locationY>
+        <inputAssignments>
+            <field>Contract__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__Contract__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>PlainText</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Product__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__Product__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Undergoing Maintenance</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Maintenance__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Change_Status_to_Returned</name>
+        <label>Change Status to Returned</label>
+        <locationX>314</locationX>
+        <locationY>839</locationY>
+        <connector>
+            <targetReference>Rental_or_Not_Rental_Accessory</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Overage_Charge__c</field>
+            <value>
+                <elementReference>OverageAmountFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Returned</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Charge__c</field>
+            <value>
+                <elementReference>TaxChargeFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Return_Date</name>
+        <label>Set Return Date</label>
+        <locationX>138</locationX>
+        <locationY>1355</locationY>
+        <connector>
+            <targetReference>Create_Maintenance_Set_Status_Closed</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Return_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Return_Date_0</name>
+        <label>Set Return Date</label>
+        <locationX>578</locationX>
+        <locationY>1355</locationY>
+        <connector>
+            <targetReference>Create_Maintenance_Set_Status_Closed_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Return_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_QuoteLine</name>
+        <label>Update QuoteLine</label>
+        <locationX>314</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Return_Date_Populated</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SBQQ__QuoteLine__r.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>SBQQ__NetPrice__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__NetPrice__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__SpecialPriceDescription__c</field>
+            <value>
+                <stringValue>Updated Expected End Date</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__SpecialPriceType__c</field>
+            <value>
+                <stringValue>Custom</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__SpecialPrice__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__NetPrice__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>SBQQ__QuoteLine__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Status</name>
+        <label>Update Status</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Update_QuoteLine</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Duration__c</field>
+            <value>
+                <elementReference>DurationCalculation</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SBQQ__NetPrice__c</field>
+            <value>
+                <elementReference>PricingCalculation</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Charge__c</field>
+            <value>
+                <elementReference>TaxChargeFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Updated_Expected_End_Date__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Expected_End_Date_Changed</targetReference>
+        </connector>
+        <object>SBQQ__Subscription__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>200</triggerOrder>
+    <variables>
+        <name>PlainText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

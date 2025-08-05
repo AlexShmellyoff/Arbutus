@@ -7,4 +7,8 @@
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <tabs>standard-AppLauncher</tabs>
     <tabs>standard-Quote</tabs>
+    <tabs>Tax_Rate__c</tabs>
+    <tabs>SBQQ__LookupData__c</tabs>
+    <tabs>Pre_Defined_Quote_Notes__c</tabs>
+    <tabs>Predefined_Qts__c</tabs>
 </CustomApplication>

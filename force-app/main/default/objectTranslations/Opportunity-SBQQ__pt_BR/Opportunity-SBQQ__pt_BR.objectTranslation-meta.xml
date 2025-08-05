@@ -64,7 +64,7 @@
         <name>Arbutus_WestAgencyLtd</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- CSSP Service Contract --></label>
+        <label><!-- CSSP Service Contract [DO NOT USE] --></label>
         <name>CSSP_Service_Contract</name>
     </recordTypes>
     <recordTypes>

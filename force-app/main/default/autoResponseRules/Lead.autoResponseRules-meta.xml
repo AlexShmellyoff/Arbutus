@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Lead response to customer</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Arbutus West Agency Ltd</value>
+            </criteriaItems>
+            <senderEmail>project.arbutus@integrate2cloud.com</senderEmail>
+            <senderName>Arbutus West</senderName>
+            <template>unfiled$public/LeadsWebtoLeademailresponseSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Fundamentals Power Group</value>
+            </criteriaItems>
+            <senderEmail>project.arbutus@integrate2cloud.com</senderEmail>
+            <senderName>Fundamentals Power</senderName>
+            <template>unfiled$public/LeadsWebtoLeademailresponseSAMPLEfundamentals</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

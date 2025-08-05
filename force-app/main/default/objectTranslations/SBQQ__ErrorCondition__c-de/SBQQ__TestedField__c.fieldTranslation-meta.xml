@@ -8,7 +8,23 @@
         <translation>Belegposten gruppieren</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>SBQQ__EndDate__c</masterLabel>
+        <translation><!-- SBQQ__EndDate__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__ProductFamily__c</masterLabel>
+        <translation><!-- SBQQ__ProductFamily__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__StartDate__c</masterLabel>
+        <translation><!-- SBQQ__StartDate__c --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Unit Price</masterLabel>
         <translation>Stückpreis</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Year__c</masterLabel>
+        <translation><!-- Year__c --></translation>
     </picklistValues>
 </CustomFieldTranslation>

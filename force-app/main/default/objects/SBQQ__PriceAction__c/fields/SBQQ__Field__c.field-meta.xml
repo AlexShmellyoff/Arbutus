@@ -56,6 +56,11 @@
                 <default>false</default>
                 <label>Explanation</label>
             </value>
+            <value>
+                <fullName>QuotelineDuration__c</fullName>
+                <default>false</default>
+                <label>QuotelineDuration__c</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Quote</controllingFieldValue>
@@ -86,6 +91,10 @@
             <controllingFieldValue>Quote Line</controllingFieldValue>
             <controllingFieldValue>Product Option</controllingFieldValue>
             <valueName>Markup (Amt)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote Line</controllingFieldValue>
+            <valueName>QuotelineDuration__c</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Quote Line Pricing Guidance</controllingFieldValue>

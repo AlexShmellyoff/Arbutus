@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arbutus_West_Agency_Ltd_Rex_PO_s</fullName>
+    <columns>ORDER.PO_NUMBER</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.STATUS</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>Manufacturer__c</columns>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Manufacturer__c</field>
+        <operation>contains</operation>
+        <value>Rex</value>
+    </filters>
+    <label>Arbutus West Agency Ltd. - Rex</label>
+</ListView>

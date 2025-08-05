@@ -248,6 +248,30 @@
                 <identifier>RecordLoss_Reason_Other__cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Quickbooks_Invoice_ID__c</fieldItem>
+                <identifier>RecordQuickbooks_Invoice_ID__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Quickbooks_Invoice_Balance__c</fieldItem>
+                <identifier>RecordQuickbooks_Invoice_Balance__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Invoice_Fully_Paid__c</fieldItem>
+                <identifier>RecordInvoice_Fully_Paid__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Today_Closed_Date__c</fieldItem>
+                <identifier>RecordToday_Closed_Date__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-bda0868e-f60d-43d1-bc15-da4b2cf8d682</name>
         <type>Facet</type>
     </flexiPageRegions>

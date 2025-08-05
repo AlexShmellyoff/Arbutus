@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Tax_Amount__c</fullName>
-    <formula>IF(
-  NOT(ISBLANK(Overage_Charge__c)),
-  (SBQQ__NetPrice__c + Overage_Charge__c) * SBQQ__QuoteLine__r.SBQQ__Quote__r.Total_Tax_Rate__c,
-  SBQQ__NetPrice__c * SBQQ__QuoteLine__r.SBQQ__Quote__r.Total_Tax_Rate__c
-)</formula>
+    <formula>(SBQQ__NetPrice__c+ Overage_Amount__c) * Total_Tax_Rate__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Tax Amount</label>
     <precision>18</precision>

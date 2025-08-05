@@ -9,6 +9,10 @@
         <formula>Opportunity.Account.BillingCountry</formula>
     </fieldOverrides>
     <fieldOverrides>
+        <field>SBQQ__BillingName__c</field>
+        <formula>Opportunity.Account.Billing_Name__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
         <field>SBQQ__BillingPostalCode__c</field>
         <formula>Opportunity.Account.BillingPostalCode</formula>
     </fieldOverrides>
@@ -41,6 +45,10 @@
         <formula>Opportunity.Account.ShippingCountry</formula>
     </fieldOverrides>
     <fieldOverrides>
+        <field>SBQQ__ShippingName__c</field>
+        <formula>Opportunity.Account.Shipping_Name__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
         <field>SBQQ__ShippingPostalCode__c</field>
         <formula>Opportunity.Account.ShippingPostalCode</formula>
     </fieldOverrides>
@@ -51,6 +59,18 @@
     <fieldOverrides>
         <field>SBQQ__ShippingStreet__c</field>
         <formula>Opportunity.Account.ShippingStreet</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Tax_Code_1_Rate__c</field>
+        <formula>Opportunity.Account.Tax_Code_1Percent__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Tax_Code_2_Rate__c</field>
+        <formula>Opportunity.Account.Tax_Code_2_Percent__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Will_Call__c</field>
+        <formula>Opportunity.Account.Will_Call__c</formula>
     </fieldOverrides>
     <label>New Fundamental Quote</label>
     <optionsCreateFeedItem>true</optionsCreateFeedItem>

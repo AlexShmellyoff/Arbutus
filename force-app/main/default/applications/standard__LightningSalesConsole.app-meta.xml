@@ -58,9 +58,25 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>Tax_Rate__c</tabs>
+    <tabs>SBQQ__LookupData__c</tabs>
+    <tabs>Pre_Defined_Quote_Notes__c</tabs>
+    <tabs>Predefined_Qts__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Pre_Defined_Quote_Notes__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Predefined_Qts__c</tab>
+        </mappings>
+        <mappings>
+            <tab>SBQQ__LookupData__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Tax_Rate__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

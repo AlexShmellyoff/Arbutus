@@ -3,6 +3,10 @@
     <label><!-- Status --></label>
     <name>Status__c</name>
     <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation><!-- Cancelled --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Invoice Paid</masterLabel>
         <translation><!-- Invoice Paid --></translation>
     </picklistValues>

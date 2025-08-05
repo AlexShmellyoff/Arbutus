@@ -26,7 +26,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Qualification,Needs Analysis,Proposal,Negotiation,Prospecting</value>
+            <value>Qualification,Needs Analysis,Proposal,Negotiation,Prospecting,Qualified,RFQ/RFP,Followup,Forecast,On Hold,No Bid,Cancelled,Active Contract,Pending Payment,Schedule,Completed</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

@@ -53,10 +53,6 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__LightningInstrumentation</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>standard__LightningBolt</name>
         <type>CustomApplication</type>
     </appMenuItems>
@@ -97,8 +93,16 @@
         <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>DEVHUB_1qoroisnca4aikkpddcp</name>
-        <type>ConnectedApp</type>
+        <name>SBQQ__QuoteQuickly</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Arbutus_West_Agency_ltd</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Fundamental_Power_Solutions</name>
+        <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
         <name>standard__Approvals</name>
@@ -113,16 +117,36 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>SBQQ__QuoteQuickly</name>
-        <type>CustomApplication</type>
+        <name>Dataloader_Bulk</name>
+        <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Arbutus_West_Agency_ltd</name>
-        <type>CustomApplication</type>
+        <name>Dataloader_Partner</name>
+        <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Fundamental_Power_Solutions</name>
-        <type>CustomApplication</type>
+        <name>Forcecom_IDE</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Forcecom_Migration_Tool</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Salesforce_Mobile_Dashboards</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Salesforce_Touch</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Salesforce_for_Outlook</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Workbench</name>
+        <type>ConnectedApp</type>
     </appMenuItems>
     <appMenuItems>
         <name>dlrs__DeclarativeLookupRollupSummaries</name>
@@ -131,5 +155,37 @@
     <appMenuItems>
         <name>dlrs__DeclarativeLookupRollupSummaries2</name>
         <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Hubspot_Export_Data</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Chatter_Desktop</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Chatter_for_Android</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Chatter_for_BlackBerry</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Chatter_for_iOS</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Salesforce1_for_Windows</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>SalesforceA</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Salesforce_Chatterbox</name>
+        <type>ConnectedApp</type>
     </appMenuItems>
 </AppMenu>

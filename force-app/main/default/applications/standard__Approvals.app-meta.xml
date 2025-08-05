@@ -8,8 +8,24 @@
     <label>Approvals</label>
     <navType>Console</navType>
     <tabs>standard-ApprovalsHome</tabs>
+    <tabs>Tax_Rate__c</tabs>
+    <tabs>SBQQ__LookupData__c</tabs>
+    <tabs>Pre_Defined_Quote_Notes__c</tabs>
+    <tabs>Predefined_Qts__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>Pre_Defined_Quote_Notes__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Predefined_Qts__c</tab>
+        </mappings>
+        <mappings>
+            <tab>SBQQ__LookupData__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Tax_Rate__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-ApprovalsHome</tab>
         </mappings>

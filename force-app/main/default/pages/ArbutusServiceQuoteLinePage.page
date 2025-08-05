@@ -10,13 +10,15 @@
   <!-- Outer loop: each year key -->
   <apex:repeat value="{!groupedLinesByYearsKeys}" var="yearKey">
 
+    <apex:variable var="yearGroup" value="{!groupedLinesByYears[yearKey]}" />
+
     <!-- Year section header -->
     <block font-size="14pt" font-weight="bold" space-before="6pt" space-after="4pt">
-      Quote Details for {!yearKey}
+      Quote Details for {!yearKey}: {!yearGroup['periodInfo']['startDate']} – {!yearGroup['periodInfo']['endDate']}
     </block>
 
     <!-- Grab the inner map for this year -->
-    <apex:variable var="yearGroup" value="{!groupedLinesByYears[yearKey]}" />
+    
 
     <!-- Table of services for this year -->
     <table width="100%"  font-size="9pt">
@@ -89,7 +91,7 @@
             <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
               <block>
                 <apex:outputText value="{0,number,$###,###,###,##0.00}">
-                  <apex:param value="{!group['parentProduct'].SBQQ__ListPrice__c}"/>
+                  <apex:param value="{!group['parentProduct'].SBQQ__NetPrice__c}"/>
                 </apex:outputText>
               </block>
             </table-cell>
@@ -98,7 +100,7 @@
             <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
               <block font-weight="bold">
                 <apex:outputText value="{0,number,$###,###,###,##0.00}">
-                    <apex:param value="{!group['parentProduct'].SBQQ__ListPrice__c 
+                    <apex:param value="{!group['parentProduct'].SBQQ__NetPrice__c 
                                         * group['parentProduct'].SBQQ__Quantity__c}"/>
                 </apex:outputText>
               </block>
@@ -113,12 +115,14 @@
                     <table-cell padding-top="3pt" padding-bottom="3pt">
                         <block font-weight="bold">
                             <!-- Part number -->
-                            {!subItem.SBQQ__Product__r.Part_Number__c}
+                            <!-- {!subItem.SBQQ__Product__r.Part_Number__c} -->
+                            {!subItem['partNumber']}
                         </block>
 
-                        <block>&#160;</block> <!-- empty line -->
+                        <!-- <block>&#160;</block> empty line -->
                         <block>
-                            {!subItem.SBQQ__ProductName__c}
+                            <!-- {!subItem.SBQQ__ProductName__c} -->
+                            {!subItem['name']}
                         </block>
                         <block>
                             Year: {!yearGroup['periodInfo']['duration']}
@@ -130,28 +134,29 @@
                         <block>&#160;</block> <!-- empty line -->
 
                         <block>
-                            Manufacturer: {!subItem.SBQQ__Product__r.Manufacturer__c}
+                            <!-- Manufacturer: {!subItem.SBQQ__Product__r.Manufacturer__c} -->
+                            Manufacturer: {!subItem['SBQQ__Product__r']['Manufacturer__c']}
                         </block>
                     </table-cell>
                     <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
                         <block>
                             <apex:outputText value="{0,number,###,###,###,##0}">
-                            <apex:param value="{!subItem.SBQQ__Quantity__c}"/>
+                            <apex:param value="{!subItem['SBQQ__Quantity__c']}"/>
                             </apex:outputText>
                         </block>
                     </table-cell>
                     <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
                         <block>
                             <apex:outputText value="{0,number,$###,###,###,##0.00}">
-                            <apex:param value="{!subItem.SBQQ__ListPrice__c}"/>
+                            <apex:param value="{!subItem['SBQQ__NetPrice__c']}"/>
                             </apex:outputText>
                         </block>
                     </table-cell>
                     <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
                         <block font-weight="bold">
                             <apex:outputText value="{0,number,$###,###,###,##0.00}">
-                            <apex:param value="{!subItem.SBQQ__ListPrice__c 
-                                                * subItem.SBQQ__Quantity__c}"/>
+                            <apex:param value="{!subItem['SBQQ__NetPrice__c'] 
+                                                * subItem['SBQQ__Quantity__c']}"/>
                             </apex:outputText>
                         </block>
                     </table-cell>

@@ -47,6 +47,10 @@
     <gender>Feminine</gender>
     <nameFieldLabel>Gruppenname</nameFieldLabel>
     <validationRules>
+        <errorMessage><!-- End Date must be after the Start Date for this Quote Line Group. --></errorMessage>
+        <name>Quote_Line_Group_Date_Validation</name>
+    </validationRules>
+    <validationRules>
         <errorMessage>Als Abonnementlaufzeit muss eine positive Zahl angegeben werden.</errorMessage>
         <name>SBQQ__Invalid_Subscription_Term</name>
     </validationRules>

@@ -4,7 +4,15 @@
     <label><!-- Field --></label>
     <name>SBQQ__Field__c</name>
     <picklistValues>
+        <masterLabel>Duration__c</masterLabel>
+        <translation><!-- Duration__c --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Product Code</masterLabel>
         <translation>Código del producto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__ProductFamily__c</masterLabel>
+        <translation><!-- SBQQ__ProductFamily__c --></translation>
     </picklistValues>
 </CustomFieldTranslation>

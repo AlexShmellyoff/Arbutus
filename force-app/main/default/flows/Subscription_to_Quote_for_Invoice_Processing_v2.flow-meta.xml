@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_QuoteLine_to_Collection</name>
+        <label>Add QuoteLine to Collection</label>
+        <locationX>138</locationX>
+        <locationY>755</locationY>
+        <assignmentItems>
+            <assignToReference>ActiveSubscriptionQuoteLineIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Active_Subscriptions.SBQQ__QuoteLine__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Active_Subscriptions</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_Active_Subscriptions_Exist</name>
+        <label>Check Active Subscriptions Exist</label>
+        <locationX>182</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>No Active Subscriptions</defaultConnectorLabel>
+        <rules>
+            <name>Active_Subscriptions_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_All_Active_Subscriptions</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Active_Subscriptions</targetReference>
+            </connector>
+            <label>Active Subscriptions Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Product_Subscription_Type</name>
+        <label>Check Product Subscription Type</label>
+        <locationX>270</locationX>
+        <locationY>1595</locationY>
+        <defaultConnector>
+            <targetReference>Create_OneTime_Invoice_Item</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Subscription_Product</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Quote_Line_Items.SBQQ__ProductSubscriptionType__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>One-time</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Subscription_Invoice_Item</targetReference>
+            </connector>
+            <label>Is Subscription Product</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>CalculatedOverageAmount</name>
+        <dataType>Currency</dataType>
+        <expression>IF( {!CalculatedOverageDays} &gt; 0, 
+    CASE( {!CalculatedOverageDays}, 
+        1, {!$Record.Daily__c}, 
+        2, {!$Record.Daily__c}, 
+        3, {!$Record.Week_7_DAY__c}, 
+        4, {!$Record.Week_7_DAY__c}, 
+        5, {!$Record.Week_7_DAY__c}, 
+        6, {!$Record.Week_7_DAY__c}, 
+        7, {!$Record.Week_7_DAY__c}, 
+        8, {!$Record.Week_7_DAY__c}, 
+        9, {!$Record.Week_7_DAY__c} + ({!$Record.Week_7_DAY__c} / 5), 
+        10, {!$Record.Week_7_DAY__c} + ({!$Record.Week_7_DAY__c} / 5) * 2,
+        11, {!$Record.Week_7_DAY__c} + ({!$Record.Week_7_DAY__c} / 5) * 3,
+        12, {!$Record.Week_7_DAY__c} + ({!$Record.Week_7_DAY__c} / 5) * 4,
+        13, {!$Record.Week_7_DAY__c} * 2,
+        14, {!$Record.Week_7_DAY__c} * 2,
+        15, {!$Record.Week_7_DAY__c} * 2,
+        16, ({!$Record.Week_7_DAY__c} * 2) + ({!$Record.Week_7_DAY__c} / 5),
+        17, ({!$Record.Week_7_DAY__c} * 2) + ({!$Record.Week_7_DAY__c} / 5) * 2,
+        18, ({!$Record.Week_7_DAY__c} * 2) + ({!$Record.Week_7_DAY__c} / 5) * 3,
+        19, ({!$Record.Week_7_DAY__c} * 2) + ({!$Record.Week_7_DAY__c} / 5) * 4,
+        20, {!$Record.Week_7_DAY__c} * 3,
+        28, {!$Record.Week_7_DAY__c} * 3,
+        30, {!$Record.Month_28_DAY__c} + ({!$Record.Month_28_DAY__c} / 20),
+        NULL 
+    ), 
+    NULL 
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>CalculatedOverageDays</name>
+        <dataType>Number</dataType>
+        <expression>MAX({!$Record.Return_Date__c} - {!$Record.Expected_End_Date__c}, 0)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>EnhancedInvoiceDescription</name>
+        <dataType>String</dataType>
+        <expression>{!Loop_Quote_Line_Items.SBQQ__Description__c} + 
+IF(NOT(ISBLANK(TEXT({!Get_Current_Subscription_Status.Status__c}))), 
+  &quot; | Status: &quot; + TEXT({!Get_Current_Subscription_Status.Status__c}), 
+  &quot;&quot;) +
+IF(NOT(ISBLANK({!Get_Current_Subscription_Status.Return_Date__c})), 
+  &quot; | Return Date: &quot; + TEXT({!Get_Current_Subscription_Status.Return_Date__c}), 
+  &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_Quote_Line_Items.SBQQ__StartDate__c})), 
+  &quot; | Start Date: &quot; + TEXT({!Loop_Quote_Line_Items.SBQQ__StartDate__c}), 
+  &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})), 
+  &quot; | End Date: &quot; + TEXT({!Loop_Quote_Line_Items.Expected_End_Date__c}), 
+  &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>QuoteName</name>
+        <dataType>String</dataType>
+        <expression>IF(CONTAINS({!Get_Related_Quote.Name}, &quot;_v&quot;), 
+    LEFT({!Get_Related_Quote.Name}, FIND(&quot;_v&quot;, {!Get_Related_Quote.Name}) - 1), 
+    LEFT({!Get_Related_Quote.Name}, 250))</expression>
+    </formulas>
+    <formulas>
+        <name>ReturnDateToday</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.Return_Date__c} = TODAY()</expression>
+    </formulas>
+    <interviewLabel>Subscription to Quote for Invoice Processing v2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Subscription to Quote for Invoice Processing v2</label>
+    <loops>
+        <name>Loop_Active_Subscriptions</name>
+        <label>Loop Active Subscriptions</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <collectionReference>Get_All_Active_Subscriptions</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Add_QuoteLine_to_Collection</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_Parent_Opportunity</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_Quote_Line_Items</name>
+        <label>Loop Quote Line Items</label>
+        <locationX>50</locationX>
+        <locationY>1379</locationY>
+        <collectionReference>Get_Quote_Lines</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Get_Current_Subscription_Status</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_QuoteLines_as_Invoiced</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Invoice_Request</name>
+        <label>Create Invoice Request</label>
+        <locationX>50</locationX>
+        <locationY>1271</locationY>
+        <connector>
+            <targetReference>Loop_Quote_Line_Items</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Expected_End_Date__c</field>
+            <value>
+                <elementReference>Get_Related_Quote.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Expiration_Date__c</field>
+            <value>
+                <elementReference>Get_Related_Quote.SBQQ__ExpirationDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Opportunity__c</field>
+            <value>
+                <elementReference>Get_Related_Quote.SBQQ__Opportunity2__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Invoice_Request__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_OneTime_Invoice_Item</name>
+        <label>Create OneTime Invoice Item</label>
+        <locationX>402</locationX>
+        <locationY>1703</locationY>
+        <connector>
+            <targetReference>Loop_Quote_Line_Items</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__Description__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Invoice_Request__c</field>
+            <value>
+                <elementReference>Create_Invoice_Request</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Net_Price__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__NetTotal__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Original_Quote_Line_Product_Family_code__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.Product_Family_Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Pricebook_Entry_Id__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__PricebookEntryId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Quantity__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Expected_End_Date__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Start_Date__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription_Product_Type__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__Product__r.SBQQ__SubscriptionType__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Invoice_Request_Line__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Subscription_Invoice_Item</name>
+        <label>Create Subscription Invoice Item</label>
+        <locationX>138</locationX>
+        <locationY>1703</locationY>
+        <connector>
+            <targetReference>Loop_Quote_Line_Items</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>EnhancedInvoiceDescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Invoice_Request__c</field>
+            <value>
+                <elementReference>Create_Invoice_Request</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Net_Price__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__NetTotal__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Original_Quote_Line_Product_Family_code__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.Product_Family_Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Pricebook_Entry_Id__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__PricebookEntryId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Quantity__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Expected_End_Date__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Start_Date__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription_Product_Type__c</field>
+            <value>
+                <elementReference>Loop_Quote_Line_Items.SBQQ__Product__r.SBQQ__SubscriptionType__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Invoice_Request_Line__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_All_Active_Subscriptions</name>
+        <label>Get All Active Subscriptions</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Active_Subscriptions_Exist</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Contract__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Contract.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Returned</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SBQQ__TerminatedDate__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SBQQ__Subscription__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Current_Subscription_Status</name>
+        <label>Get Current Subscription Status</label>
+        <locationX>270</locationX>
+        <locationY>1487</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_Product_Subscription_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SBQQ__Subscription__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Status__c</queriedFields>
+        <queriedFields>Return_Date__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Parent_Opportunity</name>
+        <label>Get Parent Opportunity</label>
+        <locationX>50</locationX>
+        <locationY>947</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Related_Quote</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Contract.SBQQ__Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Quote_Lines</name>
+        <label>Get Quote Lines</label>
+        <locationX>50</locationX>
+        <locationY>1163</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Create_Invoice_Request</targetReference>
+        </connector>
+        <filterLogic>(1 AND 2) OR (1 AND 3 AND 4)</filterLogic>
+        <filters>
+            <field>SBQQ__Quote__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Quote.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>ActiveSubscriptionQuoteLineIds</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SBQQ__ProductSubscriptionType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>One-time</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>OneTime_Invoiced__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SBQQ__QuoteLine__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Related_Contract</name>
+        <label>Get Related Contract</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_All_Active_Subscriptions</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SBQQ__Contract__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contract</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Related_Quote</name>
+        <label>Get Related Quote</label>
+        <locationX>50</locationX>
+        <locationY>1055</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Quote_Lines</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Opportunity2__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Parent_Opportunity.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SBQQ__Quote__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Contract_Subscriptions_As_Cycle_Invoiced</name>
+        <label>Update Contract Subscriptions As Cycle Invoiced</label>
+        <locationX>50</locationX>
+        <locationY>2087</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Contract__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SBQQ__Contract__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SBQQ__TerminatedDate__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>X28_Days_Cycle_Invoiced__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SBQQ__Subscription__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_QuoteLines_as_Invoiced</name>
+        <label>Update QuoteLines as Invoiced</label>
+        <locationX>50</locationX>
+        <locationY>1979</locationY>
+        <connector>
+            <targetReference>Update_Contract_Subscriptions_As_Cycle_Invoiced</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3</filterLogic>
+        <filters>
+            <field>SBQQ__Quote__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Related_Quote.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SBQQ__ProductSubscriptionType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>One-time</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>OneTime_Invoiced__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>OneTime_Invoiced__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SBQQ__QuoteLine__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Related_Contract</targetReference>
+        </connector>
+        <filterFormula>({!$Record.Send_Invoice__c} = TRUE &amp;&amp; {!$Record__Prior.Send_Invoice__c} = FALSE)</filterFormula>
+        <object>SBQQ__Subscription__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>50</triggerOrder>
+    <variables>
+        <name>ActiveSubscriptionQuoteLineIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CurrentSubscriptionId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

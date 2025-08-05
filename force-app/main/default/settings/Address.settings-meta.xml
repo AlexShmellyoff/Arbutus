@@ -98,6 +98,22 @@
             <label>Austria</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Upper Austria</integrationValue>
+                <isoCode>4</isoCode>
+                <label>Upper Austria</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>Steiermark</integrationValue>
+                <isoCode>6</isoCode>
+                <label>Steiermark</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -234,6 +250,14 @@
             <label>Belgium</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Flanders</integrationValue>
+                <isoCode>VLG</isoCode>
+                <label>Flanders</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -594,6 +618,14 @@
             <label>Belarus</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Minsk Oblast</integrationValue>
+                <isoCode>HM</isoCode>
+                <label>Minsk Oblast</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -761,6 +793,22 @@
             <label>Switzerland</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Geneva</integrationValue>
+                <isoCode>GE</isoCode>
+                <label>Geneva</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>Zurich</integrationValue>
+                <isoCode>ZH</isoCode>
+                <label>Zurich</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -1150,6 +1198,14 @@
             <label>Czech Republic</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>South Moravian Region</integrationValue>
+                <isoCode>64</isoCode>
+                <label>South Moravian Region</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -1159,6 +1215,30 @@
             <label>Germany</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Baden-Württemberg</integrationValue>
+                <isoCode>BW</isoCode>
+                <label>Baden-Württemberg</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>Bavaria</integrationValue>
+                <isoCode>BY</isoCode>
+                <label>Bavaria</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>North Rhine-Westphalia</integrationValue>
+                <isoCode>NW</isoCode>
+                <label>North Rhine-Westphalia</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -1312,6 +1392,22 @@
             <label>France</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Ile-de-France</integrationValue>
+                <isoCode>IDF</isoCode>
+                <label>Ile-de-France</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>Occitania</integrationValue>
+                <isoCode>OCC</isoCode>
+                <label>Occitania</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -1330,6 +1426,30 @@
             <label>United Kingdom</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Aberdeen City</integrationValue>
+                <isoCode>I1</isoCode>
+                <label>Aberdeen City</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>Greater London</integrationValue>
+                <isoCode>JS</isoCode>
+                <label>Greater London</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>Staffordshire</integrationValue>
+                <isoCode>LJ</isoCode>
+                <label>Staffordshire</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -3719,6 +3839,14 @@
             <label>Netherlands</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>North Holland</integrationValue>
+                <isoCode>NH</isoCode>
+                <label>North Holland</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -3728,6 +3856,14 @@
             <label>Norway</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Oslo</integrationValue>
+                <isoCode>03</isoCode>
+                <label>Oslo</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -3791,6 +3927,14 @@
             <label>Peru</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>province of Lima</integrationValue>
+                <isoCode>LIM</isoCode>
+                <label>province of Lima</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -3989,6 +4133,14 @@
             <label>Singapore</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Singapore</integrationValue>
+                <isoCode>SG</isoCode>
+                <label>Singapore</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -4259,6 +4411,14 @@
             <label>Chinese Taipei</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>New Taipei City</integrationValue>
+                <isoCode>NWT</isoCode>
+                <label>New Taipei City</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
@@ -4293,7 +4453,7 @@
             <integrationValue>United States</integrationValue>
             <isoCode>US</isoCode>
             <label>United States</label>
-            <orgDefault>true</orgDefault>
+            <orgDefault>false</orgDefault>
             <standard>true</standard>
             <states>
                 <active>false</active>

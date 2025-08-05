@@ -4,27 +4,31 @@
     <label>お支払い条件</label>
     <name>SBQQ__PaymentTerms__c</name>
     <picklistValues>
+        <masterLabel>CONVERSION</masterLabel>
+        <translation><!-- CONVERSION --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Due on receipt</masterLabel>
         <translation><!-- Due on receipt --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 15</masterLabel>
-        <translation><!-- Net 15 --></translation>
+        <masterLabel>NET 15</masterLabel>
+        <translation><!-- NET 15 --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 30</masterLabel>
-        <translation><!-- Net 30 --></translation>
+        <masterLabel>NET 30</masterLabel>
+        <translation><!-- NET 30 --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 45</masterLabel>
-        <translation><!-- Net 45 --></translation>
+        <masterLabel>NET 45</masterLabel>
+        <translation><!-- NET 45 --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 60</masterLabel>
-        <translation><!-- Net 60 --></translation>
+        <masterLabel>NET 60</masterLabel>
+        <translation><!-- NET 60 --></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 90</masterLabel>
-        <translation><!-- Net 90 --></translation>
+        <masterLabel>NET 90</masterLabel>
+        <translation><!-- NET 90 --></translation>
     </picklistValues>
 </CustomFieldTranslation>

@@ -35,7 +35,10 @@
                 <block>Product</block>
             </table-cell>
             <table-cell padding-top="3pt" padding-bottom="3pt">
-                <block font-weight="bold">{!group['name']}</block>
+                <!-- <block font-weight="bold">{!group['name']}</block> -->
+                <apex:repeat value="{!group['name']}" var="desc">
+                    <block>{!desc}</block>
+                </apex:repeat>
             </table-cell>
             <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
                 <block>{!group['qty']}</block>

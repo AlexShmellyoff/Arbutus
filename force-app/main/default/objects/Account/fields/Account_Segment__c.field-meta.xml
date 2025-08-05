@@ -4,7 +4,6 @@
     <label>Account Segment</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
@@ -49,6 +48,11 @@
                 <fullName>Manufacturer</fullName>
                 <default>false</default>
                 <label>Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Supplier</fullName>
+                <default>false</default>
+                <label>Supplier</label>
             </value>
         </valueSetDefinition>
     </valueSet>

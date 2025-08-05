@@ -3,24 +3,6 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Arbutus_Product_Layout</content>
-        <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Arbutus_Product_Layout</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>Product2</pageOrSobjectType>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
         <content>CPQ_Account_Record_Page</content>
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
@@ -35,6 +17,24 @@
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
         <pageOrSobjectType>Account</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Quote_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Quote_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
@@ -57,20 +57,20 @@
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Quote_Record_Page</content>
+        <content>Arbutus_Product_Layout</content>
         <formFactor>Small</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
         <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Quote_Record_Page</content>
+        <content>Arbutus_Product_Layout</content>
         <formFactor>Large</formFactor>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
         <type>Flexipage</type>
-        <pageOrSobjectType>SBQQ__Quote__c</pageOrSobjectType>
+        <pageOrSobjectType>Product2</pageOrSobjectType>
     </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
@@ -88,21 +88,105 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>CPQ_Account_Record_Page</content>
+        <content>Subscription_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Arbutus Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Subscription_Record_Page1</content>
         <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Company_Account</recordType>
+        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Arbutus Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Subscription_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Arbutus Finance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Subscription_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Arbutus Finance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Subscription_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>CPQ_Account_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Company_Account</recordType>
+        <content>Subscription_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
         <type>Flexipage</type>
         <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Opportunity_Record_Page_Three_Column1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.AWALDistributor</recordType>
+        <type>Flexipage</type>
+        <profile>Fundamentals + Arbutus Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Opportunity_Record_Page_Three_Column1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.AWALDistributor</recordType>
+        <type>Flexipage</type>
+        <profile>Fundamentals + Arbutus Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Opportunity_Record_Page_Three_Column1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Arbutus_WestAgencyLtd</recordType>
+        <type>Flexipage</type>
+        <profile>Fundamentals + Arbutus Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Opportunity_Record_Page_Three_Column1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.Arbutus_WestAgencyLtd</recordType>
+        <type>Flexipage</type>
+        <profile>Fundamentals + Arbutus Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CSSP</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.CSSP_Service_Contract</recordType>
+        <type>Flexipage</type>
+        <profile>Arbutus Finance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>CSSP</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Opportunity</pageOrSobjectType>
+        <recordType>Opportunity.CSSP_Service_Contract</recordType>
+        <type>Flexipage</type>
+        <profile>Arbutus Finance User</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -305,6 +389,87 @@
     <profileActionOverrides>
         <actionName>View</actionName>
         <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
+        <type>Flexipage</type>
+        <profile>Arbutus Finance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
+        <type>Flexipage</type>
+        <profile>Arbutus Finance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
+        <type>Flexipage</type>
+        <profile>Arbutus Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
+        <type>Flexipage</type>
+        <profile>Arbutus Standard User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.AWALDistributor</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.AWALDistributor</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Order</pageOrSobjectType>
+        <recordType>Order.AWALDistributor</recordType>
+        <type>Flexipage</type>
+        <profile>Arbutus Finance User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Order_Record_Page1</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Order</pageOrSobjectType>
         <recordType>Order.AWALDistributor</recordType>
@@ -409,189 +574,6 @@
         <recordType>Opportunity.AWALDistributor</recordType>
         <type>Flexipage</type>
         <profile>Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Subscription_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Opportunity_Record_Page_Three_Column1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.AWALDistributor</recordType>
-        <type>Flexipage</type>
-        <profile>Fundamentals + Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Opportunity_Record_Page_Three_Column1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.AWALDistributor</recordType>
-        <type>Flexipage</type>
-        <profile>Fundamentals + Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Opportunity_Record_Page_Three_Column1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.Arbutus_WestAgencyLtd</recordType>
-        <type>Flexipage</type>
-        <profile>Fundamentals + Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Opportunity_Record_Page_Three_Column1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.Arbutus_WestAgencyLtd</recordType>
-        <type>Flexipage</type>
-        <profile>Fundamentals + Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CSSP</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.CSSP_Service_Contract</recordType>
-        <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>CSSP</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Opportunity</pageOrSobjectType>
-        <recordType>Opportunity.CSSP_Service_Contract</recordType>
-        <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
-        <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.AWALDistributor</recordType>
-        <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
-        <type>Flexipage</type>
-        <profile>Arbutus Finance User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
-        <type>Flexipage</type>
-        <profile>Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.Arbutus_West_AgencyLtd</recordType>
-        <type>Flexipage</type>
-        <profile>Arbutus Standard User</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.AWALDistributor</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Order_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Order</pageOrSobjectType>
-        <recordType>Order.AWALDistributor</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -658,19 +640,21 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Subscription_Record_Page2</content>
+        <content>CPQ_Account_Record_Page</content>
         <formFactor>Small</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Company_Account</recordType>
         <type>Flexipage</type>
-        <profile>Fundamentals Standard User</profile>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Subscription_Record_Page2</content>
+        <content>CPQ_Account_Record_Page</content>
         <formFactor>Large</formFactor>
-        <pageOrSobjectType>SBQQ__Subscription__c</pageOrSobjectType>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Company_Account</recordType>
         <type>Flexipage</type>
-        <profile>Fundamentals Standard User</profile>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Lead</tabs>

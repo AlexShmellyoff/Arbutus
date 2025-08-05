@@ -4,27 +4,31 @@
     <label><!-- Payment Terms --></label>
     <name>SBQQ__PaymentTerms__c</name>
     <picklistValues>
+        <masterLabel>CONVERSION</masterLabel>
+        <translation><!-- CONVERSION --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Due on receipt</masterLabel>
         <translation>Fällig bei Erhalt</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 15</masterLabel>
+        <masterLabel>NET 15</masterLabel>
         <translation>15 Tage Netto</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 30</masterLabel>
+        <masterLabel>NET 30</masterLabel>
         <translation>30 Tage Netto</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 45</masterLabel>
+        <masterLabel>NET 45</masterLabel>
         <translation>45 Tage Netto</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 60</masterLabel>
+        <masterLabel>NET 60</masterLabel>
         <translation>60 Tage Netto</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Net 90</masterLabel>
+        <masterLabel>NET 90</masterLabel>
         <translation>90 Tage Netto</translation>
     </picklistValues>
 </CustomFieldTranslation>

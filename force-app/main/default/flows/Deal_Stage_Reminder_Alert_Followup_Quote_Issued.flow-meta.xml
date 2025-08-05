@@ -236,8 +236,8 @@ Sales reps can mark the quote as Closed-Won, Closed-Lost to stop further reminde
                 <targetReference>Email_alert_after_14_days_Quote_Issued</targetReference>
             </connector>
             <label>14daysReminder Email - Quote Issued</label>
-            <offsetNumber>14</offsetNumber>
-            <offsetUnit>Days</offsetUnit>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
             <recordField>LastModifiedDate</recordField>
             <timeSource>RecordField</timeSource>
         </scheduledPaths>
@@ -247,8 +247,8 @@ Sales reps can mark the quote as Closed-Won, Closed-Lost to stop further reminde
                 <targetReference>Email_alert_after_30_days</targetReference>
             </connector>
             <label>30days Reminder Email &amp; Task - Follow Up</label>
-            <offsetNumber>30</offsetNumber>
-            <offsetUnit>Days</offsetUnit>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
             <recordField>LastModifiedDate</recordField>
             <timeSource>RecordField</timeSource>
         </scheduledPaths>

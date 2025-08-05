@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>SBQQ__Amend</customButtons>
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>true</customLabel>
@@ -72,6 +71,30 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Paid_Upfront__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Quickbooks_Id__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Quickbooks_Invoice_Balance__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Quickbook_Invoice_Partly_Paid__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Quickbooks_Invoice_Fully_Paid__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>QB_Invoice_Fully_Paid_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Quickbooks_Invoice_Path__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -257,11 +280,12 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>SBQQ__Product__c</fields>
+        <fields>Description__c</fields>
         <fields>SBQQ__Quantity__c</fields>
         <fields>Status__c</fields>
         <fields>SBQQ__StartDate__c</fields>
+        <fields>Duration__c</fields>
         <fields>Expected_End_Date__c</fields>
-        <fields>SBQQ__TerminatedDate__c</fields>
         <relatedList>SBQQ__Subscription__c.SBQQ__Contract__c</relatedList>
     </relatedLists>
     <relatedLists>

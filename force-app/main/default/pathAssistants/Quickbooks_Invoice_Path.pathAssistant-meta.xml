@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <entityName>Contract</entityName>
+    <fieldName>Quickbooks_Invoice_Path__c</fieldName>
+    <masterLabel>Quickbooks Invoice Path</masterLabel>
+    <recordTypeName>Fundamental_Contracts</recordTypeName>
+</PathAssistant>

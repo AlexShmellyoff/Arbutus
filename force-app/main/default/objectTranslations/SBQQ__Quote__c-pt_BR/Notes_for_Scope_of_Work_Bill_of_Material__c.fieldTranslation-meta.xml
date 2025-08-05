@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Notes for Scope of Work/Bill of Material --></label>
+    <name>Notes_for_Scope_of_Work_Bill_of_Material__c</name>
+</CustomFieldTranslation>

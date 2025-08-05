@@ -44,19 +44,19 @@
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Arbutus_72_hours</name>
-            <conditionLogic>(1 AND 2 AND 3) OR (1 AND 2 AND 4)</conditionLogic>
+            <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>LeadAgeInDays</leftValueReference>
                 <operator>GreaterThanOrEqualTo</operator>
                 <rightValue>
-                    <numberValue>4320.0</numberValue>
+                    <numberValue>1.0</numberValue>
                 </rightValue>
             </conditions>
             <conditions>
                 <leftValueReference>LeadAgeInDays</leftValueReference>
                 <operator>LessThan</operator>
                 <rightValue>
-                    <numberValue>4380.0</numberValue>
+                    <numberValue>15.0</numberValue>
                 </rightValue>
             </conditions>
             <conditions>
@@ -66,13 +66,6 @@
                     <stringValue>Arbutus West Agency Ltd</stringValue>
                 </rightValue>
             </conditions>
-            <conditions>
-                <leftValueReference>$Profile.Name</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Label.Profile_Arbutus_Standard_User</elementReference>
-                </rightValue>
-            </conditions>
             <connector>
                 <targetReference>lead_escalation_after_72_hours</targetReference>
             </connector>
@@ -80,7 +73,7 @@
         </rules>
         <rules>
             <name>Fundamentals_24_hours</name>
-            <conditionLogic>(1 AND 2 AND 3) OR (1 AND 2 AND 4)</conditionLogic>
+            <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>LeadAgeInDays</leftValueReference>
                 <operator>GreaterThanOrEqualTo</operator>
@@ -100,13 +93,6 @@
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>Fundamentals Power Group</stringValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>$Profile.Name</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <elementReference>$Label.Profile_Fundamentals_Standard_User</elementReference>
                 </rightValue>
             </conditions>
             <connector>

@@ -252,8 +252,34 @@
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Quickbooks_Id__c</fieldItem>
                 <identifier>RecordQuickbooks_Id__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Customer_Numberr__c</fieldItem>
+                <identifier>RecordCustomer_Numberr_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Quickbooks_Invoice_Email__c</fieldItem>
+                <identifier>RecordQuickbooks_Invoice_Email__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Quickbooks_Vendor_Id__c</fieldItem>
+                <identifier>RecordQuickbooks_Vendor_Id__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-9317228b-9000-4df5-9218-7d1560529bcc</name>

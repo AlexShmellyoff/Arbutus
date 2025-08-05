@@ -381,12 +381,6 @@
                         <valueListItems>
                             <value>New</value>
                         </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.Create_Fundamental_Quote</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity.New_Arbutus_Quote</value>
-                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>

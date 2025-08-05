@@ -2,7 +2,6 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
         <headerColor>#0070D2</headerColor>
-        <logo>relationship_management</logo>
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
@@ -21,6 +20,10 @@
     <tabs>standard-Contact</tabs>
     <tabs>standard-Contract</tabs>
     <tabs>standard-Event</tabs>
+    <tabs>Tax_Rate__c</tabs>
+    <tabs>SBQQ__LookupData__c</tabs>
+    <tabs>Pre_Defined_Quote_Notes__c</tabs>
+    <tabs>Predefined_Qts__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Relationship_Management_UtilityBar</utilityBar>
 </CustomApplication>

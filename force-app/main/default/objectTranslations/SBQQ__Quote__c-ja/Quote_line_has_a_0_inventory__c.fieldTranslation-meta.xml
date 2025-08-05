@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Quote line has a 0 inventory --></label>
+    <name>Quote_line_has_a_0_inventory__c</name>
+</CustomFieldTranslation>

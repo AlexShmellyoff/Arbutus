@@ -32,6 +32,10 @@
         <translation>基準値 (%)</translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>QuotelineDuration__c</masterLabel>
+        <translation><!-- QuotelineDuration__c --></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>Target (%)</masterLabel>
         <translation>目標値 (%)</translation>
     </picklistValues>

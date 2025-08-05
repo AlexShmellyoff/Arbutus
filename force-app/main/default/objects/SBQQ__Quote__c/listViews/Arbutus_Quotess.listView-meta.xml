@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arbutus_Quotess</fullName>
+    <columns>NAME</columns>
+    <columns>SBQQ__Account__c</columns>
+    <columns>SBQQ__Opportunity2__c</columns>
+    <columns>Net_Amount_Tax__c</columns>
+    <columns>SBQQ__PrimaryContact__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Contract__c</columns>
+    <columns>Contract_Number__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>SBQQ__Quote__c.Arbutus_Quotes</value>
+    </filters>
+    <label>Arbutus Quotes</label>
+    <sharedTo>
+        <group>ArbutusSalesteam</group>
+    </sharedTo>
+</ListView>

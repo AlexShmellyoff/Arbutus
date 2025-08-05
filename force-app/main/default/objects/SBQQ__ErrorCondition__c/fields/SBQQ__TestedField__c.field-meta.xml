@@ -22,10 +22,46 @@
                 <default>false</default>
                 <label>Unit Price</label>
             </value>
+            <value>
+                <fullName>SBQQ__ProductFamily__c</fullName>
+                <default>false</default>
+                <label>SBQQ__ProductFamily__c</label>
+            </value>
+            <value>
+                <fullName>SBQQ__StartDate__c</fullName>
+                <default>false</default>
+                <label>SBQQ__StartDate__c</label>
+            </value>
+            <value>
+                <fullName>SBQQ__EndDate__c</fullName>
+                <default>false</default>
+                <label>SBQQ__EndDate__c</label>
+            </value>
+            <value>
+                <fullName>Year__c</fullName>
+                <default>false</default>
+                <label>Year__c</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Quote</controllingFieldValue>
             <valueName>Group Line Items</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote Line</controllingFieldValue>
+            <valueName>SBQQ__ProductFamily__c</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote Line Group</controllingFieldValue>
+            <valueName>SBQQ__StartDate__c</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote Line Group</controllingFieldValue>
+            <valueName>SBQQ__EndDate__c</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Quote Line Group</controllingFieldValue>
+            <valueName>Year__c</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Product Option</controllingFieldValue>

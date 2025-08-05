@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arbutus_Opp_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    RecordType.Name = &quot;Arbutus Quotes&quot;,
+    ISPICKVAL(SBQQ__Status__c, &quot;Accepted&quot;),
+    ISBLANK(SBQQ__Opportunity2__r.Estimated_ship_date__c)
+)</errorConditionFormula>
+    <errorMessage>Estimated Ship Date must be populated before the quote can be set to Accepted.</errorMessage>
+</ValidationRule>

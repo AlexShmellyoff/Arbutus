@@ -21,7 +21,6 @@
             <connector>
                 <targetReference>Contacts_Account</targetReference>
             </connector>
-            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
             <label>is primary</label>
         </rules>
     </decisions>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage>有効な注文商品の予約状況は編集できません。</errorMessage>
+        <name>SBQQ__CannotChangeBookingIndicatorOnActivation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>課金タイプが定期であるときは、請求種別を選択する必要があります。</errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>課金タイプが「1 回」であるときは、請求サイクルの値を選択できません。</errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>課金タイプが 1 回または利用状況であるときは、請求種別の値を選択できません。</errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- References the order product that this order product revises. --></help>
+    <label>Produit commandé révisé</label>
+    <name>SBQQ__RevisedOrderProduct__c</name>
+    <relationshipLabel>Produits commandés (produit commandé révisé)</relationshipLabel>
+</CustomFieldTranslation>

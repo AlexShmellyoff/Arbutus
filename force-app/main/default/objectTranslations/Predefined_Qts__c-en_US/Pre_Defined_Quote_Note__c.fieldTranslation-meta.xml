@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pre Defined Quote Note --></label>
+    <name>Pre_Defined_Quote_Note__c</name>
+    <relationshipLabel><!-- Predefined+Qts --></relationshipLabel>
+</CustomFieldTranslation>

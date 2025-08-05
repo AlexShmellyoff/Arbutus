@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Configuration type of this product: Choose Allowed if the user is allowed to configure the product/bundle, but not required to, Disabled when your bundle automatically selects options, or Required if the product/bundle must be configured. --></help>
+    <label>設定種別</label>
+    <name>SBQQ__ConfigurationType__c</name>
+    <picklistValues>
+        <masterLabel>Allowed</masterLabel>
+        <translation><!-- Allowed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disabled</masterLabel>
+        <translation><!-- Disabled --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Required</masterLabel>
+        <translation><!-- Required --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

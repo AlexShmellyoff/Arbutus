@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Manufacturer --></label>
+    <name>Manufacturer__c</name>
+    <picklistValues>
+        <masterLabel>Arbutus West Agency Ltd</masterLabel>
+        <translation><!-- Arbutus West Agency Ltd --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Avtron</masterLabel>
+        <translation><!-- Avtron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering/Design Feel</masterLabel>
+        <translation><!-- Engineering/Design Feel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamental Power Solutions</masterLabel>
+        <translation><!-- Fundamental Power Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hitachi</masterLabel>
+        <translation><!-- Hitachi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I-Gard</masterLabel>
+        <translation><!-- I-Gard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Powell</masterLabel>
+        <translation><!-- Powell --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rental</masterLabel>
+        <translation><!-- Rental --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rex Power Magnetics</masterLabel>
+        <translation><!-- Rex Power Magnetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schneider Electric</masterLabel>
+        <translation><!-- Schneider Electric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Services</masterLabel>
+        <translation><!-- Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sprecher + Schuh</masterLabel>
+        <translation><!-- Sprecher + Schuh --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

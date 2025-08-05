@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Schedule for discounts based on subscription term. --></help>
+    <label>期間割引率表</label>
+    <name>SBQQ__TermDiscountSchedule__c</name>
+    <relationshipLabel>期間割引商品</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>検索条件</label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fieldSets>
+        <label>検索結果</label>
+        <name>SBQQ__SearchResults</name>
+    </fieldSets>
+    <recordTypes>
+        <description><!-- This is the record type for arbutus assets --></description>
+        <label><!-- Arbutus assets --></label>
+        <name>Arbutus_assets</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This is the record type for fundamentals asset. --></description>
+        <label><!-- Fundamentals Asset --></label>
+        <name>Fundamentals_Asset</name>
+    </recordTypes>
+</CustomObjectTranslation>

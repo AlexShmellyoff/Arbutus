@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Amount of the order product’s total price. --></help>
+    <label>Lançamentos de produto do pedido</label>
+    <name>SBQQ__OrderProductBookings__c</name>
+</CustomFieldTranslation>

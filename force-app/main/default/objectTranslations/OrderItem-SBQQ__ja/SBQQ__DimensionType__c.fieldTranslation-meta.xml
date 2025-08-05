@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For multi-segmented Products, this is the type of price dimeension (e.g. &quot;YEAR&quot;, &quot;MONTH&quot;, &quot;QUARTER&quot;) of the order item. --></help>
+    <label>セグメント種別</label>
+    <name>SBQQ__DimensionType__c</name>
+</CustomFieldTranslation>

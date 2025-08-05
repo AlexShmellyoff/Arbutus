@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Ultimate bundle parent of this Asset --></help>
+    <label>Ressource racine (CPQ)</label>
+    <name>SBQQ__RootAsset__c</name>
+    <relationshipLabel>Ressources (RootAsset)</relationshipLabel>
+</CustomFieldTranslation>

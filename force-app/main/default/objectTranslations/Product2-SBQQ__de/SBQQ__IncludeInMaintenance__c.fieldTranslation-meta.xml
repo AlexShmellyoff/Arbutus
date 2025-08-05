@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check to always include this product in percent of total calculations (normally subscription products are excluded from percent of total calculations). --></help>
+    <label>In &quot;Prozent vom Gesamtwert&quot; einbeziehen</label>
+    <name>SBQQ__IncludeInMaintenance__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>3-Phase Inverter over 100kw &gt;&gt; Solar Inverter</masterLabel>
+        <translation><!-- 3-Phase Inverter over 100kw &gt;&gt; Solar Inverter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV Power Conditioners with Battery &gt;&gt; Audio-Video Solutions</masterLabel>
+        <translation><!-- AV Power Conditioners with Battery &gt;&gt; Audio-Video Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Air Economizers &gt;&gt; Cooling</masterLabel>
+        <translation><!-- Air Economizers &gt;&gt; Cooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Continuity Software &gt;&gt; Data Center Infrastructure Management (DCIM) Software</masterLabel>
+        <translation><!-- Business Continuity Software &gt;&gt; Data Center Infrastructure Management (DCIM) Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bypass Panels &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- Bypass Panels &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Close Coupled Air Conditioners &gt;&gt; Cooling</masterLabel>
+        <translation><!-- Close Coupled Air Conditioners &gt;&gt; Cooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computer Cables and Devices &gt;&gt; Networking and Cable Solutions</masterLabel>
+        <translation><!-- Computer Cables and Devices &gt;&gt; Networking and Cable Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Containment and Air Distribution &gt;&gt; Cooling</masterLabel>
+        <translation><!-- Containment and Air Distribution &gt;&gt; Cooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cooling Distribution and Piping &gt;&gt; Cooling</masterLabel>
+        <translation><!-- Cooling Distribution and Piping &gt;&gt; Cooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cooling Modules &gt;&gt; Prefabricated Data Center Modules</masterLabel>
+        <translation><!-- Cooling Modules &gt;&gt; Prefabricated Data Center Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC Battery Systems &gt;&gt; DC Systems</masterLabel>
+        <translation><!-- DC Battery Systems &gt;&gt; DC Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC Distribution Systems &gt;&gt; DC Systems</masterLabel>
+        <translation><!-- DC Distribution Systems &gt;&gt; DC Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC Integrated Power Systems &gt;&gt; DC Systems</masterLabel>
+        <translation><!-- DC Integrated Power Systems &gt;&gt; DC Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC Power Systems &gt;&gt; DC Systems</masterLabel>
+        <translation><!-- DC Power Systems &gt;&gt; DC Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC Rack Mounted Rectifier Subsystems &gt;&gt; DC Systems</masterLabel>
+        <translation><!-- DC Rack Mounted Rectifier Subsystems &gt;&gt; DC Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Center Containment &gt;&gt; Racks and Accessories</masterLabel>
+        <translation><!-- Data Center Containment &gt;&gt; Racks and Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Center and Facility 3 Phase UPS &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- Data Center and Facility 3 Phase UPS &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Filters &amp; Harmonic Conditioners &gt;&gt; Surge Protection and Power Conditioning</masterLabel>
+        <translation><!-- Filters &amp; Harmonic Conditioners &gt;&gt; Surge Protection and Power Conditioning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home &amp; Office Electronics &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- Home &amp; Office Electronics &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home UPS &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- Home UPS &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Modules &gt;&gt; Prefabricated Data Center Modules</masterLabel>
+        <translation><!-- IT Modules &gt;&gt; Prefabricated Data Center Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial UPS &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- Industrial UPS &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InfraStruXure Power Generation &gt;&gt; Power Generation</masterLabel>
+        <translation><!-- InfraStruXure Power Generation &gt;&gt; Power Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Install &gt;&gt; Services</masterLabel>
+        <translation><!-- Install &gt;&gt; Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LCD Monitors and KVM Switches &gt;&gt; Racks and Accessories</masterLabel>
+        <translation><!-- LCD Monitors and KVM Switches &gt;&gt; Racks and Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modular Systems &gt;&gt; Data Centers and Server Rooms and Network Closets</masterLabel>
+        <translation><!-- Modular Systems &gt;&gt; Data Centers and Server Rooms and Network Closets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monitoring and Management &gt;&gt; Data Center Infrastructure Management (DCIM) Software</masterLabel>
+        <translation><!-- Monitoring and Management &gt;&gt; Data Center Infrastructure Management (DCIM) Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network and Server &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- Network and Server &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Networking Cables and Adapters &gt;&gt; Networking and Cable Solutions</masterLabel>
+        <translation><!-- Networking Cables and Adapters &gt;&gt; Networking and Cable Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open Frame Racks &gt;&gt; Racks and Accessories</masterLabel>
+        <translation><!-- Open Frame Racks &gt;&gt; Racks and Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operate &gt;&gt; Services</masterLabel>
+        <translation><!-- Operate &gt;&gt; Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operations &gt;&gt; Data Center Infrastructure Management (DCIM) Software</masterLabel>
+        <translation><!-- Operations &gt;&gt; Data Center Infrastructure Management (DCIM) Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Optimize &gt;&gt; Services</masterLabel>
+        <translation><!-- Optimize &gt;&gt; Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plan &gt;&gt; Services</masterLabel>
+        <translation><!-- Plan &gt;&gt; Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning and Modelling &gt;&gt; Data Center Infrastructure Management (DCIM) Software</masterLabel>
+        <translation><!-- Planning and Modelling &gt;&gt; Data Center Infrastructure Management (DCIM) Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portable Power &gt;&gt; Portable Power Station</masterLabel>
+        <translation><!-- Portable Power &gt;&gt; Portable Power Station --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Modules &gt;&gt; Prefabricated Data Center Modules</masterLabel>
+        <translation><!-- Power Modules &gt;&gt; Prefabricated Data Center Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>President Rack and Accessories &gt;&gt; Racks and Accessories</masterLabel>
+        <translation><!-- President Rack and Accessories &gt;&gt; Racks and Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Based Services &gt;&gt; Services</masterLabel>
+        <translation><!-- Product Based Services &gt;&gt; Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Professional Services &gt;&gt; Services</masterLabel>
+        <translation><!-- Professional Services &gt;&gt; Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rack Power Distribution &gt;&gt; Power Distribution</masterLabel>
+        <translation><!-- Rack Power Distribution &gt;&gt; Power Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rack and Enclosure Accessories &gt;&gt; Racks and Accessories</masterLabel>
+        <translation><!-- Rack and Enclosure Accessories &gt;&gt; Racks and Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Racks and Enclosures &gt;&gt; Racks and Accessories</masterLabel>
+        <translation><!-- Racks and Enclosures &gt;&gt; Racks and Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Renew &gt;&gt; Services</masterLabel>
+        <translation><!-- Renew &gt;&gt; Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Room Power Distribution &gt;&gt; Power Distribution</masterLabel>
+        <translation><!-- Room Power Distribution &gt;&gt; Power Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Row 3 Phase Power Distribution &gt;&gt; Power Distribution</masterLabel>
+        <translation><!-- Row 3 Phase Power Distribution &gt;&gt; Power Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Motors &amp; Drives &gt;&gt; Motor &amp; Drives</masterLabel>
+        <translation><!-- SE Motors &amp; Drives &gt;&gt; Motor &amp; Drives --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security and Environmental Appliances &gt;&gt; Security and Environmental Monitoring</masterLabel>
+        <translation><!-- Security and Environmental Appliances &gt;&gt; Security and Environmental Monitoring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sensors / Cameras / Licenses / Accessories &gt;&gt; Security and Environmental Monitoring</masterLabel>
+        <translation><!-- Sensors / Cameras / Licenses / Accessories &gt;&gt; Security and Environmental Monitoring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Services &gt;&gt; Data Center Infrastructure Management (DCIM) Software</masterLabel>
+        <translation><!-- Software Services &gt;&gt; Data Center Infrastructure Management (DCIM) Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Applications &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- Special Applications &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surge Protection Devices &gt;&gt; Surge Protection and Power Conditioning</masterLabel>
+        <translation><!-- Surge Protection Devices &gt;&gt; Surge Protection and Power Conditioning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transfer Switches &gt;&gt; Power Distribution</masterLabel>
+        <translation><!-- Transfer Switches &gt;&gt; Power Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Management &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- UPS Management &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UPS Replacement Batteries &gt;&gt; Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- UPS Replacement Batteries &gt;&gt; Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uniflair Chillers &gt;&gt; Cooling</masterLabel>
+        <translation><!-- Uniflair Chillers &gt;&gt; Cooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uniflair Room Cooling &gt;&gt; Cooling</masterLabel>
+        <translation><!-- Uniflair Room Cooling &gt;&gt; Cooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown &gt;&gt; Unknown</masterLabel>
+        <translation><!-- Unknown &gt;&gt; Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

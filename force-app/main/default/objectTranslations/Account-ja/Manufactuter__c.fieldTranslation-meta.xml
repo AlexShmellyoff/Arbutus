@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Manufacturers --></label>
+    <name>Manufactuter__c</name>
+    <picklistValues>
+        <masterLabel>Avtron</masterLabel>
+        <translation><!-- Avtron --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering/Design Feel</masterLabel>
+        <translation><!-- Engineering/Design Feel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fundamental Power Solutions</masterLabel>
+        <translation><!-- Fundamental Power Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hitachi Energy</masterLabel>
+        <translation><!-- Hitachi Energy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I-Gard</masterLabel>
+        <translation><!-- I-Gard --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Powell Industries</masterLabel>
+        <translation><!-- Powell Industries --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rex Power Magnetics</masterLabel>
+        <translation><!-- Rex Power Magnetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Schneider - CSSP</masterLabel>
+        <translation><!-- Schneider - CSSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sprecher + Schuh</masterLabel>
+        <translation><!-- Sprecher + Schuh --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

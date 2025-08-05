@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Weekly Rate (7-DAY) --></label>
+    <name>Week_7_DAY__c</name>
+</CustomFieldTranslation>

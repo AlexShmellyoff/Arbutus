@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Característica do produto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Características dos produtos</value>
+    </caseValues>
+    <fieldSets>
+        <label>Configurador</label>
+        <name>SBQQ__Configurator</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome do recurso</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Não foi possível criar pacotes dinâmico para produtos perenes ou renováveis/perenes</errorMessage>
+        <name>SBQQ__Dynamic_OptionSelectionMethod_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O mínimo de opções não pode ser negativo.</errorMessage>
+        <name>SBQQ__MinOptionValidation</name>
+    </validationRules>
+    <webLinks>
+        <label>Traduzir</label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

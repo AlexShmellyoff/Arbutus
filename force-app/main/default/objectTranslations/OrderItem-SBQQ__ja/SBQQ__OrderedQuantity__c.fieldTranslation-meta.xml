@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The actual quantity of the product placed in the order. --></help>
+    <label>注文済み数量</label>
+    <name>SBQQ__OrderedQuantity__c</name>
+</CustomFieldTranslation>

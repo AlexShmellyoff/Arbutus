@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Model --></label>
+    <name>Model__c</name>
+    <picklistValues>
+        <masterLabel>170SHT-122</masterLabel>
+        <translation><!-- 170SHT-122 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>170SHT-152</masterLabel>
+        <translation><!-- 170SHT-152 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8SHT-601</masterLabel>
+        <translation><!-- 8SHT-601 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8SHT-801</masterLabel>
+        <translation><!-- 8SHT-801 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR0.7-480</masterLabel>
+        <translation><!-- CR0.7-480 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CR1.0-480</masterLabel>
+        <translation><!-- CR1.0-480 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E1016-575</masterLabel>
+        <translation><!-- E1016-575 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K575A-600</masterLabel>
+        <translation><!-- K575A-600 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>K675A-600</masterLabel>
+        <translation><!-- K675A-600 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KCS100</masterLabel>
+        <translation><!-- KCS100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPC-100C</masterLabel>
+        <translation><!-- LPC-100C --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPH-400</masterLabel>
+        <translation><!-- LPH-400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LPH100-600</masterLabel>
+        <translation><!-- LPH100-600 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MARS-1000-600</masterLabel>
+        <translation><!-- MARS-1000-600 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NORTHSTAR</masterLabel>
+        <translation><!-- NORTHSTAR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OLP6-2020-600</masterLabel>
+        <translation><!-- OLP6-2020-600 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XE189-100</masterLabel>
+        <translation><!-- XE189-100 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XE191-255</masterLabel>
+        <translation><!-- XE191-255 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

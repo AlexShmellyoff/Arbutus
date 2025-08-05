@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage>Não é possível editar o status de lançamento em um produto do pedido ativado.</errorMessage>
+        <name>SBQQ__CannotChangeBookingIndicatorOnActivation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Quando o Tipo de encargo é Recorrente, um Tipo de faturamento deve ser selecionado.</errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Quando o Tipo de encargo é &quot;Ocorrência única&quot;, não é possível selecionar um valor de Frequência de faturamento.</errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Quando o Tipo de encargo é Ocorrência única ou Uso, não é possível selecionar um valor de Tipo de faturamento.</errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+</CustomObjectTranslation>

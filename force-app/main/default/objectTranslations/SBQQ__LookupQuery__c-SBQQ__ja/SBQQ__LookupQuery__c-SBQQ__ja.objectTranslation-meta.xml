@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ルックアップクエリ</value>
+    </caseValues>
+    <nameFieldLabel>ルックアップクエリ番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage>設定属性のテストは、商品ルールに関連付けられているルックアップクエリでのみサポートされます。</errorMessage>
+        <name>SBQQ__Configuration_Attribute_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ルックアップクエリを作成する前に商品ルールの参照オブジェクトを関連付けてください。</errorMessage>
+        <name>SBQQ__LookupObjectMustExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>[一致項目] = [静的値] の場合は、[テスト対象値] が必須です。[一致項目] = [項目値] の場合は、[テスト対象オブジェクト] と [テスト対象項目] が必須です。[一致項目] = [設定属性] の場合、テスト済み設定属性は必須です。</errorMessage>
+        <name>SBQQ__Match_Type_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select if Pricing Method can be changed when this product is added to quote. --></help>
+    <label>Método de precios modificable</label>
+    <name>SBQQ__PricingMethodEditable__c</name>
+</CustomFieldTranslation>

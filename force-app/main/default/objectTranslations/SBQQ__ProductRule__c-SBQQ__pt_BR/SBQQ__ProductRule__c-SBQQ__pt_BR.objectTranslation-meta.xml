@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regra do produto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regras dos produtos</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome da regra do produto</nameFieldLabel>
+    <validationRules>
+        <errorMessage>O campo Escopo deve apontar para &quot;Produto&quot; para o tipo de Filtro de Regras de produto.</errorMessage>
+        <name>SBQQ__FilterTypeScope</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Somente regras com o Escopo &quot;Produto&quot; podem ter Eventos de avaliação do tipo &quot;Editar&quot; ou &quot;Carregar&quot;</errorMessage>
+        <name>SBQQ__ProductEvaluationEventValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O campo Evento de avaliação deve ser preenchido com um valor.</errorMessage>
+        <name>SBQQ__RequiredEvaluationEvent</name>
+    </validationRules>
+    <webLinks>
+        <label>Clonar com relacionado</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>Clonar com relacionado</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

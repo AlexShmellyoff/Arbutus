@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>CPQ Opportunity Layout Arbutus</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CPQ Opportunity Layout Fundamentals</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Information --></label>
+            <section>Salesforce CPQ Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CSSP Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Arbutus Quote --></label>
+        <name>Create_Arbutus_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Fundamental Quote --></label>
+        <name>Create_Fundamental_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Arbutus Quote --></label>
+        <name>New_Arbutus_Quote</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- This is the record type for a Buy/Sell deal where Arbutus is the Distributor --></description>
+        <label><!-- AWAL Distributor --></label>
+        <name>AWALDistributor</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type is for creating deals where Arbutus is the Agent --></description>
+        <label><!-- Arbutus West Agency Ltd. --></label>
+        <name>Arbutus_WestAgencyLtd</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- CSSP Service Contract --></label>
+        <name>CSSP_Service_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This record type is solely for creating deals for the Fundamental Power business unit --></description>
+        <label><!-- Fundamental Power Solutions --></label>
+        <name>Fundamental_Power</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- In order to move to stage PO Issued, the Primary Quote must be accepted. --></errorMessage>
+        <name>Primary_Quote_Must_be_Accepted</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Amend_Assets --></label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Amend_Contract --></label>
+        <name>SBQQ__Amend_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CreateOrder --></label>
+        <name>SBQQ__CreateOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Include_Document --></label>
+        <name>SBQQ__Include_Document</name>
+    </webLinks>
+</CustomObjectTranslation>

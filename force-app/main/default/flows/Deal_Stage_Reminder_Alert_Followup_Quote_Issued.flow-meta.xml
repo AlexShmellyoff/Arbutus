@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Follow_up_30_days_alert</name>
+        <label>Follow up 30 days alert</label>
+        <locationX>842</locationX>
+        <locationY>384</locationY>
+        <actionName>Opportunity.Opportunity_Follow_up_stage_email_alert</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>If_manager_exist</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Opportunity_Follow_up_stage_email_alert</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <actionCalls>
+        <name>Quote_Issued</name>
+        <label>Quote Issued 14 days Alert</label>
+        <locationX>50</locationX>
+        <locationY>384</locationY>
+        <actionName>Opportunity.Opportunity_Quote_issued_stage_reminder_alert</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Opportunity_Quote_issued_stage_reminder_alert</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Email_alert_after_14_days_Quote_Issued</name>
+        <label>Email alert after 14 days Quote Issued</label>
+        <locationX>182</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_Quote_Issued</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Quote Issued</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Quote_Issued</targetReference>
+            </connector>
+            <label>Stage Quote Issued</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Email_alert_after_30_days</name>
+        <label>Email alert after 30 days Followup</label>
+        <locationX>1106</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Stage_FollowUp</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Followup</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Follow_up_30_days_alert</targetReference>
+            </connector>
+            <label>Stage FollowUp</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>If_manager_exist</name>
+        <label>If manager exist</label>
+        <locationX>842</locationX>
+        <locationY>492</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner.ManagerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_a_followup_task</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+        <rules>
+            <name>No</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner.ManagerId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_2_of_Create_a_followup_task</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <description>If an opportunity stays in the &quot;Quote Issued&quot; stage for 14 days, a reminder email is sent to the assigned sales rep/opportunity owner. 
+If an opportunity stays in the &quot;Follow up&quot; stage for 30days, a reminder email is sent to the assigned sales rep/opportunity owner. Create a Task if the opportunity has not been updated and add this to the task dashboard for the managers.
+Sales reps can mark the quote as Closed-Won, Closed-Lost to stop further reminders.</description>
+    <environments>Default</environments>
+    <interviewLabel>Deal Stage Reminder Alert -Followup, Quote Issued {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Deal Stage Reminder Alert -Followup, Quote Issued</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Copy_2_of_Create_a_followup_task</name>
+        <label>Create a followup task assign to owner</label>
+        <locationX>842</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Taskdescription</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Opportunity in Follow up stage for 30 days.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_a_followup_task</name>
+        <label>Create a followup task assign to manager</label>
+        <locationX>578</locationX>
+        <locationY>600</locationY>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Taskdescriptionforfollowup</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.Owner.ManagerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Opportunity in Follow up stage for 30 days.</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>320</locationX>
+        <locationY>0</locationY>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Quote Issued</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Followup</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Reminder_Email_Quote_Issued</name>
+            <connector>
+                <targetReference>Email_alert_after_14_days_Quote_Issued</targetReference>
+            </connector>
+            <label>14daysReminder Email - Quote Issued</label>
+            <offsetNumber>14</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>LastModifiedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <scheduledPaths>
+            <name>Reminder_Email_Task_Follow_Up</name>
+            <connector>
+                <targetReference>Email_alert_after_30_days</targetReference>
+            </connector>
+            <label>30days Reminder Email &amp; Task - Follow Up</label>
+            <offsetNumber>30</offsetNumber>
+            <offsetUnit>Days</offsetUnit>
+            <recordField>LastModifiedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Taskdescription</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This opportunity  has been in the Follow up stage for 30 days. Please follow up with the customer and update the stage to close further reminders if necessary.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Taskdescriptionforfollowup</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;This opportunity  has been in the Follow up stage for 30 days. Please follow up with the customer and update the stage to close further reminders if necessary.&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

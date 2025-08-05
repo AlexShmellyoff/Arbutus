@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Produktfunktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Produktfunktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Produktfunktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Produktfunktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Produktfunktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Produktfunktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Produktfunktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Produktfunktionen</value>
+    </caseValues>
+    <fieldSets>
+        <label>Konfigurator</label>
+        <name>SBQQ__Configurator</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name der Funktion</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Dynamische Pakete für Produkte mit Dauergültigkeit oder Verlängerbarkeit/Dauergültigkeit können nicht erstellt werden</errorMessage>
+        <name>SBQQ__Dynamic_OptionSelectionMethod_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>&quot;Mindestzahl Optionen&quot; darf nicht negativ sein.</errorMessage>
+        <name>SBQQ__MinOptionValidation</name>
+    </validationRules>
+    <webLinks>
+        <label>Übersetzen</label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

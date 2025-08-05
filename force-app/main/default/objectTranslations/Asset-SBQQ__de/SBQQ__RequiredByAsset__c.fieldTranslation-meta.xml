@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The parent Asset. If populated, this Asset is a child in a bundle. --></help>
+    <label>Erforderlich für Vermögenswert</label>
+    <name>SBQQ__RequiredByAsset__c</name>
+    <relationshipLabel>Vermögenswerte (Erforderlich für Vermögenswert)</relationshipLabel>
+</CustomFieldTranslation>

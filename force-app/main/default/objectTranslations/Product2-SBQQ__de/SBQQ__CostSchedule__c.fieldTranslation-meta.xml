@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Discount schedule used as a Cost Schedule with this product. --></help>
+    <label>Kostenregelung</label>
+    <name>SBQQ__CostSchedule__c</name>
+    <relationshipLabel>Produkte (Kostenregelung)</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Acción de precios</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Acciones de precios</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Número de acción</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Para utilizar Orientación sobre precios de partida de presupuesto como Objeto de destino, seleccione Después de calcular desde la lista desplegable Evento de evaluación de calculadora.</errorMessage>
+        <name>SBQQ__Event_Evaluation_Pricing_Guidance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>El objeto de destino de la acción de precios no coincide con Ámbito de evaluación</errorMessage>
+        <name>SBQQ__Target_Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

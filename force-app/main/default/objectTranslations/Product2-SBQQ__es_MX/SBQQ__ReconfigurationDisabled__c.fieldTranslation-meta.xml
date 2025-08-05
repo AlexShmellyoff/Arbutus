@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When checked this product can only be configured when first added to a quote. If selected, users will not have access to a Configure link on the Edit Lines page after product has been added. --></help>
+    <label>Desactivar reconfiguración</label>
+    <name>SBQQ__ReconfigurationDisabled__c</name>
+</CustomFieldTranslation>

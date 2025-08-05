@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Category --></label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>AGM INSTALLATION GUIDE NOTE</masterLabel>
+        <translation><!-- AGM INSTALLATION GUIDE NOTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EFT PAYMENTS</masterLabel>
+        <translation><!-- EFT PAYMENTS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EQUIPMENT QUOTED STATEMENT</masterLabel>
+        <translation><!-- EQUIPMENT QUOTED STATEMENT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FREIGHT QUOTES</masterLabel>
+        <translation><!-- FREIGHT QUOTES --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>POWERLENS/AGM NOTE</masterLabel>
+        <translation><!-- POWERLENS/AGM NOTE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RENTAL PERIOD</masterLabel>
+        <translation><!-- RENTAL PERIOD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TECH SUPPORT</masterLabel>
+        <translation><!-- TECH SUPPORT --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Determines a default sort order of products in the Product Lookup page, and therefore the order in which they are added to the quote. --></help>
+    <label>並び替え順</label>
+    <name>SBQQ__SortOrder__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>商品ルール</value>
+    </caseValues>
+    <nameFieldLabel>商品ルール名</nameFieldLabel>
+    <validationRules>
+        <errorMessage>[条件] 種別の商品ルールの場合、[範囲] 項目は [商品] にする必要があります。</errorMessage>
+        <name>SBQQ__FilterTypeScope</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>[編集] または [読み込み] 種別の評価イベントを設定できるのは、範囲が [商品] のルールのみです</errorMessage>
+        <name>SBQQ__ProductEvaluationEventValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>[評価イベント] 項目には値が入力されている必要があります。</errorMessage>
+        <name>SBQQ__RequiredEvaluationEvent</name>
+    </validationRules>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

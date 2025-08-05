@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check to create a new quote group when this product is added (unless the current group is empty). --></help>
+    <label>Nouveau groupe de devis</label>
+    <name>SBQQ__NewQuoteGroup__c</name>
+</CustomFieldTranslation>

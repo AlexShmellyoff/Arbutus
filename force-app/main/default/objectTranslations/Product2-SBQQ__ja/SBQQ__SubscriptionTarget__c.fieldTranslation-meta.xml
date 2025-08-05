@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use this field to override a product that is included in a percent of total calculation. Point this lookup to a product with a list price you would like to use for the current product’s Percent of Total calculations. --></help>
+    <label>全体に対する割合の対象</label>
+    <name>SBQQ__SubscriptionTarget__c</name>
+    <relationshipLabel>サブスクリプションの対象商品</relationshipLabel>
+</CustomFieldTranslation>

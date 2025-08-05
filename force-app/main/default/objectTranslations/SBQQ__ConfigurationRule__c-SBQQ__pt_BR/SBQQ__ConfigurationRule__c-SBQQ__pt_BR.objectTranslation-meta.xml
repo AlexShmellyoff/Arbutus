@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regra de configuração</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regras de configuração</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nº da regra</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Há suporte para o nível de Condição apenas para as regras do produto de Validação, Alerta e Seleção.</errorMessage>
+        <name>SBQQ__Ensure_rule_type_nested_level</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Há suporte para o nível de Ação apenas para as regras do produto de Seleção.</errorMessage>
+        <name>SBQQ__Ensure_rule_type_nested_level_actions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O Nível de pacote máximo com suporte é 1.</errorMessage>
+        <name>SBQQ__Ensure_supported_nested_level</name>
+    </validationRules>
+</CustomObjectTranslation>

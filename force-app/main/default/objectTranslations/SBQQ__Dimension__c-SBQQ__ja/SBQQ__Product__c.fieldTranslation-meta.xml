@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select a Product to associate this Price Dimension with. --></help>
+    <label>商品</label>
+    <name>SBQQ__Product__c</name>
+    <relationshipLabel>価格ディメンション</relationshipLabel>
+</CustomFieldTranslation>

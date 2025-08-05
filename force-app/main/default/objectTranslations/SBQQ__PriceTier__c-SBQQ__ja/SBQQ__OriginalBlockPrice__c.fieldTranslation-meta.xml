@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The block price where this price tier is originated from. --></help>
+    <label>元のブロック価格</label>
+    <name>SBQQ__OriginalBlockPrice__c</name>
+    <relationshipLabel>価格層</relationshipLabel>
+</CustomFieldTranslation>

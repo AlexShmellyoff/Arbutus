@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Account Segment --></label>
+    <name>Account_Segment__c</name>
+    <picklistValues>
+        <masterLabel>Consultant</masterLabel>
+        <translation><!-- Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contractor</masterLabel>
+        <translation><!-- Contractor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Direct customer</masterLabel>
+        <translation><!-- Direct customer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor</masterLabel>
+        <translation><!-- Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EPC</masterLabel>
+        <translation><!-- EPC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>End user</masterLabel>
+        <translation><!-- End user --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Partner</masterLabel>
+        <translation><!-- IT Partner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturer</masterLabel>
+        <translation><!-- Manufacturer --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

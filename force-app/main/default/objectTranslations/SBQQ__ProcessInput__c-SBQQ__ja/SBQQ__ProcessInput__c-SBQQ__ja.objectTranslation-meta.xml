@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>プロセス入力</value>
+    </caseValues>
+    <nameFieldLabel>入力名</nameFieldLabel>
+    <validationRules>
+        <errorMessage>[商品の項目] と [演算子] は、いずれかを設定する場合、両方とも設定する必要があります。</errorMessage>
+        <name>SBQQ__ProductFieldAndOperatorSet</name>
+    </validationRules>
+</CustomObjectTranslation>

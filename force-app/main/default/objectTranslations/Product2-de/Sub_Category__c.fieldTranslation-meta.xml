@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sub Category --></label>
+    <name>Sub_Category__c</name>
+    <picklistValues>
+        <masterLabel>Audio-Video Solutions</masterLabel>
+        <translation><!-- Audio-Video Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cooling</masterLabel>
+        <translation><!-- Cooling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DC Systems</masterLabel>
+        <translation><!-- DC Systems --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Center Infrastructure Management (DCIM) Software</masterLabel>
+        <translation><!-- Data Center Infrastructure Management (DCIM) Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Centers and Server Rooms and Network Closets</masterLabel>
+        <translation><!-- Data Centers and Server Rooms and Network Closets --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Motor &amp; Drives</masterLabel>
+        <translation><!-- Motor &amp; Drives --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Networking and Cable Solutions</masterLabel>
+        <translation><!-- Networking and Cable Solutions --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portable Power Station</masterLabel>
+        <translation><!-- Portable Power Station --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Distribution</masterLabel>
+        <translation><!-- Power Distribution --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power Generation</masterLabel>
+        <translation><!-- Power Generation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prefabricated Data Center Modules</masterLabel>
+        <translation><!-- Prefabricated Data Center Modules --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Racks and Accessories</masterLabel>
+        <translation><!-- Racks and Accessories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Security and Environmental Monitoring</masterLabel>
+        <translation><!-- Security and Environmental Monitoring --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Services</masterLabel>
+        <translation><!-- Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solar Inverter</masterLabel>
+        <translation><!-- Solar Inverter --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surge Protection and Power Conditioning</masterLabel>
+        <translation><!-- Surge Protection and Power Conditioning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Uninterruptible Power Supply (UPS)</masterLabel>
+        <translation><!-- Uninterruptible Power Supply (UPS) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select checkbox to hide this product&apos;s price in the Product Search Results. --></help>
+    <label>Ocultar preço nos resultados da pesquisa</label>
+    <name>SBQQ__HidePriceInSearchResults__c</name>
+</CustomFieldTranslation>

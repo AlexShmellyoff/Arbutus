@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Summary variable tested by this price condition. --></help>
+    <label>テスト対象変数</label>
+    <name>SBQQ__TestedVariable__c</name>
+    <relationshipLabel>価格条件 (テスト対象変数)</relationshipLabel>
+</CustomFieldTranslation>

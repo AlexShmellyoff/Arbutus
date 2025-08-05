@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Term Codes --></label>
+    <name>Term_Codes__c</name>
+    <picklistValues>
+        <masterLabel>CONVERSION</masterLabel>
+        <translation><!-- CONVERSION --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Due on receipt</masterLabel>
+        <translation><!-- Due on receipt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NET 15</masterLabel>
+        <translation><!-- NET 15 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NET 30</masterLabel>
+        <translation><!-- NET 30 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NET 45</masterLabel>
+        <translation><!-- NET 45 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NET 60</masterLabel>
+        <translation><!-- NET 60 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NET 90</masterLabel>
+        <translation><!-- NET 90 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

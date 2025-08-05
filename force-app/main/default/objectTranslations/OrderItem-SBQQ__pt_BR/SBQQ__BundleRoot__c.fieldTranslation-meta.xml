@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- An internally used field that points to the root of its bundle parent. --></help>
+    <label>Raiz do pacote</label>
+    <name>SBQQ__BundleRoot__c</name>
+    <relationshipLabel>Produtos do pedido (raiz do pacote)</relationshipLabel>
+</CustomFieldTranslation>

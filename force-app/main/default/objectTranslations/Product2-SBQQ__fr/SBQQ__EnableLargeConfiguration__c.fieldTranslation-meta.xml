@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Should be enabled if you experience performance errors during bundle configuration. Bundle will be processed asynchronously. --></help>
+    <label>Activer la configuration volumineuse</label>
+    <name>SBQQ__EnableLargeConfiguration__c</name>
+</CustomFieldTranslation>

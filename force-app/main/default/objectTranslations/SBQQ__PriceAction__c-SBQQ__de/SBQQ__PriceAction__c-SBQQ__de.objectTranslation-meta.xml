@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Preisaktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Preisaktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Preisaktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Preisaktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Preisaktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Preisaktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Preisaktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Preisaktionen</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Aktionsnummer</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Um &quot;Preisempfehlung für Angebotsbelegposten&quot; als Zielobjekt zu verwenden, wählen Sie &quot;Nach der Berechnung&quot; in der Dropdown-Liste &quot;Rechnerevaluierungsereignis&quot; aus.</errorMessage>
+        <name>SBQQ__Event_Evaluation_Pricing_Guidance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Das Zielobjekt der Preisaktion stimmt nicht mit dem Evaluierungsumfang überein</errorMessage>
+        <name>SBQQ__Target_Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

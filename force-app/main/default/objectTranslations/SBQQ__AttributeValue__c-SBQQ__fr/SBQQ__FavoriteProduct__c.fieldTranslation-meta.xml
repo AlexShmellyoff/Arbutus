@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Produit favori</label>
+    <name>SBQQ__FavoriteProduct__c</name>
+    <relationshipLabel>Valeurs d&apos;attribut</relationshipLabel>
+</CustomFieldTranslation>

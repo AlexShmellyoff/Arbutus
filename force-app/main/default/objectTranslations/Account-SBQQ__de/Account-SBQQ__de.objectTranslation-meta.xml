@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Tax Information --></label>
+            <section>Tax Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create Fundamental Quote --></label>
+        <name>Create1_Fundamental_Quote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Fundamental Quote --></label>
+        <name>Create_Fundamental_Quote</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Company Account --></label>
+        <name>Company_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This is specific to creating Manufacturer records for the Arbutus Group --></description>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please check off if the account is Fundamental or Arbutus --></errorMessage>
+        <name>Account_Must_be_Flagged</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing address is required --></errorMessage>
+        <name>Billing_address_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Fundamental Accounts must have a Tax Code, Billing/Shipping State and Country --></errorMessage>
+        <name>Fundamental_Tax_Code</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label>Vermögenswerte ändern</label>
+        <name>SBQQ__Amend_Assets</name>
+    </webLinks>
+    <webLinks>
+        <label>Vermögenswerte verlängern</label>
+        <name>SBQQ__Renew_Assets</name>
+    </webLinks>
+</CustomObjectTranslation>

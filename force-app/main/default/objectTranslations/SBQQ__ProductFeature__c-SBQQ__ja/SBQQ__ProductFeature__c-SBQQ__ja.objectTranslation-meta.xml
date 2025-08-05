@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>商品機能</value>
+    </caseValues>
+    <fieldSets>
+        <label>コンフィグレーター</label>
+        <name>SBQQ__Configurator</name>
+    </fieldSets>
+    <nameFieldLabel>機能名</nameFieldLabel>
+    <validationRules>
+        <errorMessage>エバーグリーン商品または更新可能/エバーグリーン商品の動的バンドルを作成できません。</errorMessage>
+        <name>SBQQ__Dynamic_OptionSelectionMethod_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>[最小オプション数] は負の数にはできません。</errorMessage>
+        <name>SBQQ__MinOptionValidation</name>
+    </validationRules>
+    <webLinks>
+        <label>翻訳</label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

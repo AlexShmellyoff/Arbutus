@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Summary variable that sources value for this action. --></help>
+    <label>Variable de origen</label>
+    <name>SBQQ__SourceVariable__c</name>
+    <relationshipLabel>Acciones de precios (Origen)</relationshipLabel>
+</CustomFieldTranslation>

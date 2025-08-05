@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Profile_Arbutus_Standard_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Profile Arbutus Standard User</shortDescription>
+        <value>Arbutus Standard User</value>
+    </labels>
+    <labels>
+        <fullName>Profile_Fundamentals_Standard_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Profile Fundamentals Standard User</shortDescription>
+        <value>Fundamentals Standard User</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check to always exclude this product from percent of total calculations (normally non-subscription products are included in percent of total calculations). --></help>
+    <label>全体に対する割合から除外</label>
+    <name>SBQQ__ExcludeFromMaintenance__c</name>
+</CustomFieldTranslation>

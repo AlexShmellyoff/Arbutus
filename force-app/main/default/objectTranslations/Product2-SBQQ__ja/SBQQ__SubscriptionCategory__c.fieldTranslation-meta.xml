@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Use this to limit percent of total calculations to certain product categories. For example, software maintenance should only calculate percentage on products with a software maintenance percent of total category. --></help>
+    <label>全体に対する割合のカテゴリ</label>
+    <name>SBQQ__SubscriptionCategory__c</name>
+    <picklistValues>
+        <masterLabel>Hardware</masterLabel>
+        <translation><!-- Hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software</masterLabel>
+        <translation><!-- Software --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

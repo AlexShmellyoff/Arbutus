@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>コンフィグレーターの検索条件</label>
+        <name>SBQQ__ConfiguratorFilter</name>
+    </fieldSets>
+    <fieldSets>
+        <label>コンフィグレーターのルックアップ</label>
+        <name>SBQQ__ConfiguratorLookup</name>
+    </fieldSets>
+    <fieldSets>
+        <label>検索条件</label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <fieldSets>
+        <label>検索結果</label>
+        <name>SBQQ__SearchResults</name>
+    </fieldSets>
+    <layouts>
+        <layout>Arbutus Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Product Info --></label>
+            <section>Product Info</section>
+        </sections>
+        <sections>
+            <label><!-- Renewals --></label>
+            <section>Renewals</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Configuration --></label>
+            <section>Salesforce CPQ Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Subscriptions --></label>
+            <section>Subscriptions</section>
+        </sections>
+        <sections>
+            <label><!-- Upgrades --></label>
+            <section>Upgrades</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fundamental Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- Product Info --></label>
+            <section>Product Info</section>
+        </sections>
+        <sections>
+            <label><!-- Renewals --></label>
+            <section>Renewals</section>
+        </sections>
+        <sections>
+            <label><!-- Salesforce CPQ Configuration --></label>
+            <section>Salesforce CPQ Configuration</section>
+        </sections>
+        <sections>
+            <label><!-- Subscriptions --></label>
+            <section>Subscriptions</section>
+        </sections>
+        <sections>
+            <label><!-- Upgrades --></label>
+            <section>Upgrades</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- The Arbutus Products record type is restricted to the Arbutus Group business unit and system administrators. --></description>
+        <label><!-- Arbutus Products --></label>
+        <name>Arbutus_Products</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- The Fundamental Products record type is restricted to the Arbutus Group business unit and system administrators. --></description>
+        <label><!-- Fundamental Products --></label>
+        <name>Fundamental_Products</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>[メンテナンスに含める] または [メンテナンスから除外する] のいずれかのチェックボックスをオンにする必要があります。</errorMessage>
+        <name>SBQQ__Include_or_Exclude_Maintenance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>課金タイプが定期であるときは、請求種別を選択する必要があります。</errorMessage>
+        <name>SBQQ__RecurringChargeTypeMustHaveBillingType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>期間割引率表を指定できるのはサブスクリプション商品のみです</errorMessage>
+        <name>SBQQ__Term_schedule_requires_subscription</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>課金タイプが 1 回であるときは、請求サイクルの値を選択できません。</errorMessage>
+        <name>SBQQ__Validate_billing_frequency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>課金タイプが 1 回または利用状況であるときは、請求種別の値を選択できません。</errorMessage>
+        <name>SBQQ__Validate_billing_type</name>
+    </validationRules>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label>翻訳</label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

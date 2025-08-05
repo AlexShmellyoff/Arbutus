@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Acción personalizada</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Acciones personalizadas</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre</nameFieldLabel>
+    <validationRules>
+        <errorMessage>La URL no puede estar vacía para la Acción personalizada &quot;Guardar y navegar&quot;</errorMessage>
+        <name>SBQQ__Non_empty_URL_for_Save_and_Navigate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>La URL de destino tiene que ser Sustituir página para la Acción personalizada &quot;Guardar y navegar&quot;</errorMessage>
+        <name>SBQQ__URLTarget_for_Save_and_Navigate</name>
+    </validationRules>
+</CustomObjectTranslation>

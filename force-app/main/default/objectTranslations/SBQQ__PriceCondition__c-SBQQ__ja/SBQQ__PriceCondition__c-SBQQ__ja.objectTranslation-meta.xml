@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格条件</value>
+    </caseValues>
+    <nameFieldLabel>条件番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage>テスト対象オブジェクトとしての設定属性は、コンフィグレーターの範囲の価格ルールでのみ許可されています。</errorMessage>
+        <name>SBQQ__Config_attr_config_scoped_price_rules</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>テスト対象オブジェクトとしての設定属性は、数式に対して評価できません。</errorMessage>
+        <name>SBQQ__Config_attr_tested_object_with_formula</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>[条件種別] が [数式] の場合、[条件の数式] は空にできません。</errorMessage>
+        <name>SBQQ__Filter_formula_field_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>いずれかの項目またはテスト対象変数を指定する必要があります。</errorMessage>
+        <name>SBQQ__Tested_field_or_variable</name>
+    </validationRules>
+</CustomObjectTranslation>

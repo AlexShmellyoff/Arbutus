@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Pulls in the value of Configuration Type on Product object in order to avoid loading related product record. --></help>
+    <label>商品設定種別</label>
+    <name>SBQQ__ProductConfigurationType__c</name>
+</CustomFieldTranslation>

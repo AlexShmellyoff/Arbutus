@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opción de producto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opciones de producto</value>
+    </caseValues>
+    <fieldSets>
+        <label>OptionConfiguration</label>
+        <name>SBQQ__OptionConfiguration</name>
+    </fieldSets>
+    <fieldSets>
+        <label>OptionLookup</label>
+        <name>SBQQ__OptionLookup</name>
+    </fieldSets>
+    <fieldSets>
+        <label>SearchFilters</label>
+        <name>SBQQ__SearchFilters</name>
+    </fieldSets>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre de opción</nameFieldLabel>
+    <validationRules>
+        <errorMessage>El campo &quot;Aplicar inmediatamente&apos; debe estar marcados antes de proporcionar un &quot;Contexto de Aplicar inmediatamente&quot;. En caso contrario, cambie el campo &quot;Contexto de Aplicar inmediatamente&quot; a &quot;Ninguno&quot;.</errorMessage>
+        <name>SBQQ__Apply_Immediately_Context_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se pueden incluir productos perennes y renovables en el mismo paquete.</errorMessage>
+        <name>SBQQ__Cannot_Bundle_Evergreen_Renewable_SKUs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>No se pueden incluir productos perennes y renovables en el mismo paquete.</errorMessage>
+        <name>SBQQ__Cannot_Have_RenewableEvergreen_In_Bundle</name>
+    </validationRules>
+    <webLinks>
+        <label>Traducir</label>
+        <name>SBQQ__Translate</name>
+    </webLinks>
+</CustomObjectTranslation>

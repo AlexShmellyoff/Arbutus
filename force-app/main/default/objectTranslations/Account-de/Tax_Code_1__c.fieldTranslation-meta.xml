@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Tax Code 1 --></label>
+    <name>Tax_Code_1__c</name>
+    <picklistValues>
+        <masterLabel>GST</masterLabel>
+        <translation><!-- GST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HST</masterLabel>
+        <translation><!-- HST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NTX</masterLabel>
+        <translation><!-- NTX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PST</masterLabel>
+        <translation><!-- PST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QST</masterLabel>
+        <translation><!-- QST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RST</masterLabel>
+        <translation><!-- RST --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

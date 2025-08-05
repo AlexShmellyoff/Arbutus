@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select a behavior when amending assets representing this product. By default, asset quantities cannot decrease unless an upgrade is added, and no refund is applied. --></help>
+    <label>Comportamento da alteração do ativo</label>
+    <name>SBQQ__AssetAmendmentBehavior__c</name>
+    <picklistValues>
+        <masterLabel>Allow Refund</masterLabel>
+        <translation><!-- Allow Refund --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Default</masterLabel>
+        <translation><!-- Default --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Action de prix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actions de prix</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>N° d&apos;action</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage>Pour utiliser le prix indicatif de ligne de devis en tant qu&apos;objet cible, sélectionnez Après le calcul dans la liste déroulante Événement d&apos;évaluation du Calculateur.</errorMessage>
+        <name>SBQQ__Event_Evaluation_Pricing_Guidance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>L&apos;objet cible de l&apos;action de prix ne correspond pas à l’étendue de l&apos;évaluation</errorMessage>
+        <name>SBQQ__Target_Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

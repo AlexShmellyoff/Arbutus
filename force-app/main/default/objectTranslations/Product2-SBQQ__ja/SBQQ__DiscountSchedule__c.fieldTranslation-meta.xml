@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Discount schedule for use with this product --></help>
+    <label>割引率表</label>
+    <name>SBQQ__DiscountSchedule__c</name>
+    <relationshipLabel>数量割引商品</relationshipLabel>
+</CustomFieldTranslation>

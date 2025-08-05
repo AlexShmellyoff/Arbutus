@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Make --></label>
+    <name>Make__c</name>
+    <picklistValues>
+        <masterLabel>AVTRON</masterLabel>
+        <translation><!-- AVTRON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CABLE</masterLabel>
+        <translation><!-- CABLE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COOPER</masterLabel>
+        <translation><!-- COOPER --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CRESTCHIC</masterLabel>
+        <translation><!-- CRESTCHIC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CROMPTON</masterLabel>
+        <translation><!-- CROMPTON --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LOADTEC</masterLabel>
+        <translation><!-- LOADTEC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLASTIC CRATE</masterLabel>
+        <translation><!-- PLASTIC CRATE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PLATE 8589 3K</masterLabel>
+        <translation><!-- PLATE 8589 3K --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RENTALOAD</masterLabel>
+        <translation><!-- RENTALOAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIMPLEX</masterLabel>
+        <translation><!-- SIMPLEX --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPARE PARTS</masterLabel>
+        <translation><!-- SPARE PARTS --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

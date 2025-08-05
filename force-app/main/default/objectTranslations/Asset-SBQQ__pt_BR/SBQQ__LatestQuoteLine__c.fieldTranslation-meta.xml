@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Linha de cotação mais recente</label>
+    <name>SBQQ__LatestQuoteLine__c</name>
+    <relationshipLabel>Ativos (Linha de cotação mais recente)</relationshipLabel>
+</CustomFieldTranslation>

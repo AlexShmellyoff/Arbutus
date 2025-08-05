@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Quickbooks Invoice Path --></label>
+    <name>Quickbooks_Invoice_Path__c</name>
+    <picklistValues>
+        <masterLabel>Invoice Fully Paid</masterLabel>
+        <translation><!-- Invoice Fully Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Generated</masterLabel>
+        <translation><!-- Invoice Generated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Partly Paid</masterLabel>
+        <translation><!-- Invoice Partly Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Requested</masterLabel>
+        <translation><!-- Invoice Requested --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice Review</masterLabel>
+        <translation><!-- Invoice Review --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

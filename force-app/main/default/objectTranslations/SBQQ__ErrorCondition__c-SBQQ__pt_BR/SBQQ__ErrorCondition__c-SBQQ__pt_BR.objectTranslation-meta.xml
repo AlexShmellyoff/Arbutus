@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Condição de erro</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Condições de erro</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nº da condição</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Um Tipo de filtro &quot;Variável&quot; deve ter uma Variável do filtro.</errorMessage>
+        <name>SBQQ__FilterCombinationValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Esta combinação de ProductRule.Scope e ErrorCondition.TestedObject não é válida.</errorMessage>
+        <name>SBQQ__ScopeAndErrorConditionTestedObject</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Atributo testado exigido, uma vez que o Campo testado é um campo de Atributos de configuração global.</errorMessage>
+        <name>SBQQ__Tested_attr_required_if_global_field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Especifique Campo testado ou Variável testada.</errorMessage>
+        <name>SBQQ__Tested_field_or_variable_required</name>
+    </validationRules>
+</CustomObjectTranslation>

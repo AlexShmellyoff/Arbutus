@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Flag that indicates this product&apos;s description is locked (not editable on the quote). --></help>
+    <label>Bloquear descripción</label>
+    <name>SBQQ__DescriptionLocked__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Règle de produit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Règles de produit</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nom de la règle produit</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>Le champ « Étendue » doit pointer vers « Produits » pour le type de règle produit Filtre.</errorMessage>
+        <name>SBQQ__FilterTypeScope</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Seules les règles avec l’étendue « Produit » peuvent avoir des événements d’évaluation de type « Modifier » ou « Charger »</errorMessage>
+        <name>SBQQ__ProductEvaluationEventValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Le champ Événement d’évaluation doit être renseigné avec une valeur.</errorMessage>
+        <name>SBQQ__RequiredEvaluationEvent</name>
+    </validationRules>
+    <webLinks>
+        <label>Cloner avec associé</label>
+        <name>SBQQ__CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>Cloner avec associé</label>
+        <name>SBQQ__CloneWithRelatedClassic</name>
+    </webLinks>
+</CustomObjectTranslation>

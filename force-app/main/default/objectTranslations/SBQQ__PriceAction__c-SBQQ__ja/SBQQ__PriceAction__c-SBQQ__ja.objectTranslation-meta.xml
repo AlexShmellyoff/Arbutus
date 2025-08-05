@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格アクション</value>
+    </caseValues>
+    <nameFieldLabel>アクション番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage>対象オブジェクトとして見積品目価格設定ガイダンスを使用するには、[計算機能評価イベント] ドロップダウンリストから [計算後] を選択します。</errorMessage>
+        <name>SBQQ__Event_Evaluation_Pricing_Guidance</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>価格アクションの対象オブジェクトが評価範囲に一致しません</errorMessage>
+        <name>SBQQ__Target_Object_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

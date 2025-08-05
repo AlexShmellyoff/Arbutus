@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Consulta de pesquisa</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Consultas de pesquisas</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nº da consulta de pesquisa</nameFieldLabel>
+    <validationRules>
+        <errorMessage>Testar Atributos de Configuração somente é suportado para Consultas de pesquisa associadas a Regras de Produto.</errorMessage>
+        <name>SBQQ__Configuration_Attribute_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Associe um objeto de pesquisa na regra do produto antes de criar uma Consulta de pesquisa.</errorMessage>
+        <name>SBQQ__LookupObjectMustExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>O Valor testado é exigido se Tipo de correspondência = Valor estático. O Objeto testado e o Campo testado são exigidos se Tipo de correspondência = Valor do campo. O Atributo de configuração testado é necessário se Tipo de correspondência = Atributo de configuração.</errorMessage>
+        <name>SBQQ__Match_Type_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -3,8 +3,8 @@
     <fullName>Quote_Must_Have_An_Opportunity_to_Accept</fullName>
     <active>true</active>
     <errorConditionFormula>AND(
-ISPICKVAL(SBQQ__Status__c, &quot;Accepted&quot;),
-ISBLANK(SBQQ__Opportunity2__c)
+    ISPICKVAL(SBQQ__Status__c, &quot;Accepted&quot;),
+    ISBLANK(SBQQ__Opportunity2__c)
 )</errorConditionFormula>
     <errorMessage>Quote must have an opportunity to move the status to Accepted</errorMessage>
 </ValidationRule>

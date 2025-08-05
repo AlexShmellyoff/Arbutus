@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AWAL_Distributor_Engineering</fullName>
+    <columns>ORDERS.ORDER_NUMBER</columns>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>ORDERS.EFFECTIVE_DATE</columns>
+    <columns>ORDERS.TOTAL_AMOUNT</columns>
+    <columns>ORDERS.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Manufacturer__c</field>
+        <operation>equals</operation>
+        <value>Arbutus West Agency Ltd</value>
+    </filters>
+    <filters>
+        <field>ORDER.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Order.AWALDistributor</value>
+    </filters>
+    <label>AWAL Distributor - Engineering</label>
+    <sharedTo>
+        <group>Management</group>
+    </sharedTo>
+</ListView>

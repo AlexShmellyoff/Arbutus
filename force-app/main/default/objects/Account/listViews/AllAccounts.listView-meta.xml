@@ -8,7 +8,10 @@
     <columns>ACCOUNT.RECORDTYPE</columns>
     <columns>ACCOUNT.INDUSTRY</columns>
     <columns>ACCOUNT.URL</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE_CODE</columns>
     <columns>Account_Segment__c</columns>
+    <columns>Tax_Code_1__c</columns>
+    <columns>Tax_code_2__c</columns>
     <filterScope>Everything</filterScope>
     <label>All Accounts</label>
 </ListView>

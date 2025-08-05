@@ -72,7 +72,43 @@
     <picklistValues>
         <picklist>Status</picklist>
         <values>
+            <fullName>Customer Invoiced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Documentation Review %E2%80%93 Waiting for Release</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawings Issued to Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESD%2FTracking Issued to Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Issued to Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Delivered%2FServices Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Milestones%2FSchedule required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Released - Product%2FServices Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Revenue recognition%2FClosed Archived</fullName>
             <default>false</default>
         </values>
     </picklistValues>

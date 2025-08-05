@@ -29,6 +29,11 @@
                 <default>false</default>
                 <label>Invoice Paid</label>
             </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

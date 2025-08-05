@@ -66,6 +66,84 @@
             <targetReference>Loop_Each_SubscriptionId</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>Set_Cycle_Overage_Flag</name>
+        <label>Set Cycle Overage Flag</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>HasInvoicesCreated</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Cycle_Overage_Invoice_Item</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Has_Invoices_Flag</name>
+        <label>Set Has Invoices Flag</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>HasInvoicesCreated</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AllSubscriptionsAlreadyInvoiced</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Standard_Invoice_Item</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Overage_Invoice_Flag</name>
+        <label>Set Overage Invoice Flag</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>HasInvoicesCreated</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AllSubscriptionsAlreadyInvoiced</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Standard_Overage_Invoice_Item</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Store_Current_Subscription_Status</name>
+        <label>Store Current Subscription Status</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>CurrentSubscriptionStatus</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Related_Subscription.Status__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Overage_Amount_Exists</targetReference>
+        </connector>
+    </assignments>
     <customProperties>
         <name>ScreenProgressIndicator</name>
         <value>
@@ -135,7 +213,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>Create_Standard_Invoice_Item</targetReference>
+            <targetReference>Set_Has_Invoices_Flag</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -149,9 +227,35 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Cycle_Payment_Complete_Message</targetReference>
+                <isGoTo>true</isGoTo>
+                <targetReference>Loop_through_Quote_Line_Items</targetReference>
             </connector>
             <label>Subscription Cycle Already Invoiced</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Final_Decision_Check</name>
+        <label>Final Decision Check</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Cycle_Payment_Complete_Screen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Invoices Needed</defaultConnectorLabel>
+        <rules>
+            <name>Invoices_Were_Created</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>HasInvoicesCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Related_Quote</targetReference>
+            </connector>
+            <label>Invoices Were Created</label>
         </rules>
     </decisions>
     <decisions>
@@ -167,14 +271,14 @@
             <name>No_Related_Invoices</name>
             <conditionLogic>or</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Invoice.Id__NotFound</leftValueReference>
+                <leftValueReference>Get_Invoice.Id</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Get_Invoice.Id__NotFound</leftValueReference>
+                <leftValueReference>Get_Invoice.Id</leftValueReference>
                 <operator>IsBlank</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -224,7 +328,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>Create_Standard_Overage_Invoice_Item</targetReference>
+            <targetReference>Set_Overage_Invoice_Flag</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -238,7 +342,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Create_Cycle_Overage_Invoice_Item</targetReference>
+                <targetReference>Set_Cycle_Overage_Flag</targetReference>
             </connector>
             <label>Cycle Invoiced</label>
         </rules>
@@ -247,12 +351,54 @@
     <formulas>
         <name>CycleOverageDescription</name>
         <dataType>String</dataType>
-        <expression>&quot;Overage for the: &quot; + {!Loop_through_Quote_Line_Items.SBQQ__Description__c}</expression>
+        <expression>&quot;Overage for the: &quot; + {!Loop_through_Quote_Line_Items.SBQQ__Description__c} + 
+IF(NOT(ISBLANK({!CurrentSubscriptionStatus})), 
+   &quot; | Status: &quot; + {!CurrentSubscriptionStatus}, 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c})), 
+   &quot; | Return Date: &quot; + {!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c}, 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c})), 
+   &quot; | Start Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c}), 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})), 
+   &quot; | End Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.Expected_End_Date__c}), 
+   &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>EnhancedStandardDescription</name>
+        <dataType>String</dataType>
+        <expression>{!Loop_through_Quote_Line_Items.SBQQ__Description__c} + 
+IF(NOT(ISBLANK({!CurrentSubscriptionStatus})), 
+   &quot; | Status: &quot; + {!CurrentSubscriptionStatus}, 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c})), 
+   &quot; | Return Date: &quot; + {!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c}, 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c})), 
+   &quot; | Start Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c}), 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})), 
+   &quot; | End Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.Expected_End_Date__c}), 
+   &quot;&quot;)</expression>
     </formulas>
     <formulas>
         <name>OverageDescription</name>
         <dataType>String</dataType>
-        <expression>{!Loop_through_Quote_Line_Items.SBQQ__Description__c} + &quot; + Overage Amount of: $&quot; + TEXT(ROUND({!Get_Related_Subscription.Overage_Amount__c}, 2))</expression>
+        <expression>{!Loop_through_Quote_Line_Items.SBQQ__Description__c} + 
+IF(NOT(ISBLANK({!CurrentSubscriptionStatus})), 
+   &quot; | Status: &quot; + {!CurrentSubscriptionStatus}, 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c})), 
+   &quot; | Return Date: &quot; + {!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c}, 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c})), 
+   &quot; | Start Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c}), 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})), 
+   &quot; | End Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.Expected_End_Date__c}), 
+   &quot;&quot;) + 
+&quot; + Overage Amount of: $&quot; + TEXT(ROUND({!Get_Related_Subscription.Overage_Amount__c}, 2))</expression>
     </formulas>
     <formulas>
         <name>TotalOverage</name>
@@ -287,7 +433,7 @@
             <targetReference>Get_Related_Subscription</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Get_Related_Quote</targetReference>
+            <targetReference>Final_Decision_Check</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -318,44 +464,57 @@
             <targetReference>Add_Cycle_Overage_To_Total</targetReference>
         </connector>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Description__c</field>
             <value>
                 <elementReference>CycleOverageDescription</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Invoice_Request__c</field>
             <value>
                 <elementReference>Create_Return_Invoice_Request</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Net_Price__c</field>
             <value>
                 <elementReference>Get_Related_Subscription.Overage_Amount__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Original_Quote_Line_Product_Family_code__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.null__NotFound</elementReference>
+                <elementReference>Loop_through_Quote_Line_Items.Product_Family_Code__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Pricebook_Entry_Id__c</field>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Quantity__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>QuoteLine_Expected_End_Date__c</field>
+            <value>
+                <elementReference>Loop_through_Quote_Line_Items.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Start_Date__c</field>
+            <value>
+                <elementReference>Loop_through_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription_Product_Type__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
             </value>
         </inputAssignments>
+        <object>Invoice_Request_Line__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
@@ -367,29 +526,30 @@
             <targetReference>Loop_through_Quote_Line_Items</targetReference>
         </connector>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Contract__c</field>
             <value>
                 <elementReference>GetContract.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Expected_End_Date__c</field>
             <value>
                 <elementReference>GetContract.SBQQ__Quote__r.Expected_End_Date__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Expiration_Date__c</field>
             <value>
                 <elementReference>GetContract.SBQQ__Quote__r.SBQQ__ExpirationDate__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Opportunity__c</field>
             <value>
                 <elementReference>GetContract.SBQQ__Opportunity__c</elementReference>
             </value>
         </inputAssignments>
+        <object>Invoice_Request__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
@@ -401,47 +561,60 @@
             <targetReference>Update_QuoteLines_as_Invoiced</targetReference>
         </connector>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Description__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__Description__c</elementReference>
+                <elementReference>EnhancedStandardDescription</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Invoice_Request__c</field>
             <value>
                 <elementReference>Create_Return_Invoice_Request</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Net_Price__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__NetTotal__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Original_Quote_Line_Product_Family_code__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.null__NotFound</elementReference>
+                <elementReference>Loop_through_Quote_Line_Items.Product_Family_Code__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Pricebook_Entry_Id__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__PricebookEntryId__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Quantity__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>QuoteLine_Expected_End_Date__c</field>
+            <value>
+                <elementReference>Loop_through_Quote_Line_Items.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Start_Date__c</field>
+            <value>
+                <elementReference>Loop_through_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription_Product_Type__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
             </value>
         </inputAssignments>
+        <object>Invoice_Request_Line__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
@@ -453,47 +626,60 @@
             <targetReference>Add_Subscription_Overage_Amount</targetReference>
         </connector>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Description__c</field>
             <value>
                 <elementReference>OverageDescription</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Invoice_Request__c</field>
             <value>
                 <elementReference>Create_Return_Invoice_Request</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Net_Price__c</field>
             <value>
                 <elementReference>TotalOverage</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Original_Quote_Line_Product_Family_code__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.null__NotFound</elementReference>
+                <elementReference>Loop_through_Quote_Line_Items.Product_Family_Code__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Pricebook_Entry_Id__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__PricebookEntryId__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Quantity__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>QuoteLine_Expected_End_Date__c</field>
+            <value>
+                <elementReference>Loop_through_Quote_Line_Items.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Start_Date__c</field>
+            <value>
+                <elementReference>Loop_through_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription_Product_Type__c</field>
             <value>
                 <elementReference>Loop_through_Quote_Line_Items.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
             </value>
         </inputAssignments>
+        <object>Invoice_Request_Line__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
@@ -507,13 +693,14 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>null__NotFound</field>
+            <field>Contract__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>GetContract.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Invoice_Request__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
@@ -546,7 +733,7 @@
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Check_Overage_Amount_Exists</targetReference>
+            <targetReference>Store_Current_Subscription_Status</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -613,7 +800,7 @@
             </value>
         </filters>
         <filters>
-            <field>null__NotFound</field>
+            <field>OneTime_Invoiced__c</field>
             <operator>EqualTo</operator>
             <value>
                 <booleanValue>false</booleanValue>
@@ -709,14 +896,14 @@
             </value>
         </filters>
         <filters>
-            <field>null__NotFound</field>
+            <field>OneTime_Invoiced__c</field>
             <operator>EqualTo</operator>
             <value>
                 <booleanValue>false</booleanValue>
             </value>
         </filters>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>OneTime_Invoiced__c</field>
             <value>
                 <booleanValue>true</booleanValue>
             </value>
@@ -740,7 +927,7 @@
             </value>
         </filters>
         <inputAssignments>
-            <field>null__NotFound</field>
+            <field>Overage_Net_Amount_Tax__c</field>
             <value>
                 <elementReference>TotalOverageAmount</elementReference>
             </value>
@@ -748,16 +935,16 @@
         <object>SBQQ__Quote__c</object>
     </recordUpdates>
     <screens>
-        <name>Cycle_Payment_Complete_Message</name>
-        <label>Cycle Payment Complete Message</label>
+        <name>Cycle_Payment_Complete_Screen</name>
+        <label>Cycle Payment Complete Screen</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <fields>
-            <name>CyclePaymentCompleteText</name>
-            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Paid during the 28-day cycle — no invoice needed.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <name>Cycle_Payment_Complete_Message</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;All subscriptions were paid during the 28-day cycle — no invoice needed.&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -850,13 +1037,40 @@
             <targetReference>GetContract</targetReference>
         </connector>
     </start>
-    <status>InvalidDraft</status>
+    <status>Obsolete</status>
+    <variables>
+        <name>AllSubscriptionsAlreadyInvoiced</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>true</booleanValue>
+        </value>
+    </variables>
     <variables>
         <name>ContractRelatedSubscriptionIds</name>
         <dataType>String</dataType>
         <isCollection>true</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>CurrentSubscriptionStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>HasInvoicesCreated</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
     </variables>
     <variables>
         <name>recordId</name>

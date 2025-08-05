@@ -44,6 +44,10 @@
             <fullName>Manufacturer</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>Supplier</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>Industry</picklist>
@@ -105,10 +109,6 @@
         </values>
         <values>
             <fullName>Computer %26 Network Security</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Computer Hardware</fullName>
             <default>false</default>
         </values>
         <values>
@@ -321,10 +321,6 @@
         </values>
         <values>
             <fullName>Paper %26 Forest Products</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pharmaceuticals</fullName>
             <default>false</default>
         </values>
         <values>
@@ -546,19 +542,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>NTX</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>PST</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>QST</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>RST</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -573,19 +557,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>NTX</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>PST</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>QST</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>RST</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -631,7 +603,23 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Consultant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>End-User</fullName>
             <default>false</default>
         </values>
         <values>
@@ -639,7 +627,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Integrator%2FOEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturer</fullName>
             <default>false</default>
         </values>
         <values>

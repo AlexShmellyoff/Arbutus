@@ -4,7 +4,6 @@
     <label>Tax Code 2</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
@@ -26,19 +25,22 @@
                 <label>PST</label>
             </value>
             <value>
-                <fullName>RST</fullName>
+                <fullName>NTX</fullName>
                 <default>false</default>
-                <label>RST</label>
+                <isActive>false</isActive>
+                <label>NTX</label>
             </value>
             <value>
                 <fullName>QST</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>QST</label>
             </value>
             <value>
-                <fullName>NTX</fullName>
+                <fullName>RST</fullName>
                 <default>false</default>
-                <label>NTX</label>
+                <isActive>false</isActive>
+                <label>RST</label>
             </value>
         </valueSetDefinition>
     </valueSet>

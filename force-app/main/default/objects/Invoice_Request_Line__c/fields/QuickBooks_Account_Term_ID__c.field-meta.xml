@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuickBooks_Account_Term_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    UPPER(TRIM(Related_Account_Term_Code__c)),
+    &quot;CONVERSION&quot;, 7,
+    &quot;DUE ON RECEIPT&quot;, 1,
+    &quot;NET 15&quot;, 2,
+    &quot;NET 30&quot;, 3,
+    &quot;NET 45&quot;, 5,
+    &quot;NET 60&quot;, 4,
+    &quot;NET 90&quot;, 6,
+    NULL
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>QuickBooks Account Term ID</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

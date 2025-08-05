@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Arbutus_Sales_Group_Opportunity_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Arbutus Sales Group Opportunity Sharing</label>
+        <sharedTo>
+            <group>ArbutusSalesteam</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>AWAL Distributor,Arbutus West Agency Ltd.</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Fundamentals_Opportunity_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Fundamentals Opportunity Sharing</label>
+        <sharedTo>
+            <group>Fundamentals_Sales_Team</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Fundamental Power Solutions</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

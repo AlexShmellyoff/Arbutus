@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The Price Book associated with this web quote. --></help>
+    <label>価格表</label>
+    <name>SBQQ__PriceBook__c</name>
+    <relationshipLabel>Web 見積</relationshipLabel>
+</CustomFieldTranslation>

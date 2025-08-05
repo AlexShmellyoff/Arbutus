@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_must_be_selected_before_creating</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.Name = &quot;Fundamental Quotes&quot;,
+ISBLANK(SBQQ__Account__c)
+)</errorConditionFormula>
+    <errorMessage>Account must be selected before creating a quote.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arbutus_Products</fullName>
+    <active>true</active>
+    <description>The Arbutus Products record type is restricted to the Arbutus Group business unit and system administrators.</description>
+    <label>Arbutus Products</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>3-Phase Inverter over 100kw %3E%3E Solar Inverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AV Power Conditioners with Battery %3E%3E Audio-Video Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Economizers %3E%3E Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Continuity Software %3E%3E Data Center Infrastructure Management %28DCIM%29 Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bypass Panels %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Close Coupled Air Conditioners %3E%3E Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Cables and Devices %3E%3E Networking and Cable Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Containment and Air Distribution %3E%3E Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooling Distribution and Piping %3E%3E Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooling Modules %3E%3E Prefabricated Data Center Modules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Battery Systems %3E%3E DC Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Distribution Systems %3E%3E DC Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Integrated Power Systems %3E%3E DC Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Power Systems %3E%3E DC Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Rack Mounted Rectifier Subsystems %3E%3E DC Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center Containment %3E%3E Racks and Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center and Facility 3 Phase UPS %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filters %26 Harmonic Conditioners %3E%3E Surge Protection and Power Conditioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home %26 Office Electronics %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home UPS %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Modules %3E%3E Prefabricated Data Center Modules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial UPS %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InfraStruXure Power Generation %3E%3E Power Generation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Install %3E%3E Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCD Monitors and KVM Switches %3E%3E Racks and Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modular Systems %3E%3E Data Centers and Server Rooms and Network Closets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitoring and Management %3E%3E Data Center Infrastructure Management %28DCIM%29 Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network and Server %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Networking Cables and Adapters %3E%3E Networking and Cable Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Frame Racks %3E%3E Racks and Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operate %3E%3E Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations %3E%3E Data Center Infrastructure Management %28DCIM%29 Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Optimize %3E%3E Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plan %3E%3E Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning and Modelling %3E%3E Data Center Infrastructure Management %28DCIM%29 Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Power %3E%3E Portable Power Station</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Modules %3E%3E Prefabricated Data Center Modules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>President Rack and Accessories %3E%3E Racks and Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Based Services %3E%3E Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Services %3E%3E Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rack Power Distribution %3E%3E Power Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rack and Enclosure Accessories %3E%3E Racks and Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Racks and Enclosures %3E%3E Racks and Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renew %3E%3E Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Room Power Distribution %3E%3E Power Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Row 3 Phase Power Distribution %3E%3E Power Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE Motors %26 Drives %3E%3E Motor %26 Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security and Environmental Appliances %3E%3E Security and Environmental Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensors %2F Cameras %2F Licenses %2F Accessories %3E%3E Security and Environmental Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software Services %3E%3E Data Center Infrastructure Management %28DCIM%29 Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Applications %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surge Protection Devices %3E%3E Surge Protection and Power Conditioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Switches %3E%3E Power Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS Management %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS Replacement Batteries %3E%3E Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uniflair Chillers %3E%3E Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uniflair Room Cooling %3E%3E Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown %3E%3E Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Class__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RR</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Family</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>ANSER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VCM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Make__c</picklist>
+        <values>
+            <fullName>AVTRON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CABLE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COOPER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRESTCHIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CROMPTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOADTEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLASTIC CRATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLATE 8589 3K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RENTALOAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMPLEX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPARE PARTS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Manufacturer__c</picklist>
+        <values>
+            <fullName>Arbutus West Agency Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avtron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering%2FDesign Feel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fundamental Power Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hitachi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I-Gard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rex Power Magnetics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schneider Electric</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sprecher %2B Schuh</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Model__c</picklist>
+        <values>
+            <fullName>170SHT-122</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>170SHT-152</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8SHT-601</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8SHT-801</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CR0%2E7-480</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CR1%2E0-480</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E1016-575</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K575A-600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K675A-600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KCS100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPC-100C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPH-400</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LPH100-600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARS-1000-600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORTHSTAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OLP6-2020-600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XE189-100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XE191-255</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QuantityUnitOfMeasure</picklist>
+        <values>
+            <fullName>Each</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AssetAmendmentBehavior__c</picklist>
+        <values>
+            <fullName>Allow Refund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Default</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AssetConversion__c</picklist>
+        <values>
+            <fullName>One per quote line</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>One per unit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BillingFrequency__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Semiannual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BillingType__c</picklist>
+        <values>
+            <fullName>Advance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arrears</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__BlockPricingField__c</picklist>
+        <values>
+            <fullName>Quantity</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ChargeType__c</picklist>
+        <values>
+            <fullName>One-Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationEvent__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationFieldSet__c</picklist>
+        <values>
+            <fullName>OptionConfiguration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__ConfigurationType__c</picklist>
+        <values>
+            <fullName>Allowed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disabled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__CustomerCommunityAvailability__c</picklist>
+        <values>
+            <fullName>Always</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Never</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only when already owned</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__DefaultPricingTable__c</picklist>
+        <values>
+            <fullName>Segmented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__DynamicPricingConstraint__c</picklist>
+        <values>
+            <fullName>List price is maximum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List price is minimum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__GenerateContractedPrice__c</picklist>
+        <values>
+            <fullName>Discount Schedule</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Generate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__OptionLayout__c</picklist>
+        <values>
+            <fullName>Sections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tabs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wizard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__OptionSelectionMethod__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Click</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__PricingMethod__c</picklist>
+        <values>
+            <fullName>Block</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Percent Of Total</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionBase__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>List</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Net</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionCategory__c</picklist>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionPricing__c</picklist>
+        <values>
+            <fullName>Fixed Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Percent Of Total</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__SubscriptionType__c</picklist>
+        <values>
+            <fullName>Evergreen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One-time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Renewable%2FEvergreen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__TermDiscountLevel__c</picklist>
+        <values>
+            <fullName>Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Category__c</picklist>
+        <values>
+            <fullName>Audio-Video Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Center Infrastructure Management %28DCIM%29 Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Centers and Server Rooms and Network Closets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor %26 Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Networking and Cable Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Power Station</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Generation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prefabricated Data Center Modules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Racks and Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security and Environmental Monitoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solar Inverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surge Protection and Power Conditioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uninterruptible Power Supply %28UPS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

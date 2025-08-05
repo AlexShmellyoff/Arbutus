@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Tech support and Equipment categories automatically added to every fundamental quote</description>
+    <label>Fundamenta Predefined Note</label>
+    <pluralLabel>Fundamenta Predefined Notes</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

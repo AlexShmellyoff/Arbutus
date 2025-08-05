@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Province --></label>
+    <name>Province__c</name>
+    <picklistValues>
+        <masterLabel>Alberta</masterLabel>
+        <translation><!-- Alberta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>British Columbia</masterLabel>
+        <translation><!-- British Columbia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manitoba</masterLabel>
+        <translation><!-- Manitoba --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Brunswick</masterLabel>
+        <translation><!-- New Brunswick --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Newfoundland and Labrador</masterLabel>
+        <translation><!-- Newfoundland and Labrador --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northwest Territories</masterLabel>
+        <translation><!-- Northwest Territories --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nova Scotia</masterLabel>
+        <translation><!-- Nova Scotia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nunavut</masterLabel>
+        <translation><!-- Nunavut --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ontario</masterLabel>
+        <translation><!-- Ontario --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prince Edward Island</masterLabel>
+        <translation><!-- Prince Edward Island --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quebec</masterLabel>
+        <translation><!-- Quebec --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saskatchewan</masterLabel>
+        <translation><!-- Saskatchewan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yukon</masterLabel>
+        <translation><!-- Yukon --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

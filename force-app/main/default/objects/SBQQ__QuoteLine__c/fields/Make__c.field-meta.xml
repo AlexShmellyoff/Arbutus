@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Make__c</fullName>
+    <label>Make</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AVTRON</fullName>
+                <default>false</default>
+                <label>AVTRON</label>
+            </value>
+            <value>
+                <fullName>SIMPLEX</fullName>
+                <default>false</default>
+                <label>SIMPLEX</label>
+            </value>
+            <value>
+                <fullName>CRESTCHIC</fullName>
+                <default>false</default>
+                <label>CRESTCHIC</label>
+            </value>
+            <value>
+                <fullName>LOADTEC</fullName>
+                <default>false</default>
+                <label>LOADTEC</label>
+            </value>
+            <value>
+                <fullName>PLASTIC CRATE</fullName>
+                <default>false</default>
+                <label>PLASTIC CRATE</label>
+            </value>
+            <value>
+                <fullName>CABLE</fullName>
+                <default>false</default>
+                <label>CABLE</label>
+            </value>
+            <value>
+                <fullName>COOPER</fullName>
+                <default>false</default>
+                <label>COOPER</label>
+            </value>
+            <value>
+                <fullName>CROMPTON</fullName>
+                <default>false</default>
+                <label>CROMPTON</label>
+            </value>
+            <value>
+                <fullName>SPARE PARTS</fullName>
+                <default>false</default>
+                <label>SPARE PARTS</label>
+            </value>
+            <value>
+                <fullName>PLATE 8589 3K</fullName>
+                <default>false</default>
+                <label>PLATE 8589 3K</label>
+            </value>
+            <value>
+                <fullName>RENTALOAD</fullName>
+                <default>false</default>
+                <label>RENTALOAD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

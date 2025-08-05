@@ -1,0 +1,45 @@
+<apex:page contentType="text/xml" showHeader="false" sidebar="false"
+           standardController="SBQQ__Quote__c"
+           extensions="ArbutusServiceLineTemplate">
+<!-- ─────── Top “Quote Details for pricing” page ─────── -->
+
+  <block font-size="18pt" font-weight="bold" space-after="12pt">
+    Quote Details for pricing.
+  </block>
+
+  <!-- Installed Site -->
+    <apex:outputPanel layout="none" rendered="{!installedSite.size > 0}">
+        <block font-size="12pt" font-weight="bold" padding-bottom="5pt">Installed Site:</block>
+        <apex:repeat value="{!installedSite}" var="iS">
+            <block color="#4a4392">
+            <apex:outputText value="{!iS}"/>
+            </block>
+        </apex:repeat>
+    </apex:outputPanel>
+
+    <!-- Proposal Overview: -->
+    <apex:outputPanel layout="none" rendered="{!proposalOverview.size > 0}">
+        <block font-size="12pt" font-weight="bold" padding-bottom="5pt" padding-top="10">Proposal Overview:</block>
+        <apex:repeat value="{!proposalOverview}" var="pO">
+            <block >
+            <apex:outputText value="{!pO}"/>
+            </block>
+        </apex:repeat>
+    </apex:outputPanel>
+
+    <!-- Service plan Period -->
+    <block font-size="12pt" font-weight="bold" padding-bottom="5pt" padding-top="15pt">
+        Service Plan Period: {!quoteStartAndEndDate}
+    </block>
+
+    <apex:outputPanel layout="none" rendered="{!serviceIncluded.size > 0}">
+        <block font-size="12pt" font-weight="bold" padding-bottom="5pt" padding-top="10">Proposal Overview:</block>
+        <apex:repeat value="{!serviceIncluded}" var="sI">
+            <block >
+                &#160;&#160;&#160;&#x2022;&#160;{!sI}
+            
+            </block>
+        </apex:repeat>
+    </apex:outputPanel>
+
+</apex:page>

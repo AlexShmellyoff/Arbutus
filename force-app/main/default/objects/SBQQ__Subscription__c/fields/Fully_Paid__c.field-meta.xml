@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fully_Paid__c</fullName>
+    <description>Indicates the associated QuickBooks Invoice has been paid in full</description>
+    <formula>AND(
+    NOT(ISNULL(Quickbooks_Invoice_Balance__c)),
+    Quickbooks_Invoice_Balance__c = 0
+)</formula>
+    <inlineHelpText>Indicates the associated QuickBooks Invoice has been paid in full</inlineHelpText>
+    <label>Fully Paid</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

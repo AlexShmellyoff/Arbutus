@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manager_Required_User</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+(ISBLANK(ManagerId)), 
+(NOT(Profile.Name=&apos;System Administrator&apos;))
+)</errorConditionFormula>
+    <errorDisplayField>ManagerId</errorDisplayField>
+    <errorMessage>This field is required for non-admin user</errorMessage>
+</ValidationRule>

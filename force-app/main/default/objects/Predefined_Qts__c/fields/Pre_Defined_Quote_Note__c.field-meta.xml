@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pre_Defined_Quote_Note__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Pre Defined Quote Note</label>
+    <referenceTo>Pre_Defined_Quote_Notes__c</referenceTo>
+    <relationshipLabel>Predefined+Qts</relationshipLabel>
+    <relationshipName>Predefined_Qts</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

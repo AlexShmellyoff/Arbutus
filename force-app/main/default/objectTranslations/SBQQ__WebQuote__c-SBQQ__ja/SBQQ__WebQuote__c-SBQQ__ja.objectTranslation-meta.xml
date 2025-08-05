@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Web 見積</value>
+    </caseValues>
+    <nameFieldLabel>見積番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage>最初のセグメント期間の終了日は、見積開始日と見積終了日の間にある必要があります。</errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date_WQ</name>
+    </validationRules>
+    <webLinks>
+        <label>品目の編集</label>
+        <name>SBQQ__Edit_Lines</name>
+    </webLinks>
+    <webLinks>
+        <label>ドキュメントを作成</label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>価格を更新</label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label>価格を更新</label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

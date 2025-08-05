@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <label>Sub Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Solar Inverter</fullName>
+                <default>false</default>
+                <label>Solar Inverter</label>
+            </value>
+            <value>
+                <fullName>Cooling</fullName>
+                <default>false</default>
+                <label>Cooling</label>
+            </value>
+            <value>
+                <fullName>Audio-Video Solutions</fullName>
+                <default>false</default>
+                <label>Audio-Video Solutions</label>
+            </value>
+            <value>
+                <fullName>Data Center Infrastructure Management (DCIM) Software</fullName>
+                <default>false</default>
+                <label>Data Center Infrastructure Management (DCIM) Software</label>
+            </value>
+            <value>
+                <fullName>Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>Networking and Cable Solutions</fullName>
+                <default>false</default>
+                <label>Networking and Cable Solutions</label>
+            </value>
+            <value>
+                <fullName>Prefabricated Data Center Modules</fullName>
+                <default>false</default>
+                <label>Prefabricated Data Center Modules</label>
+            </value>
+            <value>
+                <fullName>Racks and Accessories</fullName>
+                <default>false</default>
+                <label>Racks and Accessories</label>
+            </value>
+            <value>
+                <fullName>DC Systems</fullName>
+                <default>false</default>
+                <label>DC Systems</label>
+            </value>
+            <value>
+                <fullName>Surge Protection and Power Conditioning</fullName>
+                <default>false</default>
+                <label>Surge Protection and Power Conditioning</label>
+            </value>
+            <value>
+                <fullName>Power Generation</fullName>
+                <default>false</default>
+                <label>Power Generation</label>
+            </value>
+            <value>
+                <fullName>Data Centers and Server Rooms and Network Closets</fullName>
+                <default>false</default>
+                <label>Data Centers and Server Rooms and Network Closets</label>
+            </value>
+            <value>
+                <fullName>Portable Power Station</fullName>
+                <default>false</default>
+                <label>Portable Power Station</label>
+            </value>
+            <value>
+                <fullName>Power Distribution</fullName>
+                <default>false</default>
+                <label>Power Distribution</label>
+            </value>
+            <value>
+                <fullName>Motor &amp; Drives</fullName>
+                <default>false</default>
+                <label>Motor &amp; Drives</label>
+            </value>
+            <value>
+                <fullName>Security and Environmental Monitoring</fullName>
+                <default>false</default>
+                <label>Security and Environmental Monitoring</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

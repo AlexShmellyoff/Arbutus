@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quickbook_Invoice_Partly_Paid__c</fullName>
+    <formula>AND(Quickbooks_Invoice_Balance__c &gt; 0, Quickbooks_Invoice_Balance__c &lt; SBQQ__Quote__r.Net_Amount_Tax__c)</formula>
+    <label>Quickbook Invoice Partly Paid</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

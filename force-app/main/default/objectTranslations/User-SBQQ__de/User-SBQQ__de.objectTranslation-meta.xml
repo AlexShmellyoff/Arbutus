@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>User Profile Layout</layout>
+        <layoutType>UserAlt</layoutType>
+        <sections>
+            <label><!-- Background --></label>
+            <section>Background</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Business Unit is a required field and must be populated before saving this record. --></errorMessage>
+        <name>Business_Unit_Required_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This field is required for non-admin user --></errorMessage>
+        <name>Manager_Required_User</name>
+    </validationRules>
+    <webLinks>
+        <label>Thema auswählen</label>
+        <name>SBQQ__Select_Theme</name>
+    </webLinks>
+</CustomObjectTranslation>

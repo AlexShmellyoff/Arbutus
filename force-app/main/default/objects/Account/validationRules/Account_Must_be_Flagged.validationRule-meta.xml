@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Must_be_Flagged</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(OR(Fundamental_Account__c = TRUE, Arbutus_Account__c = TRUE))</errorConditionFormula>
+    <errorMessage>Please check off if the account is Fundamental or Arbutus</errorMessage>
+</ValidationRule>

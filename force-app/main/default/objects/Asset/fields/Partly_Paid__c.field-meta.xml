@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partly_Paid__c</fullName>
+    <description>Indicates the associated QuickBooks Invoice has received partial payment</description>
+    <formula>AND(Quickbooks_Invoice_Balance__c &gt; 0, Quickbooks_Invoice_Balance__c &lt; Price )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates the associated QuickBooks Invoice has received partial payment</inlineHelpText>
+    <label>Partly Paid</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

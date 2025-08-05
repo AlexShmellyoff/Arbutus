@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Unit_Required_User</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(TEXT(Business_Unit__c))</errorConditionFormula>
+    <errorDisplayField>EmailPreferences</errorDisplayField>
+    <errorMessage>Business Unit is a required field and must be populated before saving this record.</errorMessage>
+</ValidationRule>

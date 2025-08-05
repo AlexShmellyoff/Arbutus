@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Segment</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  CONTAINS(RecordType.Name, &quot;Fundamental&quot;),
+  SBQQ__Account__r.Fundamental_Account__c,
+  OR(
+    ISBLANK(TEXT(SBQQ__Account__r.Tax_Code_1__c)),
+    ISBLANK(SBQQ__Account__r.BillingState),
+    ISBLANK(SBQQ__Account__r.BillingCountry),
+    ISBLANK(SBQQ__Account__r.ShippingState),
+    ISBLANK(SBQQ__Account__r.ShippingCountry)
+  )
+)</errorConditionFormula>
+    <errorMessage>The account selected is not flagged as a Fundamental Account. Please go into the record and review the Fundamental Account Checkbox.
+
+You must populate the Tax Code, Billing State, Billing Country, Shipping State and Shipping Country</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ex_End_Date_Than_Quote_Exp_Date__c</fullName>
+    <formula>Expected_End_Date__c &gt; SBQQ__Quote__r.Expected_End_Date__c</formula>
+    <label>Ex End Date &gt; Than Quote Exp Date</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

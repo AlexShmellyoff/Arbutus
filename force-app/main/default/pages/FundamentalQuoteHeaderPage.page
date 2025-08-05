@@ -1,0 +1,52 @@
+<apex:page contentType="text/xml" showHeader="false" sidebar="false"
+           standardController="SBQQ__Quote__c"
+           extensions="FundamentalQuoteTemplateHeader">
+
+  <block font-size="7pt" font-family="Helvetica">
+
+    <!-- Discount Row -->
+    <table width="100%" table-layout="fixed" font-size="7pt" border-collapse="collapse">
+      <table-column column-width="66%"/>
+      <table-column column-width="34%"/>
+      
+      <table-body>
+
+        <!-- Discount Given -->
+        <table-row border-bottom="solid 1px #000000">
+          <table-cell number-columns-spanned="2" padding-bottom="2pt">
+            <block>
+              {!discountHeader}
+            </block>
+          </table-cell>
+        </table-row>
+
+        <!-- Quotation Notes & Terms -->
+        <table-row>
+          <!-- Notes -->
+          <table-cell padding-top="2pt" vertical-align="top">
+            <block font-weight="bold">{!notesHeader}</block>
+            
+            <apex:repeat value="{!orderedNoteDescriptions}" var="noteText">
+                <block>{!noteText}</block>
+              </apex:repeat>
+              <apex:repeat value="{!noteList}" var="line">
+              <block>{!line}</block>
+            </apex:repeat>
+          </table-cell>
+
+          <!-- Terms -->
+          <table-cell padding-top="2pt" vertical-align="top" text-align="left">
+            <block><inline font-weight="bold">TERMS:</inline>
+            {!quote.SBQQ__PaymentTerms__c}</block>
+            <block><inline font-weight="bold">REF:</inline>
+              {!quote.REF__c}</block>
+              <block><inline font-weight="bold">ID:</inline>
+                {!quote.SBQQ__PrimaryContact__r.Name}</block>
+          </table-cell>
+        </table-row>
+
+      </table-body>
+    </table>
+
+  </block>
+</apex:page>

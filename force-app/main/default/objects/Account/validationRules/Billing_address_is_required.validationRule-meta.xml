@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_address_is_required</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK( BillingAddress )</errorConditionFormula>
+    <errorMessage>Billing address is required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,207 @@
+<apex:page contentType="text/xml" showHeader="false" sidebar="false"
+           standardController="SBQQ__Quote__c"
+           extensions="ArbutusQuoteLineRendererController">
+
+  <block font-size="10pt">
+
+    <!-- 🔽 Heading with Account Name -->
+    <block font-weight="bold" font-size="18pt" color="#000000" text-align="left" space-after="8pt">
+        {!quote.SBQQ__Account__r.Name}
+      </block>
+  
+      <!-- Table starts -->
+      <table width="100%">
+      <table-column column-width="15%"/>
+      <table-column column-width="50%"/>
+      <table-column column-width="5%"/>
+      <table-column column-width="15%"/>
+      <table-column column-width="15%"/>
+
+      <table-header border-top="solid 1px #000000" border-bottom="solid 1px #000000">
+        <table-row font-weight="bold">
+          <table-cell padding-top="3pt" padding-bottom="3pt"><block>Category</block></table-cell>
+          <table-cell padding-top="3pt" padding-bottom="3pt"><block>Item</block></table-cell>
+          <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right"><block>Qty</block></table-cell>
+          <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right"><block>Price</block></table-cell>
+          <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right" padding-right="5pt"><block>Total</block></table-cell>
+        </table-row>
+      </table-header>
+
+      <table-body>
+        <apex:repeat value="{!groupedLines}" var="group">
+          <!-- Parent Product -->
+          <table-row >
+            <table-cell padding-top="3pt" padding-bottom="3pt">
+                <block>Product</block>
+            </table-cell>
+            <table-cell padding-top="3pt" padding-bottom="3pt">
+                <block font-weight="bold">{!group['name']}</block>
+            </table-cell>
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                <block>{!group['qty']}</block>
+            </table-cell>
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+              <block>
+                <apex:outputText value="{0, number, $###,###,##0.00}">
+                  <apex:param value="{!group['price']}" />
+                </apex:outputText>
+              </block>
+            </table-cell>
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+              <block font-weight="bold">
+                <inline padding-right="5pt">
+                  <apex:outputText value="{0, number, $###,###,##0.00}">
+                    <apex:param value="{!group['total']}" />
+                  </apex:outputText>
+                </inline>
+              </block>
+            </table-cell>
+          </table-row>
+
+          <!-- Sub Items -->
+          <apex:repeat value="{!group['subItems']}" var="item">
+            <table-row background-color="#F0FCFF">
+              <table-cell padding-top="3pt" padding-bottom="3pt">
+                <block>Product / Price Adder</block>
+            </table-cell>
+            <table-cell padding-top="3pt" padding-bottom="3pt">
+                <block font-weight="bold">
+                    <inline color="#6C757D">{!item['name']}</inline>
+                  <inline font-style="italic" color="#999999"> Optional</inline>
+                </block>
+              </table-cell>
+              <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                <block>{!item['qty']}</block>
+            </table-cell>
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+              <block>
+                <apex:outputText value="{0, number, $###,###,##0.00}">
+                  <apex:param value="{!item['price']}" />
+                </apex:outputText>
+              </block>
+            </table-cell>
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+              <block font-weight="bold">
+                <inline padding-right="5pt">
+                  <apex:outputText value="{0, number, $###,###,##0.00}">
+                    <apex:param value="{!item['total']}" />
+                  </apex:outputText>
+                </inline>
+              </block>
+              <block>
+                <inline padding-right="5pt">Selected</inline>
+              </block>
+            </table-cell>
+            </table-row>
+          </apex:repeat>
+        </apex:repeat>
+        <!-- Empty Spacer Row -->
+        <table-row border-top="solid 1px #000000">
+          <table-cell number-columns-spanned="5" padding-top="6pt" padding-bottom="6pt">
+            <block>&#160;</block> <!-- Non-breaking space to keep it from collapsing -->
+          </table-cell>
+        </table-row>
+        <!-- Final Subtotal -->
+        <table-row font-weight="bold">
+          <table-cell number-columns-spanned="3" text-align="right" padding-right="5pt" padding-bottom="3pt" padding-top="3pt">
+            <block>Total One-Time</block>
+          </table-cell>
+          <table-cell number-columns-spanned="2" border-bottom="solid 1px #000000" border-top="solid 1px #000000" text-align="right" padding-right="5pt" padding-bottom="3pt" padding-top="3pt">
+            <block>
+              <apex:outputText value="{0, number, $###,###,##0.00}">
+                <apex:param value="{!overallTotal}" />
+              </apex:outputText> CAD
+            </block>
+          </table-cell>
+        </table-row>
+        <!-- Empty Spacer Row -->
+        <table-row >
+          <table-cell number-columns-spanned="5" padding-top="6pt" padding-bottom="6pt">
+            <block>&#160;</block> <!-- Non-breaking space to keep it from collapsing -->
+          </table-cell>
+        </table-row>
+
+        <table-row>
+          <table-cell number-columns-spanned="5">
+            <block font-size="12pt" font-weight="bold" text-align="left" padding-bottom="20pt">
+              <inline>Cost Breakdown</inline>
+            </block>
+          </table-cell>
+        </table-row>
+
+        <table-row border-bottom="solid 1px #000000">
+          <table-cell number-columns-spanned="3">
+            <block font-weight="bold" text-align="left" padding-bottom="3pt">
+              <inline padding-left="5pt">Category</inline>
+            </block>
+          </table-cell>
+          <table-cell number-columns-spanned="2">
+            <block font-weight="bold" text-align="right" padding-bottom="3pt">
+              <inline padding-right="5pt">One-Time Fees</inline>
+            </block>
+          </table-cell>
+        </table-row>
+
+        <table-row >
+          <table-cell number-columns-spanned="3" padding-top="7pt" padding-bottom="7pt">
+            <block>
+              <inline padding-left="5pt">Product</inline>
+            </block>
+          </table-cell>
+          <table-cell number-columns-spanned="2" padding-top="7pt" padding-bottom="7pt">
+            <block text-align="right" >
+              <inline padding-right="5pt">
+                <apex:outputText value="{0, number, $###,###,##0.00}">
+                  <apex:param value="{!productTotal}" />
+                </apex:outputText> 
+              </inline>
+            </block>
+          </table-cell>
+        </table-row>
+
+        <table-row border-bottom="solid 1px #999999">
+          <table-cell number-columns-spanned="3" padding-bottom="7pt">
+            <block>
+              <inline padding-left="5pt">Product / Price adder</inline>
+            </block>
+          </table-cell>
+          <table-cell number-columns-spanned="2" padding-bottom="7pt">
+            <block text-align="right" >
+              <inline padding-right="5pt">
+                <apex:outputText value="{0, number, $###,###,##0.00}">
+                  <apex:param value="{!adderTotal}" />
+                </apex:outputText> 
+              </inline>
+            </block>
+          </table-cell>
+        </table-row>
+
+        <table-row>
+          <table-cell number-columns-spanned="3" padding-top="5pt">
+            <block>
+              <inline padding-left="5pt" font-weight="bold">Total</inline>
+            </block>
+          </table-cell>
+          <table-cell number-columns-spanned="2" padding-top="5pt">
+            <block text-align="right" >
+              <inline padding-right="5pt" font-weight="bold">
+                <apex:outputText value="{0, number, $###,###,##0.00}">
+                  <apex:param value="{!overallTotal}" />
+                </apex:outputText> CAD
+              </inline>
+            </block>
+          </table-cell>
+        </table-row>
+
+
+        <!-- Empty Spacer Row -->
+        <table-row >
+          <table-cell number-columns-spanned="5" padding-top="6pt" padding-bottom="6pt">
+            <block>&#160;&#160;</block> <!-- Non-breaking space to keep it from collapsing -->
+          </table-cell>
+        </table-row>
+        
+      </table-body>
+    </table>
+  </block>
+</apex:page>

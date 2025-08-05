@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overage_Amount__c</fullName>
+    <formula>IF(
+  Overage_Days__c &gt; 0,
+  CASE(
+    Overage_Days__c,
+    1, Daily__c,
+    2, Daily__c,
+    3, Week_7_DAY__c,
+    4, Week_7_DAY__c,
+    5, Week_7_DAY__c,
+    6, Week_7_DAY__c,
+    7, Week_7_DAY__c,
+    8, Week_7_DAY__c,
+    9, Week_7_DAY__c + (Week_7_DAY__c / 5),
+    10, Week_7_DAY__c + (Week_7_DAY__c / 5) * 2,
+    11, Week_7_DAY__c + (Week_7_DAY__c / 5) * 3,
+    12, Week_7_DAY__c + (Week_7_DAY__c / 5) * 4,
+    13, Week_7_DAY__c * 2,
+    14, Week_7_DAY__c * 2,
+    15, Week_7_DAY__c * 2,
+    16, (Week_7_DAY__c * 2) + (Week_7_DAY__c / 5),
+    17, (Week_7_DAY__c * 2) + (Week_7_DAY__c / 5) * 2,
+    18, (Week_7_DAY__c * 2) + (Week_7_DAY__c / 5) * 3,
+    19, (Week_7_DAY__c * 2) + (Week_7_DAY__c / 5) * 4,
+    20, Week_7_DAY__c * 3,
+    21, Week_7_DAY__c * 3,
+    22, Week_7_DAY__c * 3,
+    23, Week_7_DAY__c * 3,
+    24, Week_7_DAY__c * 3,
+    25, Week_7_DAY__c * 3,
+    26, Week_7_DAY__c * 3,
+    27, Week_7_DAY__c * 3,
+    28, Week_7_DAY__c * 3,
+    29, Week_7_DAY__c * 3,
+    30, Month_28_DAY__c + (Month_28_DAY__c / 20),
+    31, Month_28_DAY__c + (Month_28_DAY__c / 20) * 2,
+    32, Month_28_DAY__c + (Month_28_DAY__c / 20) * 3,
+    33, Month_28_DAY__c + (Month_28_DAY__c / 20) * 5,
+    34, Month_28_DAY__c + (Month_28_DAY__c / 20) * 5,
+    35, Month_28_DAY__c + (Month_28_DAY__c / 20) * 5,
+    36, Month_28_DAY__c + (Month_28_DAY__c / 20) * 5,
+    37, Month_28_DAY__c + (Month_28_DAY__c / 20) * 6,
+    38, Month_28_DAY__c + (Month_28_DAY__c / 20) * 7,
+    39, Month_28_DAY__c + (Month_28_DAY__c / 20) * 8,
+    40, Month_28_DAY__c + (Month_28_DAY__c / 20) * 9,
+    41, Month_28_DAY__c + (Month_28_DAY__c / 20) * 10,
+    42, Month_28_DAY__c + (Month_28_DAY__c / 20) * 10,
+    43, Month_28_DAY__c + (Month_28_DAY__c / 20) * 10,
+    44, Month_28_DAY__c + (Month_28_DAY__c / 20) * 11,
+    45, Month_28_DAY__c + (Month_28_DAY__c / 20) * 12,
+    46, Month_28_DAY__c + (Month_28_DAY__c / 20) * 13,
+    47, Month_28_DAY__c + (Month_28_DAY__c / 20) * 14,
+    48, Month_28_DAY__c + (Month_28_DAY__c / 20) * 15,
+    49, Month_28_DAY__c + (Month_28_DAY__c / 20) * 15,
+    50, Month_28_DAY__c + (Month_28_DAY__c / 20) * 15,
+    51, Month_28_DAY__c + (Month_28_DAY__c / 20) * 16,
+    52, Month_28_DAY__c + (Month_28_DAY__c / 20) * 17,
+    53, Month_28_DAY__c + (Month_28_DAY__c / 20) * 18,
+    54, Month_28_DAY__c + (Month_28_DAY__c / 20) * 19,
+    55, Month_28_DAY__c + (Month_28_DAY__c / 20) * 20,
+    56, Month_28_DAY__c + (Month_28_DAY__c / 20) * 20,
+    57, Month_28_DAY__c + (Month_28_DAY__c / 20) * 20,
+    58, Month_28_DAY__c + (Month_28_DAY__c / 20) * 20,
+    59, Month_28_DAY__c + (Month_28_DAY__c / 20) * 21,
+    NULL
+  ) * SBQQ__Quantity__c,
+  NULL
+)</formula>
+    <label>Overage Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Install &gt;&gt; Services</fullName>
+                <default>false</default>
+                <label>Install &gt;&gt; Services</label>
+            </value>
+            <value>
+                <fullName>Operate &gt;&gt; Services</fullName>
+                <default>false</default>
+                <label>Operate &gt;&gt; Services</label>
+            </value>
+            <value>
+                <fullName>Optimize &gt;&gt; Services</fullName>
+                <default>false</default>
+                <label>Optimize &gt;&gt; Services</label>
+            </value>
+            <value>
+                <fullName>Plan &gt;&gt; Services</fullName>
+                <default>false</default>
+                <label>Plan &gt;&gt; Services</label>
+            </value>
+            <value>
+                <fullName>Product Based Services &gt;&gt; Services</fullName>
+                <default>false</default>
+                <label>Product Based Services &gt;&gt; Services</label>
+            </value>
+            <value>
+                <fullName>Professional Services &gt;&gt; Services</fullName>
+                <default>false</default>
+                <label>Professional Services &gt;&gt; Services</label>
+            </value>
+            <value>
+                <fullName>Renew &gt;&gt; Services</fullName>
+                <default>false</default>
+                <label>Renew &gt;&gt; Services</label>
+            </value>
+            <value>
+                <fullName>3-Phase Inverter over 100kw &gt;&gt; Solar Inverter</fullName>
+                <default>false</default>
+                <label>3-Phase Inverter over 100kw &gt;&gt; Solar Inverter</label>
+            </value>
+            <value>
+                <fullName>Air Economizers &gt;&gt; Cooling</fullName>
+                <default>false</default>
+                <label>Air Economizers &gt;&gt; Cooling</label>
+            </value>
+            <value>
+                <fullName>AV Power Conditioners with Battery &gt;&gt; Audio-Video Solutions</fullName>
+                <default>false</default>
+                <label>AV Power Conditioners with Battery &gt;&gt; Audio-Video Solutions</label>
+            </value>
+            <value>
+                <fullName>Business Continuity Software &gt;&gt; Data Center Infrastructure Management (DCIM) Software</fullName>
+                <default>false</default>
+                <label>Business Continuity Software &gt;&gt; Data Center Infrastructure Management (DCIM) Software</label>
+            </value>
+            <value>
+                <fullName>Bypass Panels &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>Bypass Panels &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>Close Coupled Air Conditioners &gt;&gt; Cooling</fullName>
+                <default>false</default>
+                <label>Close Coupled Air Conditioners &gt;&gt; Cooling</label>
+            </value>
+            <value>
+                <fullName>Computer Cables and Devices &gt;&gt; Networking and Cable Solutions</fullName>
+                <default>false</default>
+                <label>Computer Cables and Devices &gt;&gt; Networking and Cable Solutions</label>
+            </value>
+            <value>
+                <fullName>Containment and Air Distribution &gt;&gt; Cooling</fullName>
+                <default>false</default>
+                <label>Containment and Air Distribution &gt;&gt; Cooling</label>
+            </value>
+            <value>
+                <fullName>Cooling Distribution and Piping &gt;&gt; Cooling</fullName>
+                <default>false</default>
+                <label>Cooling Distribution and Piping &gt;&gt; Cooling</label>
+            </value>
+            <value>
+                <fullName>Cooling Modules &gt;&gt; Prefabricated Data Center Modules</fullName>
+                <default>false</default>
+                <label>Cooling Modules &gt;&gt; Prefabricated Data Center Modules</label>
+            </value>
+            <value>
+                <fullName>Data Center and Facility 3 Phase UPS &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>Data Center and Facility 3 Phase UPS &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>Data Center Containment &gt;&gt; Racks and Accessories</fullName>
+                <default>false</default>
+                <label>Data Center Containment &gt;&gt; Racks and Accessories</label>
+            </value>
+            <value>
+                <fullName>DC Battery Systems &gt;&gt; DC Systems</fullName>
+                <default>false</default>
+                <label>DC Battery Systems &gt;&gt; DC Systems</label>
+            </value>
+            <value>
+                <fullName>DC Distribution Systems &gt;&gt; DC Systems</fullName>
+                <default>false</default>
+                <label>DC Distribution Systems &gt;&gt; DC Systems</label>
+            </value>
+            <value>
+                <fullName>DC Integrated Power Systems &gt;&gt; DC Systems</fullName>
+                <default>false</default>
+                <label>DC Integrated Power Systems &gt;&gt; DC Systems</label>
+            </value>
+            <value>
+                <fullName>DC Power Systems &gt;&gt; DC Systems</fullName>
+                <default>false</default>
+                <label>DC Power Systems &gt;&gt; DC Systems</label>
+            </value>
+            <value>
+                <fullName>DC Rack Mounted Rectifier Subsystems &gt;&gt; DC Systems</fullName>
+                <default>false</default>
+                <label>DC Rack Mounted Rectifier Subsystems &gt;&gt; DC Systems</label>
+            </value>
+            <value>
+                <fullName>Filters &amp; Harmonic Conditioners &gt;&gt; Surge Protection and Power Conditioning</fullName>
+                <default>false</default>
+                <label>Filters &amp; Harmonic Conditioners &gt;&gt; Surge Protection and Power Conditioning</label>
+            </value>
+            <value>
+                <fullName>Home &amp; Office Electronics &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>Home &amp; Office Electronics &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>Home UPS &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>Home UPS &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>Industrial UPS &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>Industrial UPS &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>InfraStruXure Power Generation &gt;&gt; Power Generation</fullName>
+                <default>false</default>
+                <label>InfraStruXure Power Generation &gt;&gt; Power Generation</label>
+            </value>
+            <value>
+                <fullName>IT Modules &gt;&gt; Prefabricated Data Center Modules</fullName>
+                <default>false</default>
+                <label>IT Modules &gt;&gt; Prefabricated Data Center Modules</label>
+            </value>
+            <value>
+                <fullName>LCD Monitors and KVM Switches &gt;&gt; Racks and Accessories</fullName>
+                <default>false</default>
+                <label>LCD Monitors and KVM Switches &gt;&gt; Racks and Accessories</label>
+            </value>
+            <value>
+                <fullName>Modular Systems &gt;&gt; Data Centers and Server Rooms and Network Closets</fullName>
+                <default>false</default>
+                <label>Modular Systems &gt;&gt; Data Centers and Server Rooms and Network Closets</label>
+            </value>
+            <value>
+                <fullName>Monitoring and Management &gt;&gt; Data Center Infrastructure Management (DCIM) Software</fullName>
+                <default>false</default>
+                <label>Monitoring and Management &gt;&gt; Data Center Infrastructure Management (DCIM) Software</label>
+            </value>
+            <value>
+                <fullName>Network and Server &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>Network and Server &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>Networking Cables and Adapters &gt;&gt; Networking and Cable Solutions</fullName>
+                <default>false</default>
+                <label>Networking Cables and Adapters &gt;&gt; Networking and Cable Solutions</label>
+            </value>
+            <value>
+                <fullName>Open Frame Racks &gt;&gt; Racks and Accessories</fullName>
+                <default>false</default>
+                <label>Open Frame Racks &gt;&gt; Racks and Accessories</label>
+            </value>
+            <value>
+                <fullName>Operations &gt;&gt; Data Center Infrastructure Management (DCIM) Software</fullName>
+                <default>false</default>
+                <label>Operations &gt;&gt; Data Center Infrastructure Management (DCIM) Software</label>
+            </value>
+            <value>
+                <fullName>Planning and Modelling &gt;&gt; Data Center Infrastructure Management (DCIM) Software</fullName>
+                <default>false</default>
+                <label>Planning and Modelling &gt;&gt; Data Center Infrastructure Management (DCIM) Software</label>
+            </value>
+            <value>
+                <fullName>Portable Power &gt;&gt; Portable Power Station</fullName>
+                <default>false</default>
+                <label>Portable Power &gt;&gt; Portable Power Station</label>
+            </value>
+            <value>
+                <fullName>Power Modules &gt;&gt; Prefabricated Data Center Modules</fullName>
+                <default>false</default>
+                <label>Power Modules &gt;&gt; Prefabricated Data Center Modules</label>
+            </value>
+            <value>
+                <fullName>President Rack and Accessories &gt;&gt; Racks and Accessories</fullName>
+                <default>false</default>
+                <label>President Rack and Accessories &gt;&gt; Racks and Accessories</label>
+            </value>
+            <value>
+                <fullName>Rack and Enclosure Accessories &gt;&gt; Racks and Accessories</fullName>
+                <default>false</default>
+                <label>Rack and Enclosure Accessories &gt;&gt; Racks and Accessories</label>
+            </value>
+            <value>
+                <fullName>Rack Power Distribution &gt;&gt; Power Distribution</fullName>
+                <default>false</default>
+                <label>Rack Power Distribution &gt;&gt; Power Distribution</label>
+            </value>
+            <value>
+                <fullName>Racks and Enclosures &gt;&gt; Racks and Accessories</fullName>
+                <default>false</default>
+                <label>Racks and Enclosures &gt;&gt; Racks and Accessories</label>
+            </value>
+            <value>
+                <fullName>Room Power Distribution &gt;&gt; Power Distribution</fullName>
+                <default>false</default>
+                <label>Room Power Distribution &gt;&gt; Power Distribution</label>
+            </value>
+            <value>
+                <fullName>Row 3 Phase Power Distribution &gt;&gt; Power Distribution</fullName>
+                <default>false</default>
+                <label>Row 3 Phase Power Distribution &gt;&gt; Power Distribution</label>
+            </value>
+            <value>
+                <fullName>SE Motors &amp; Drives &gt;&gt; Motor &amp; Drives</fullName>
+                <default>false</default>
+                <label>SE Motors &amp; Drives &gt;&gt; Motor &amp; Drives</label>
+            </value>
+            <value>
+                <fullName>Security and Environmental Appliances &gt;&gt; Security and Environmental Monitoring</fullName>
+                <default>false</default>
+                <label>Security and Environmental Appliances &gt;&gt; Security and Environmental Monitoring</label>
+            </value>
+            <value>
+                <fullName>Sensors / Cameras / Licenses / Accessories &gt;&gt; Security and Environmental Monitoring</fullName>
+                <default>false</default>
+                <label>Sensors / Cameras / Licenses / Accessories &gt;&gt; Security and Environmental Monitoring</label>
+            </value>
+            <value>
+                <fullName>Software Services &gt;&gt; Data Center Infrastructure Management (DCIM) Software</fullName>
+                <default>false</default>
+                <label>Software Services &gt;&gt; Data Center Infrastructure Management (DCIM) Software</label>
+            </value>
+            <value>
+                <fullName>Special Applications &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>Special Applications &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>Surge Protection Devices &gt;&gt; Surge Protection and Power Conditioning</fullName>
+                <default>false</default>
+                <label>Surge Protection Devices &gt;&gt; Surge Protection and Power Conditioning</label>
+            </value>
+            <value>
+                <fullName>Transfer Switches &gt;&gt; Power Distribution</fullName>
+                <default>false</default>
+                <label>Transfer Switches &gt;&gt; Power Distribution</label>
+            </value>
+            <value>
+                <fullName>Uniflair Chillers &gt;&gt; Cooling</fullName>
+                <default>false</default>
+                <label>Uniflair Chillers &gt;&gt; Cooling</label>
+            </value>
+            <value>
+                <fullName>Uniflair Room Cooling &gt;&gt; Cooling</fullName>
+                <default>false</default>
+                <label>Uniflair Room Cooling &gt;&gt; Cooling</label>
+            </value>
+            <value>
+                <fullName>Unknown &gt;&gt; Unknown</fullName>
+                <default>false</default>
+                <label>Unknown &gt;&gt; Unknown</label>
+            </value>
+            <value>
+                <fullName>UPS Management &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>UPS Management &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+            <value>
+                <fullName>UPS Replacement Batteries &gt;&gt; Uninterruptible Power Supply (UPS)</fullName>
+                <default>false</default>
+                <label>UPS Replacement Batteries &gt;&gt; Uninterruptible Power Supply (UPS)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

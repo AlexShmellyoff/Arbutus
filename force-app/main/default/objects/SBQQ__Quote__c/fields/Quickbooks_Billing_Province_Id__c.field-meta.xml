@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quickbooks_Billing_Province_Id__c</fullName>
+    <description>Maps Canadian provinces from Billing State to QuickBooks province IDs. Returns 0 for unrecognized values.</description>
+    <externalId>false</externalId>
+    <formula>VALUE(CASE(SBQQ__BillingState__c,
+    &quot;Alberta&quot;, &quot;23&quot;,
+    &quot;British Columbia&quot;, &quot;24&quot;, 
+    &quot;Manitoba&quot;, &quot;26&quot;,
+    &quot;New Brunswick&quot;, &quot;39&quot;,
+    &quot;Newfoundland and Labrador&quot;, &quot;29&quot;,
+    &quot;Northwest Territories&quot;, &quot;30&quot;,
+    &quot;Nunavut&quot;, &quot;31&quot;,
+    &quot;Ontario&quot;, &quot;32&quot;,
+    &quot;Prince Edward Island&quot;, &quot;33&quot;,
+    &quot;Quebec&quot;, &quot;34&quot;,
+    &quot;Saskatchewan&quot;, &quot;36&quot;,
+    &quot;Yukon&quot;, &quot;38&quot;,
+    &quot;0&quot;
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Maps Canadian provinces from Billing State to QuickBooks province IDs. Returns 0 for unrecognized values.</inlineHelpText>
+    <label>Quickbooks Billing Province Id</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

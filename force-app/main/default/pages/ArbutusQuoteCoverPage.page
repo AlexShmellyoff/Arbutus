@@ -1,0 +1,12 @@
+<apex:page contentType="text/xml" showHeader="false" sidebar="false"
+           standardController="SBQQ__Quote__c"
+           extensions="ArbutusServiceLineTemplate">
+  <block>
+    <external-graphic
+      src="{!logoUrl}"
+        content-width="130%" 
+        content-height="125%"
+    />
+  </block>
+
+</apex:page>

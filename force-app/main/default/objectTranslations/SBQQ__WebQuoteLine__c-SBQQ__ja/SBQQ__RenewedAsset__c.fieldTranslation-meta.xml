@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Asset being renewed if this line item represents a product renewal. --></help>
+    <label>更新対象納入商品</label>
+    <name>SBQQ__RenewedAsset__c</name>
+    <relationshipLabel>見積品目</relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manufactuter__c</fullName>
+    <label>Manufacturers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rex Power Magnetics</fullName>
+                <default>false</default>
+                <label>Rex Power Magnetics</label>
+            </value>
+            <value>
+                <fullName>Hitachi Energy</fullName>
+                <default>false</default>
+                <label>Hitachi Energy</label>
+            </value>
+            <value>
+                <fullName>Powell Industries</fullName>
+                <default>false</default>
+                <label>Powell Industries</label>
+            </value>
+            <value>
+                <fullName>I-Gard</fullName>
+                <default>false</default>
+                <label>I-Gard</label>
+            </value>
+            <value>
+                <fullName>Sprecher + Schuh</fullName>
+                <default>false</default>
+                <label>Sprecher + Schuh</label>
+            </value>
+            <value>
+                <fullName>Schneider - CSSP</fullName>
+                <default>false</default>
+                <label>Schneider - CSSP</label>
+            </value>
+            <value>
+                <fullName>Avtron</fullName>
+                <default>false</default>
+                <label>Avtron</label>
+            </value>
+            <value>
+                <fullName>Fundamental Power Solutions</fullName>
+                <default>false</default>
+                <label>Fundamental Power Solutions</label>
+            </value>
+            <value>
+                <fullName>Engineering/Design Feel</fullName>
+                <default>false</default>
+                <label>Engineering/Design Feel</label>
+            </value>
+            <value>
+                <fullName>Test-1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test-1</label>
+            </value>
+            <value>
+                <fullName>Test-2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test-2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

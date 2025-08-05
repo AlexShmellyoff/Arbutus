@@ -1,0 +1,284 @@
+<apex:page contentType="text/xml" showHeader="false" sidebar="false"
+           standardController="SBQQ__Quote__c"
+           extensions="ArbutusServiceLineTemplate">
+
+  <!-- Header with account name -->
+  <block font-size="20pt" font-weight="bold" space-after="12pt">
+    Contract Renewal - {!quote.SBQQ__Account__r.Name}
+  </block>
+
+  <!-- Outer loop: each year key -->
+  <apex:repeat value="{!groupedLinesByYearsKeys}" var="yearKey">
+
+    <!-- Year section header -->
+    <block font-size="14pt" font-weight="bold" space-before="6pt" space-after="4pt">
+      Quote Details for {!yearKey}
+    </block>
+
+    <!-- Grab the inner map for this year -->
+    <apex:variable var="yearGroup" value="{!groupedLinesByYears[yearKey]}" />
+
+    <!-- Table of services for this year -->
+    <table width="100%"  font-size="9pt">
+      <table-column column-width="15%"/>
+      <table-column column-width="50%"/>
+      <table-column column-width="5%"/>
+      <table-column column-width="15%"/>
+      <table-column column-width="15%"/>
+
+      <table-header border-top="solid 1px #000000" border-bottom="solid 1px #000000">
+        <table-row font-weight="bold">
+          <table-cell padding-top="3pt" padding-bottom="3pt"><block>Category</block></table-cell>
+          <table-cell padding-top="3pt" padding-bottom="3pt"><block>Item</block></table-cell>
+          <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right"><block>Qty</block></table-cell>
+          <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right"><block>Price</block></table-cell>
+          <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right" padding-right="5pt"><block>Total</block></table-cell>
+        </table-row>
+      </table-header>
+
+      <table-body>
+        <!-- Inner loop: each group in this year -->
+        <apex:repeat value="{!yearGroup['quoteLines']}" var="group">
+            <!-- Parent Product -->
+          <table-row>
+            <!-- static “Service” label -->
+            <table-cell padding-top="3pt" padding-bottom="3pt">
+              <block>Service</block>
+            </table-cell>
+
+            <!-- Part Number from parentQuoteLine.Product__r -->
+            <table-cell padding-top="3pt" padding-bottom="3pt">
+                <!-- Part number -->
+                <block font-weight="bold">
+                    {!group['parentProduct'].SBQQ__Product__r.Part_Number__c}
+                </block>
+                <block>&#160;</block> <!-- empty line -->
+                <!-- Now spit out each line of the description on its own row -->
+                <apex:repeat value="{!group['parrentProductDescription']}" var="desc">
+                    <block>{!desc}</block>
+                </apex:repeat>
+                <block>&#160;</block> <!-- empty line -->
+
+                <block>
+                    {!group['parentProduct'].SBQQ__ProductName__c}
+                </block>
+                <block>
+                     Year: {!yearGroup['periodInfo']['duration']}
+                </block> 
+                <block>
+                    Period: {!yearGroup['periodInfo']['startDate']} - {!yearGroup['periodInfo']['endDate']}
+                </block>
+
+                <block>&#160;</block> <!-- empty line -->
+
+                <block>
+                    Manufacturer: {!group['parentProduct'].SBQQ__Product__r.Manufacturer__c}
+                </block>
+            </table-cell>
+
+            <!-- Quantity -->
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+              <block>
+                <apex:outputText value="{0,number,###,###,###,##0}">
+                  <apex:param value="{!group['parentProduct'].SBQQ__Quantity__c}"/>
+                </apex:outputText>
+              </block>
+            </table-cell>
+
+            <!-- Unit Price -->
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+              <block>
+                <apex:outputText value="{0,number,$###,###,###,##0.00}">
+                  <apex:param value="{!group['parentProduct'].SBQQ__ListPrice__c}"/>
+                </apex:outputText>
+              </block>
+            </table-cell>
+
+            <!-- Net Total -->
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+              <block font-weight="bold">
+                <apex:outputText value="{0,number,$###,###,###,##0.00}">
+                    <apex:param value="{!group['parentProduct'].SBQQ__ListPrice__c 
+                                        * group['parentProduct'].SBQQ__Quantity__c}"/>
+                </apex:outputText>
+              </block>
+            </table-cell>
+          </table-row>
+            <!-- Sub Items -->
+            <apex:repeat value="{!group['subItems']}" var="subItem">
+                <table-row>
+                    <table-cell padding-top="3pt" padding-bottom="3pt">
+                        <block>Service</block>
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt">
+                        <block font-weight="bold">
+                            <!-- Part number -->
+                            {!subItem.SBQQ__Product__r.Part_Number__c}
+                        </block>
+
+                        <block>&#160;</block> <!-- empty line -->
+                        <block>
+                            {!subItem.SBQQ__ProductName__c}
+                        </block>
+                        <block>
+                            Year: {!yearGroup['periodInfo']['duration']}
+                        </block> 
+                        <block>
+                            Period: {!yearGroup['periodInfo']['startDate']} - {!yearGroup['periodInfo']['endDate']}
+                        </block>
+
+                        <block>&#160;</block> <!-- empty line -->
+
+                        <block>
+                            Manufacturer: {!subItem.SBQQ__Product__r.Manufacturer__c}
+                        </block>
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                        <block>
+                            <apex:outputText value="{0,number,###,###,###,##0}">
+                            <apex:param value="{!subItem.SBQQ__Quantity__c}"/>
+                            </apex:outputText>
+                        </block>
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                        <block>
+                            <apex:outputText value="{0,number,$###,###,###,##0.00}">
+                            <apex:param value="{!subItem.SBQQ__ListPrice__c}"/>
+                            </apex:outputText>
+                        </block>
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                        <block font-weight="bold">
+                            <apex:outputText value="{0,number,$###,###,###,##0.00}">
+                            <apex:param value="{!subItem.SBQQ__ListPrice__c 
+                                                * subItem.SBQQ__Quantity__c}"/>
+                            </apex:outputText>
+                        </block>
+                    </table-cell>
+                </table-row>
+            </apex:repeat>
+
+        </apex:repeat>
+        <table-row border-top="solid 1px #000000">
+            <table-cell number-columns-spanned="4" padding-top="3pt" padding-bottom="3pt" text-align="right">
+                <block>One-Time Subtotal</block>
+            </table-cell>
+            <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+              <block>
+                <apex:outputText value="{0,number,$###,###,###,##0.00}">
+                  <apex:param value="{!yearGroup['subTotal']}" />
+                </apex:outputText>
+              </block>
+            </table-cell>
+        </table-row>
+      </table-body>
+    </table>
+
+  </apex:repeat>
+
+  <block padding-bottom="20pt">
+    <!-- Summary & Total One-Time -->
+    <table width="100%">
+    <!-- 70% for the summary text, 30% for the total -->
+    <table-column column-width="80%"/>
+    <table-column column-width="20%"/>
+
+    <table-body>
+        <!-- 1st row: the “Summary” label and text -->
+        <table-row>
+            <table-cell>
+                <block font-size="14pt" font-weight="bold">Summary</block>
+                <block font-size="9pt">Please contact us if you have any questions.</block>
+            </table-cell>
+
+            <table-cell>
+                <block>&#160;</block>
+            </table-cell>
+        </table-row>
+
+        <!-- 2nd row: only the right cell has the line + total -->
+        <table-row >
+            <table-cell text-align="right" >
+                <block font-size="12" font-weight="bold"  padding-bottom="3pt" padding-top="3pt">
+                    <inline padding-right="5pt">
+                        Total One-Time
+                    </inline>
+                    </block>
+            </table-cell>
+            <table-cell text-align="right" border-top="solid 1px #000000" border-bottom="solid 1px #000000">
+                <block font-weight="bold" font-size="12" padding-bottom="3pt" padding-top="3pt"> 
+                    
+                    <apex:outputText value="{0,number,$###,###,###,##0.00 CAD}">
+                        <apex:param value="{!overallTotal}" />
+                    </apex:outputText>
+                    
+                </block>
+            </table-cell>
+        </table-row>
+
+        <table-row>
+            <table-cell text-align="left" number-columns-spanned="2" padding-top="12pt" padding-bottom="12pt"> >
+                <block font-size="13pt" font-weight="bold">
+                    <inline>Cost Breakdown</inline>
+                </block>
+            </table-cell>
+        </table-row>
+
+        <table-row border-bottom="solid 1px #000000" font-size="9pt" keep-with-previous="always">
+            <table-cell >
+                <block font-weight="bold" text-align="left" padding-bottom="3pt">
+                    <inline padding-left="5pt">Category</inline>
+                </block>
+            </table-cell>
+            <table-cell text-align="right">
+                <block font-weight="bold" text-align="right" padding-bottom="3pt">
+                    <inline padding-right="5pt">One-Time Fees</inline>
+                </block>
+            </table-cell>
+        </table-row>
+
+        <table-row border-bottom="solid 1px #000000" font-size="9pt" keep-with-previous="always">
+            <table-cell >
+                <block text-align="left" padding-bottom="5pt" padding-top="5pt">
+                    <inline padding-left="5pt">Service</inline>
+                </block>
+            </table-cell>
+            <table-cell text-align="right">
+                <block text-align="right" padding-bottom="5pt" padding-top="5pt">
+                    <inline padding-right="5pt">
+                        <apex:outputText value="{0, number, $###,###,##0.00}">
+                            <apex:param value="{!overallTotal}" />
+                        </apex:outputText>
+                    </inline>
+                </block>
+            </table-cell>
+        </table-row>
+
+        <table-row font-size="9pt" keep-with-previous="always">
+            <table-cell >
+                <block text-align="left" font-weight="bold" padding-bottom="5pt" padding-top="5pt">
+                    <inline padding-left="5pt">Total</inline>
+                </block>
+            </table-cell>
+            <table-cell text-align="right">
+                <block text-align="right" font-weight="bold" padding-bottom="5pt" padding-top="5pt">
+                    <inline padding-right="5pt">
+                        <apex:outputText value="{0, number, $###,###,##0.00CAD}">
+                            <apex:param value="{!overallTotal}" />
+                        </apex:outputText>
+                    </inline>
+                </block>
+            </table-cell>
+        </table-row>
+    </table-body>
+    </table>
+  </block>
+
+    
+    <apex:repeat value="{!arbutusNotes}" var="aO">
+        <block font-size="9pt" padding-bottom="5pt" padding-top="5">
+        <apex:outputText value="{!aO}"/>
+        </block>
+    </apex:repeat>
+    
+</apex:page>

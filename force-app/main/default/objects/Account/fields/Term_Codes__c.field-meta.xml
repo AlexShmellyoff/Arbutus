@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Codes__c</fullName>
+    <label>Term Codes</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NET 15</fullName>
+                <default>false</default>
+                <label>NET 15</label>
+            </value>
+            <value>
+                <fullName>NET 30</fullName>
+                <default>false</default>
+                <label>NET 30</label>
+            </value>
+            <value>
+                <fullName>NET 45</fullName>
+                <default>false</default>
+                <label>NET 45</label>
+            </value>
+            <value>
+                <fullName>NET 60</fullName>
+                <default>false</default>
+                <label>NET 60</label>
+            </value>
+            <value>
+                <fullName>NET 90</fullName>
+                <default>false</default>
+                <label>NET 90</label>
+            </value>
+            <value>
+                <fullName>Due on receipt</fullName>
+                <default>false</default>
+                <label>Due on receipt</label>
+            </value>
+            <value>
+                <fullName>CONVERSION</fullName>
+                <default>false</default>
+                <label>CONVERSION</label>
+            </value>
+            <value>
+                <fullName>UPON RECEIPT -</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UPON RECEIPT -</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

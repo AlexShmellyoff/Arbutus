@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Presupuesto web</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Presupuestos web</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nº de presupuesto</nameFieldLabel>
+    <validationRules>
+        <errorMessage>La fecha de finalización del plazo del primer segmento debe estar entre la Fecha de inicio del presupuesto y la Fecha de finalización del presupuesto.</errorMessage>
+        <name>SBQQ__Invalid_First_Segment_Term_End_Date_WQ</name>
+    </validationRules>
+    <webLinks>
+        <label>Modificar partidas</label>
+        <name>SBQQ__Edit_Lines</name>
+    </webLinks>
+    <webLinks>
+        <label>Generar documento</label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>Actualizar precios</label>
+        <name>SBQQ__RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label>Actualizar precios</label>
+        <name>SBQQ__RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>

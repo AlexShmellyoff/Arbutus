@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RFQ_Due_Date__c</fullName>
+    <description>Date the RFQ is due for the client</description>
+    <inlineHelpText>Date the RFQ is due for the client.</inlineHelpText>
+    <label>RFQ Due Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

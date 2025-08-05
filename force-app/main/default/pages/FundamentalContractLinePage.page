@@ -1,0 +1,410 @@
+<apex:page contentType="text/xml" showHeader="false" sidebar="false"
+           standardController="SBQQ__Quote__c"
+           extensions="FundamentalQuoteContractLineTemplate">
+    <!-- Rental line items -->
+  <block font-size="7pt">
+    <!-- Rental Table starts -->
+    <table width="100%">
+        <table-column column-width="25%"/>
+        <table-column column-width="5%"/>
+        <table-column column-width="30%"/>
+        <table-column column-width="20%"/>
+        <table-column column-width="20%"/>
+        <!-- Table header starts -->
+        <table-header>
+            <table-row>
+                <table-cell number-columns-spanned="5" padding-top="20pt">
+                    <block>&#160;</block>
+                </table-cell>
+            </table-row>
+            <table-row background-color="#E3E3E3"  border="solid 1px #000000">
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        <inline padding-left="5"> RENTAL# </inline>
+                    </block>
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        QTY
+                    </block>
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        DESCRIPTION
+                    </block>
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        SERIAL#
+                    </block>
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline padding-right="5">EXTENDED AMT</inline>
+                    </block>
+                </table-cell>
+            </table-row>
+            <!-- Spacer between header and body -->
+          <table-row>
+              <table-cell number-columns-spanned="5" padding-top="-4pt" padding-bottom="-4pt">
+              <block>&#160;</block>
+              </table-cell>
+          </table-row>
+        </table-header>
+
+        <!-- Table body -->
+
+        <table-body>
+            <apex:repeat value="{!rentalQuoteLines}" var="qLine">
+                <!-- Table body rental headers -->
+            <table-row background-color="#E6E1E1" border="solid 2px #F7F2F2">
+                <table-cell padding-left="5pt" padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        #{!qLine.SBQQ__Number__c}
+                    </block>
+                </table-cell>
+
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        {!qLine.SBQQ__Quantity__c}
+                    </block>
+                </table-cell>
+
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        {!qLine.SBQQ__Description__c}
+                    </block>
+                </table-cell>
+
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        <apex:outputText value="{!qLine.SBQQ__ProductCode__c}" />
+                    </block>
+                </table-cell>
+
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <apex:outputText value="{0, number, $###,###,##0.00}">
+                            <apex:param value="{!qLine.SBQQ__NetTotal__c}" />
+                        </apex:outputText>
+                    </block>
+                </table-cell>
+            </table-row>
+
+                <!-- Table body rental details -->
+            <table-row>
+
+                <table-cell number-columns-spanned="2" padding-left="15pt" padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        DAILY: <apex:outputText value="{0, number, $###,###,##0.00}">
+                            <apex:param value="{!qLine.Daily__c}" />
+                        </apex:outputText>
+                    </block>
+                    <block padding-top="3pt" padding-bottom="3pt">
+                        &#160;
+                    </block>
+                    <block>
+                        DATE OUT: &#160;<apex:outputText value="{0,date,MMM dd/yy}">
+                        <apex:param value="{!qLine.SBQQ__StartDate__c}" />
+                      </apex:outputText>
+                    </block>
+                    <block>
+                        DATE DUE: &#160;<apex:outputText value="{0,date,MMM dd/yy}">
+                        <apex:param value="{!qLine.Expected_End_Date__c}" />
+                      </apex:outputText>
+                    </block>
+                    <block>
+                        RENTAL PERIOD: {!qLine.Duration__c} DAY(S)
+                    </block>
+                </table-cell>
+
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        WK 7-DAY: <apex:outputText value="{0, number, $###,###,##0.00}">
+                            <apex:param value="{!qLine.Week_7_DAY__c}" />
+                        </apex:outputText>
+                    </block>
+                    <block padding-top="5pt" font-weight="bold">
+                        <apex:outputText rendered="{!qLine.SBQQ__TotalDiscountAmount__c > 0}" value="DISCOUNT: {0, number, $###,###,##0.00}">
+                            <apex:param value="{!qLine.SBQQ__TotalDiscountAmount__c}" />
+                        </apex:outputText>
+                    </block>
+                </table-cell>
+
+                <table-cell number-columns-spanned="2" padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        MTH 28-D: <apex:outputText value="{0, number, $###,###,##0.00}">
+                            <apex:param value="{!qLine.Month_28_DAY__c}" />
+                        </apex:outputText>
+                    </block>
+
+                    <block padding-top="3pt" padding-bottom="3pt">
+                        &#160;
+                    </block>
+                    <block>
+                        {!qLine.Notes_Auto_Fill__c} 
+                    </block>
+                    <block>
+                        {!qLine.Note__c} 
+                    </block>
+                </table-cell>
+
+            </table-row>
+            </apex:repeat>
+
+            <table-row keep-with-previous="always">
+                <table-cell number-columns-spanned="4" padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline font-weight="bold" font-size="9">SUBTOTAL RENTALS:</inline>
+                    </block>
+
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline font-weight="bold"  font-size="9">
+                            <apex:outputText value="{0, number, $###,###,##0.00}">
+                                <apex:param value="{!rentalTotal}" />
+                            </apex:outputText>
+                        </inline>
+                    </block>
+                </table-cell>
+            </table-row>
+        </table-body>
+    </table>    
+  </block>
+  <!-- Service line items -->
+   <apex:outputPanel layout="none" rendered="{!serviceQuoteLines.size > 0}">
+    <block font-size="7pt">
+        <!-- Services Table starts -->
+        <table width="100%">
+            <table-column column-width="15%"/>
+            <table-column column-width="5%"/>
+            <table-column column-width="40%"/>
+            <table-column column-width="20%"/>
+            <table-column column-width="20%"/>
+            <!-- Table header starts -->
+            <table-header >
+                <table-row>
+                    <table-cell number-columns-spanned="5" padding-top="20pt">
+                        <block>&#160;</block>
+                    </table-cell>
+                </table-row>
+                <table-row background-color="#E3E3E3" border="solid 1px #000000">
+                    <table-cell padding-top="3pt" padding-bottom="3pt">
+                        <block>
+                            <inline padding-left="5"> SERVICE# </inline>
+                        </block>
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt">
+                        <block>
+                            QTY
+                        </block>
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt">
+                        <block>
+                            DESCRIPTION
+                        </block>
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                        <block>
+                            <inline padding-right="5">UNIT PRICE</inline>
+                        </block>
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                        <block>
+                            <inline padding-right="5">EXTENDED AMT</inline>
+                        </block>
+                    </table-cell>
+                </table-row>
+                    <!-- Spacer between header and body -->
+                <table-row>
+                    <table-cell number-columns-spanned="5" padding-top="-4pt" padding-bottom="-4pt">
+                    <block>&#160;</block>
+                    </table-cell>
+                </table-row>
+            </table-header>
+            <!-- Table body -->
+            <table-body>
+                <apex:repeat value="{!serviceQuoteLines}" var="qLine">
+                    <!-- Table body rental headers -->
+                    <table-row background-color="#E6E1E1" border="solid 2px #F7F2F2">
+                        <table-cell padding-left="5pt" padding-top="3pt" padding-bottom="3pt">
+                            <block>
+                                #{!qLine.SBQQ__Number__c}
+                            </block>
+                        </table-cell>
+
+                        <table-cell padding-top="3pt" padding-bottom="3pt">
+                            <block>
+                                {!qLine.SBQQ__Quantity__c}
+                            </block>
+                        </table-cell>
+
+                        <table-cell padding-top="3pt" padding-bottom="3pt">
+                            <block>
+                            <apex:outputText value="{!HTMLENCODE(qLine.SBQQ__ProductName__c)}" />
+                            </block>
+                        </table-cell>
+
+                        <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                            <block>
+                                <apex:outputText value="{0, number, $###,###,##0.00}">
+                                    <apex:param value="{!qLine.SBQQ__NetPrice__c}" />
+                                </apex:outputText>
+                            </block>
+                        </table-cell>
+
+                        <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                            <block>
+                                <apex:outputText value="{0, number, $###,###,##0.00}">
+                                    <apex:param value="{!qLine.SBQQ__NetTotal__c}" />
+                                </apex:outputText>
+                            </block>
+                        </table-cell>
+                    </table-row>
+
+                    <table-row>
+                        <!-- Empty cell -->
+                        <table-cell number-columns-spanned="2"> <block> </block> </table-cell>
+                        
+                        <table-cell number-columns-spanned="2" padding-top="3pt" padding-bottom="3pt">
+                            <block>
+                            {!qLine.Note__c} 
+                            </block>
+                        </table-cell>
+
+                        <!-- Empty cell -->
+                        <table-cell > <block> </block> </table-cell>
+                    </table-row>
+                </apex:repeat>
+                <table-row  keep-with-previous="always">
+                    <table-cell number-columns-spanned="4" padding-top="3pt" padding-bottom="3pt" text-align="right">
+                        <block>
+                            <inline font-weight="bold" font-size="9">SUBTOTAL SERVICES:</inline>
+                        </block>
+
+                    </table-cell>
+                    <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                        <block>
+                            <inline font-weight="bold"  font-size="9">
+                                <apex:outputText value="{0, number, $###,###,##0.00}">
+                                    <apex:param value="{!serviceTotal}" />
+                                </apex:outputText>
+                            </inline>
+                        </block>
+                    </table-cell>
+                </table-row>
+            </table-body>
+        </table>
+    </block>
+  </apex:outputPanel>
+  <!-- Taxes and Grand TOTAL -->
+  <block font-size="7pt">
+    <!-- Services Table starts -->
+    <table width="100%">
+        <table-column column-width="60%"/>
+        <table-column column-width="20%"/>
+        <table-column column-width="20%"/>
+        <!-- Table header starts -->
+        <table-header >
+            <table-row>
+                <table-cell number-columns-spanned="3" padding-top="20pt">
+                    <block>&#160;</block>
+                </table-cell>
+            </table-row>
+            <table-row background-color="#E3E3E3" border="solid 1px #000000">
+                <table-cell padding-top="3pt" padding-bottom="3pt">
+                    <block>
+                        <inline padding-left="5"> TAXES </inline>
+                    </block>
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline padding-right="5">TAXABLE</inline>
+                    </block>
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline padding-right="5">AMOUNT</inline>
+                    </block>
+                </table-cell>
+            </table-row>
+            <!-- Spacer between header and body -->
+            <table-row>
+                <table-cell number-columns-spanned="3" padding-top="-4pt" padding-bottom="-4pt">
+                <block>&#160;</block>
+                </table-cell>
+            </table-row>
+        </table-header>
+        <!-- Table body -->
+         <table-body>
+            <!-- field from quote var -->
+            <table-row background-color="#E6E1E1" border="solid 2px #F7F2F2">
+                <table-cell padding-left="5pt" padding-top="3pt" padding-bottom="3pt">
+                    <block>{!quote.Tax_Code_1__c}</block>
+                    <block>{!quote.Tax_Code_2__c}</block>
+                </table-cell>
+
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <apex:outputText value="{0, number, $###,###,##0.00}">
+                            <apex:param value="{!quote.SBQQ__NetAmount__c}" />
+                        </apex:outputText>
+                    </block>
+                </table-cell>
+
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <apex:outputText value="{0, number, $###,###,##0.00}">
+                            <apex:param value="{!quote.Tax_Amount__c}" />
+                        </apex:outputText>
+                    </block>
+                </table-cell>
+            </table-row>
+            <!-- Subtotal taxes -->
+            <table-row  keep-with-previous="always">
+                <table-cell number-columns-spanned="2" padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline font-weight="bold" font-size="9">SUBTOTAL TAXES:</inline>
+                    </block>
+
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline font-weight="bold"  font-size="9">
+                            <apex:outputText value="{0, number, $###,###,##0.00}">
+                                <apex:param value="{!quote.Tax_Amount__c}" />
+                            </apex:outputText>
+                        </inline>
+                    </block>
+                </table-cell>
+            </table-row>
+            <!-- empty row -->
+            <table-row  keep-with-previous="always">
+                <table-cell number-columns-spanned="3">
+                <block>&#160;</block>
+                </table-cell>
+            </table-row>
+            <!-- Grand TOTAL -->
+            <table-row  keep-with-previous="always">
+                <table-cell number-columns-spanned="2" padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline font-weight="bold" font-size="9">GRAND TOTAL:</inline>
+                    </block>
+
+                </table-cell>
+                <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">
+                    <block>
+                        <inline font-weight="bold"  font-size="9">
+                            <apex:outputText value="{0, number, $###,###,##0.00}">
+                                <apex:param value="{!quote.Net_Amount_Tax__c}" />
+                            </apex:outputText>
+                        </inline>
+                    </block>
+                </table-cell>
+            </table-row>
+         </table-body>
+
+    </table>
+  </block>
+</apex:page>

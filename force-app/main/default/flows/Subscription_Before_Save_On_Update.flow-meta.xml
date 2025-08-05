@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Net_Price_Field</name>
+        <label>Update Net Price Field</label>
+        <locationX>262</locationX>
+        <locationY>550</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.SBQQ__NetPrice__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PricingCalculation</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Updated_Expected_End_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Update_the_Duration</name>
+        <label>Update the Duration</label>
+        <locationX>281</locationX>
+        <locationY>323</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Duration__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>DurationCalculation</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Net_Price_Field</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Expected_End_Date_Updated</name>
+        <label>Expected End Date Updated</label>
+        <locationX>625</locationX>
+        <locationY>371</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Expected_End_Date__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Expected_End_Date__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.Expected_End_Date__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_the_Duration</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>DurationCalculation</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.Expected_End_Date__c} - {!$Record.SBQQ__SubscriptionStartDate__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>InventoryOutPlusOne</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.SBQQ__Product__r.Inventory_Out__c}+1</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>PricingCalculation</name>
+        <dataType>Currency</dataType>
+        <expression>IF({!$Record.Duration__c} &lt;= 1, {!$Record.Daily__c},
+IF({!$Record.Duration__c} &lt;= 2, {!$Record.Daily__c} * 2,
+IF({!$Record.Duration__c} &lt;= 8, {!$Record.Week_7_DAY__c},
+IF({!$Record.Duration__c} &lt;= 13, {!$Record.Week_7_DAY__c} + (({!$Record.Duration__c} - 8) * ({!$Record.Week_7_DAY__c} / 5)),
+IF({!$Record.Duration__c} &lt;= 15, {!$Record.Week_7_DAY__c} * 2,
+IF({!$Record.Duration__c} &lt;= 20, ({!$Record.Week_7_DAY__c} * 2) + (({!$Record.Duration__c} - 15) * ({!$Record.Week_7_DAY__c} / 5)),
+IF({!$Record.Duration__c} &lt;= 29, {!$Record.Week_7_DAY__c} * 3,
+IF({!$Record.Duration__c} = 30, ({!$Record.Month_28_DAY__c} / 20) * 21,
+IF({!$Record.Duration__c} = 31, ({!$Record.Month_28_DAY__c} / 20) * 22,
+IF({!$Record.Duration__c} = 32, ({!$Record.Month_28_DAY__c} / 20) * 23,
+IF({!$Record.Duration__c} &lt;= 36, ({!$Record.Month_28_DAY__c} / 20) * 25,
+IF({!$Record.Duration__c} = 37, ({!$Record.Month_28_DAY__c} / 20) * 26,
+IF({!$Record.Duration__c} = 38, ({!$Record.Month_28_DAY__c} / 20) * 27,
+IF({!$Record.Duration__c} = 39, ({!$Record.Month_28_DAY__c} / 20) * 28,
+IF({!$Record.Duration__c} = 40, ({!$Record.Month_28_DAY__c} / 20) * 29,
+IF({!$Record.Duration__c} &lt;= 43, ({!$Record.Month_28_DAY__c} / 20) * 30,
+IF({!$Record.Duration__c} = 44, ({!$Record.Month_28_DAY__c} / 20) * 31,
+IF({!$Record.Duration__c} = 45, ({!$Record.Month_28_DAY__c} / 20) * 32,
+IF({!$Record.Duration__c} = 46, ({!$Record.Month_28_DAY__c} / 20) * 33,
+IF({!$Record.Duration__c} = 47, ({!$Record.Month_28_DAY__c} / 20) * 34,
+IF({!$Record.Duration__c} &lt;= 50, ({!$Record.Month_28_DAY__c} / 20) * 35,
+IF({!$Record.Duration__c} = 51, ({!$Record.Month_28_DAY__c} / 20) * 36,
+IF({!$Record.Duration__c} = 52, ({!$Record.Month_28_DAY__c} / 20) * 37,
+IF({!$Record.Duration__c} = 53, ({!$Record.Month_28_DAY__c} / 20) * 38,
+IF({!$Record.Duration__c} = 54, ({!$Record.Month_28_DAY__c} / 20) * 39,
+IF({!$Record.Duration__c} &lt;= 58, ({!$Record.Month_28_DAY__c} / 20) * 40,
+IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
+)))))))))))))))))))))))))))</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>[Subscription] [Before-Save] - On Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>[Subscription] [Before-Save] - On Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>500</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Expected_End_Date_Updated</targetReference>
+        </connector>
+        <object>SBQQ__Subscription__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

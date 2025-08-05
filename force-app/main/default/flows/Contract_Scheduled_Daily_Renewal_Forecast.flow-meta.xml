@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_Renewal_Email</name>
+        <label>Send Renewal Email</label>
+        <locationX>188</locationX>
+        <locationY>531</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.SBQQ__RenewalOpportunity__r.Owner.Email</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>DefaultWorkflowUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>[Automated Email] Renewal Opportunity Notification</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>Hello {!$Record.SBQQ__RenewalOpportunity__r.Owner.FirstName},
+
+This email is to notify you that contract: {!$Record.ContractNumber} for Account: {!$Record.Account.Name} is ending in 30 days and the Renewal Opportunity is pending.
+
+https://saas-ruby-3747--uat.sandbox.lightning.force.com/{!$Record.SBQQ__RenewalOpportunity__r.Id}</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>1.0.1</versionString>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Days_to_End_Date</name>
+        <label>Days to End Date</label>
+        <locationX>601</locationX>
+        <locationY>310</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Days30</name>
+            <conditionLogic>(1 AND 2 AND (3 OR 4))</conditionLogic>
+            <conditions>
+                <leftValueReference>DaysBetween</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>30.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__RenewalForecast__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__Opportunity__r.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>AWAL Distributor</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__Opportunity__r.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Arbutus West Agency Ltd.</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Renewal_Quoted</targetReference>
+            </connector>
+            <label>30 Days</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>DaysBetween</name>
+        <dataType>Number</dataType>
+        <expression>{!$Record.EndDate} - {!$Flow.CurrentDate}</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>[Contract] [Scheduled] - Daily - Renewal Forecast {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>[Contract] [Scheduled] - Daily - Renewal Quoted</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Renewal_Quoted</name>
+        <label>Update Renewal Quoted</label>
+        <locationX>334</locationX>
+        <locationY>324</locationY>
+        <connector>
+            <targetReference>Send_Renewal_Email</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>SBQQ__RenewalQuoted__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>526</locationX>
+        <locationY>47</locationY>
+        <connector>
+            <targetReference>Days_to_End_Date</targetReference>
+        </connector>
+        <object>Contract</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2025-07-17</startDate>
+            <startTime>17:30:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>RenewalEmail</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hello, &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Contract: {!$Record.ContractNumber} has an end date coming within 30 days. A renewal opportunity has been generated.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;https://saas-ruby-3747--uat.sandbox.lightning.force.com/{!$Record.SBQQ__RenewalOpportunity__r.Id}&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>RenewalSubjectLine</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Renewal Opportunity has been created for Contract: {!$Record.ContractNumber}</text>
+    </textTemplates>
+</Flow>

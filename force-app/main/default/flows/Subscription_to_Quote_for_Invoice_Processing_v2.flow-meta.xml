@@ -3,25 +3,91 @@
     <apiVersion>63.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
-        <name>Add_QuoteLine_to_Collection</name>
-        <label>Add QuoteLine to Collection</label>
-        <locationX>138</locationX>
-        <locationY>755</locationY>
+        <name>Collect_Quote_Id_and_Create_Invoice_Line</name>
+        <label>Collect Quote Id and Create Invoice Line</label>
+        <locationX>378</locationX>
+        <locationY>1379</locationY>
         <assignmentItems>
-            <assignToReference>ActiveSubscriptionQuoteLineIds</assignToReference>
+            <assignToReference>AllQuoteIdsFromSubscriptions</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Loop_Active_Subscriptions.SBQQ__QuoteLine__c</elementReference>
+                <elementReference>Get_Active_Subscription_Quote_Line.SBQQ__Quote__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop_Active_Subscriptions</targetReference>
+            <targetReference>Create_Active_Subscription_Invoice_Line</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Cycle_Invoice_Created_Flag</name>
+        <label>Set Cycle Invoice Created Flag</label>
+        <locationX>246</locationX>
+        <locationY>1079</locationY>
+        <assignmentItems>
+            <assignToReference>InvoiceRequestCreated</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Cycle_Invoice_Request</targetReference>
         </connector>
     </assignments>
     <decisions>
+        <name>Asset_Lines_Cycle_Validation</name>
+        <label>Asset Lines Cycle Validation</label>
+        <locationX>158</locationX>
+        <locationY>1871</locationY>
+        <defaultConnector>
+            <targetReference>Update_Contract_Subscriptions_As_Cycle_Invoiced</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Assets to Process</defaultConnectorLabel>
+        <rules>
+            <name>Has_Cycle_Assets_to_Process_Path</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Multi_Quote_Asset_Lines</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Multi_Quote_Asset_Lines</targetReference>
+            </connector>
+            <label>Has_Cycle_Assets_to_Process_Path</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Active_Subscription_Quote_Line_Found</name>
+        <label>Check Active Subscription Quote Line Found</label>
+        <locationX>532</locationX>
+        <locationY>863</locationY>
+        <defaultConnector>
+            <targetReference>Loop_Active_Subscriptions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Skip This Subscription</defaultConnectorLabel>
+        <rules>
+            <name>Process_This_Active_Subscription</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Active_Subscription_Quote_Line.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Cycle_Invoice_Request_Created</targetReference>
+            </connector>
+            <label>Process_This_Active_Subscription</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Check_Active_Subscriptions_Exist</name>
         <label>Check Active Subscriptions Exist</label>
-        <locationX>182</locationX>
+        <locationX>300</locationX>
         <locationY>539</locationY>
         <defaultConnectorLabel>No Active Subscriptions</defaultConnectorLabel>
         <rules>
@@ -41,28 +107,28 @@
         </rules>
     </decisions>
     <decisions>
-        <name>Check_Product_Subscription_Type</name>
-        <label>Check Product Subscription Type</label>
-        <locationX>270</locationX>
-        <locationY>1595</locationY>
+        <name>Check_Cycle_Invoice_Request_Created</name>
+        <label>Check Cycle Invoice Request Created</label>
+        <locationX>378</locationX>
+        <locationY>971</locationY>
         <defaultConnector>
-            <targetReference>Create_OneTime_Invoice_Item</targetReference>
+            <targetReference>Collect_Quote_Id_and_Create_Invoice_Line</targetReference>
         </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <defaultConnectorLabel>Invoice Already Created</defaultConnectorLabel>
         <rules>
-            <name>Is_Subscription_Product</name>
+            <name>Create_Cycle_Invoice_Request_Path</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Loop_Quote_Line_Items.SBQQ__ProductSubscriptionType__c</leftValueReference>
-                <operator>NotEqualTo</operator>
+                <leftValueReference>InvoiceRequestCreated</leftValueReference>
+                <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>One-time</stringValue>
+                    <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Create_Subscription_Invoice_Item</targetReference>
+                <targetReference>Set_Cycle_Invoice_Created_Flag</targetReference>
             </connector>
-            <label>Is Subscription Product</label>
+            <label>Create_Cycle_Invoice_Request_Path</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -106,28 +172,21 @@
         <scale>0</scale>
     </formulas>
     <formulas>
-        <name>EnhancedInvoiceDescription</name>
+        <name>Enhanced_Active_Subscription_Description</name>
         <dataType>String</dataType>
-        <expression>{!Loop_Quote_Line_Items.SBQQ__Description__c} + 
-IF(NOT(ISBLANK(TEXT({!Get_Current_Subscription_Status.Status__c}))), 
-  &quot; | Status: &quot; + TEXT({!Get_Current_Subscription_Status.Status__c}), 
-  &quot;&quot;) +
-IF(NOT(ISBLANK({!Get_Current_Subscription_Status.Return_Date__c})), 
-  &quot; | Return Date: &quot; + TEXT({!Get_Current_Subscription_Status.Return_Date__c}), 
-  &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_Quote_Line_Items.SBQQ__StartDate__c})), 
-  &quot; | Start Date: &quot; + TEXT({!Loop_Quote_Line_Items.SBQQ__StartDate__c}), 
-  &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})), 
-  &quot; | End Date: &quot; + TEXT({!Loop_Quote_Line_Items.Expected_End_Date__c}), 
-  &quot;&quot;)</expression>
-    </formulas>
-    <formulas>
-        <name>QuoteName</name>
-        <dataType>String</dataType>
-        <expression>IF(CONTAINS({!Get_Related_Quote.Name}, &quot;_v&quot;), 
-    LEFT({!Get_Related_Quote.Name}, FIND(&quot;_v&quot;, {!Get_Related_Quote.Name}) - 1), 
-    LEFT({!Get_Related_Quote.Name}, 250))</expression>
+        <expression>{!Get_Active_Subscription_Quote_Line.SBQQ__Description__c} + 
+IF(NOT(ISBLANK(TEXT({!Loop_Active_Subscriptions.Status__c}))), 
+   &quot; | Status: &quot; + TEXT({!Loop_Active_Subscriptions.Status__c}), 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Loop_Active_Subscriptions.Return_Date__c})), 
+   &quot; | Return Date: &quot; + TEXT({!Loop_Active_Subscriptions.Return_Date__c}), 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Get_Active_Subscription_Quote_Line.SBQQ__StartDate__c})), 
+   &quot; | Start Date: &quot; + TEXT({!Get_Active_Subscription_Quote_Line.SBQQ__StartDate__c}), 
+   &quot;&quot;) +
+IF(NOT(ISBLANK({!Get_Active_Subscription_Quote_Line.Expected_End_Date__c})), 
+   &quot; | End Date: &quot; + TEXT({!Get_Active_Subscription_Quote_Line.Expected_End_Date__c}), 
+   &quot;&quot;)</expression>
     </formulas>
     <formulas>
         <name>ReturnDateToday</name>
@@ -139,29 +198,29 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
     <loops>
         <name>Loop_Active_Subscriptions</name>
         <label>Loop Active Subscriptions</label>
-        <locationX>50</locationX>
+        <locationX>158</locationX>
         <locationY>647</locationY>
         <collectionReference>Get_All_Active_Subscriptions</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>Add_QuoteLine_to_Collection</targetReference>
+            <targetReference>Get_Active_Subscription_Quote_Line</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Get_Parent_Opportunity</targetReference>
+            <targetReference>Get_Multi_Quote_Asset_Lines</targetReference>
         </noMoreValuesConnector>
     </loops>
     <loops>
-        <name>Loop_Quote_Line_Items</name>
-        <label>Loop Quote Line Items</label>
+        <name>Loop_Multi_Quote_Asset_Lines</name>
+        <label>Loop Multi Quote Asset Lines</label>
         <locationX>50</locationX>
-        <locationY>1379</locationY>
-        <collectionReference>Get_Quote_Lines</collectionReference>
+        <locationY>1979</locationY>
+        <collectionReference>Get_Multi_Quote_Asset_Lines</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>Get_Current_Subscription_Status</targetReference>
+            <targetReference>Create_Cycle_Asset_Invoice_Line</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Update_QuoteLines_as_Invoiced</targetReference>
+            <targetReference>Update_Contract_Subscriptions_As_Cycle_Invoiced</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -184,29 +243,153 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordCreates>
-        <name>Create_Invoice_Request</name>
-        <label>Create Invoice Request</label>
-        <locationX>50</locationX>
-        <locationY>1271</locationY>
+        <name>Create_Active_Subscription_Invoice_Line</name>
+        <label>Create Active Subscription Invoice Line</label>
+        <locationX>378</locationX>
+        <locationY>1487</locationY>
         <connector>
-            <targetReference>Loop_Quote_Line_Items</targetReference>
+            <targetReference>Loop_Active_Subscriptions</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>Enhanced_Active_Subscription_Description</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Invoice_Request__c</field>
+            <value>
+                <elementReference>Create_Cycle_Invoice_Request</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Net_Price__c</field>
+            <value>
+                <elementReference>Get_Active_Subscription_Quote_Line.SBQQ__NetTotal__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Original_Quote_Line_Product_Family_code__c</field>
+            <value>
+                <elementReference>Get_Active_Subscription_Quote_Line.Product_Family_Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Pricebook_Entry_Id__c</field>
+            <value>
+                <elementReference>Get_Active_Subscription_Quote_Line.SBQQ__PricebookEntryId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Quantity__c</field>
+            <value>
+                <elementReference>Get_Active_Subscription_Quote_Line.SBQQ__Quantity__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Expected_End_Date__c</field>
+            <value>
+                <elementReference>Get_Active_Subscription_Quote_Line.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Start_Date__c</field>
+            <value>
+                <elementReference>Get_Active_Subscription_Quote_Line.SBQQ__StartDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription_Product_Type__c</field>
+            <value>
+                <elementReference>Get_Active_Subscription_Quote_Line.SBQQ__Product__r.SBQQ__SubscriptionType__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Invoice_Request_Line__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Cycle_Asset_Invoice_Line</name>
+        <label>Create Cycle Asset Invoice Line</label>
+        <locationX>138</locationX>
+        <locationY>2087</locationY>
+        <connector>
+            <targetReference>Update_Multi_Quote_Asset_Lines_as_Invoiced</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>Loop_Multi_Quote_Asset_Lines.SBQQ__Description__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Invoice_Request__c</field>
+            <value>
+                <elementReference>Create_Cycle_Invoice_Request</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Net_Price__c</field>
+            <value>
+                <elementReference>Loop_Multi_Quote_Asset_Lines.SBQQ__NetTotal__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Original_Quote_Line_Product_Family_code__c</field>
+            <value>
+                <elementReference>Loop_Multi_Quote_Asset_Lines.Product_Family_Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Pricebook_Entry_Id__c</field>
+            <value>
+                <elementReference>Loop_Multi_Quote_Asset_Lines.SBQQ__PricebookEntryId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Quantity__c</field>
+            <value>
+                <elementReference>Loop_Multi_Quote_Asset_Lines.SBQQ__Quantity__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Expected_End_Date__c</field>
+            <value>
+                <elementReference>Loop_Multi_Quote_Asset_Lines.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Start_Date__c</field>
+            <value>
+                <elementReference>Loop_Multi_Quote_Asset_Lines.SBQQ__StartDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription_Product_Type__c</field>
+            <value>
+                <elementReference>Loop_Multi_Quote_Asset_Lines.SBQQ__Product__r.SBQQ__SubscriptionType__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Invoice_Request_Line__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Create_Cycle_Invoice_Request</name>
+        <label>Create Cycle Invoice Request</label>
+        <locationX>246</locationX>
+        <locationY>1187</locationY>
+        <connector>
+            <targetReference>Collect_Quote_Id_and_Create_Invoice_Line</targetReference>
         </connector>
         <inputAssignments>
             <field>Expected_End_Date__c</field>
             <value>
-                <elementReference>Get_Related_Quote.Expected_End_Date__c</elementReference>
+                <elementReference>Get_Active_Subscription_Quote_Line.Expected_End_Date__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Expiration_Date__c</field>
             <value>
-                <elementReference>Get_Related_Quote.SBQQ__ExpirationDate__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Opportunity__c</field>
-            <value>
-                <elementReference>Get_Related_Quote.SBQQ__Opportunity2__c</elementReference>
+                <elementReference>Get_Active_Subscription_Quote_Line.SBQQ__Quote__r.Expected_End_Date__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -218,140 +401,38 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
         <object>Invoice_Request__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
-    <recordCreates>
-        <name>Create_OneTime_Invoice_Item</name>
-        <label>Create OneTime Invoice Item</label>
-        <locationX>402</locationX>
-        <locationY>1703</locationY>
+    <recordLookups>
+        <name>Get_Active_Subscription_Quote_Line</name>
+        <label>Get Active Subscription Quote Line</label>
+        <locationX>532</locationX>
+        <locationY>755</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Loop_Quote_Line_Items</targetReference>
+            <targetReference>Check_Active_Subscription_Quote_Line_Found</targetReference>
         </connector>
-        <inputAssignments>
-            <field>Description__c</field>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
             <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__Description__c</elementReference>
+                <elementReference>Loop_Active_Subscriptions.SBQQ__QuoteLine__c</elementReference>
             </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Invoice_Request__c</field>
+        </filters>
+        <filters>
+            <field>OneTime_Invoiced__c</field>
+            <operator>EqualTo</operator>
             <value>
-                <elementReference>Create_Invoice_Request</elementReference>
+                <booleanValue>false</booleanValue>
             </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Net_Price__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__NetTotal__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Original_Quote_Line_Product_Family_code__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.Product_Family_Code__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Pricebook_Entry_Id__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__PricebookEntryId__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Quantity__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>QuoteLine_Expected_End_Date__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.Expected_End_Date__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>QuoteLine_Start_Date__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Subscription_Product_Type__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__Product__r.SBQQ__SubscriptionType__c</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Invoice_Request_Line__c</object>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>SBQQ__QuoteLine__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
-    <recordCreates>
-        <name>Create_Subscription_Invoice_Item</name>
-        <label>Create Subscription Invoice Item</label>
-        <locationX>138</locationX>
-        <locationY>1703</locationY>
-        <connector>
-            <targetReference>Loop_Quote_Line_Items</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>Description__c</field>
-            <value>
-                <elementReference>EnhancedInvoiceDescription</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Invoice_Request__c</field>
-            <value>
-                <elementReference>Create_Invoice_Request</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Net_Price__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__NetTotal__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Original_Quote_Line_Product_Family_code__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.Product_Family_Code__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Pricebook_Entry_Id__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__PricebookEntryId__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Quantity__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>QuoteLine_Expected_End_Date__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.Expected_End_Date__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>QuoteLine_Start_Date__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Subscription_Product_Type__c</field>
-            <value>
-                <elementReference>Loop_Quote_Line_Items.SBQQ__Product__r.SBQQ__SubscriptionType__c</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Invoice_Request_Line__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordCreates>
+    </recordLookups>
     <recordLookups>
         <name>Get_All_Active_Subscriptions</name>
         <label>Get All Active Subscriptions</label>
-        <locationX>182</locationX>
+        <locationX>300</locationX>
         <locationY>431</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -384,72 +465,20 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>Get_Current_Subscription_Status</name>
-        <label>Get Current Subscription Status</label>
-        <locationX>270</locationX>
-        <locationY>1487</locationY>
+        <name>Get_Multi_Quote_Asset_Lines</name>
+        <label>Get Multi Quote Asset Lines</label>
+        <locationX>158</locationX>
+        <locationY>1763</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Check_Product_Subscription_Type</targetReference>
+            <targetReference>Asset_Lines_Cycle_Validation</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>SBQQ__Subscription__c</object>
-        <queriedFields>Id</queriedFields>
-        <queriedFields>Status__c</queriedFields>
-        <queriedFields>Return_Date__c</queriedFields>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Get_Parent_Opportunity</name>
-        <label>Get Parent Opportunity</label>
-        <locationX>50</locationX>
-        <locationY>947</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Get_Related_Quote</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Get_Related_Contract.SBQQ__Opportunity__c</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Opportunity</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>Get_Quote_Lines</name>
-        <label>Get Quote Lines</label>
-        <locationX>50</locationX>
-        <locationY>1163</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Create_Invoice_Request</targetReference>
-        </connector>
-        <filterLogic>(1 AND 2) OR (1 AND 3 AND 4)</filterLogic>
         <filters>
             <field>SBQQ__Quote__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Get_Related_Quote.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Id</field>
             <operator>In</operator>
             <value>
-                <elementReference>ActiveSubscriptionQuoteLineIds</elementReference>
+                <elementReference>AllQuoteIdsFromSubscriptions</elementReference>
             </value>
         </filters>
         <filters>
@@ -473,7 +502,7 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
     <recordLookups>
         <name>Get_Related_Contract</name>
         <label>Get Related Contract</label>
-        <locationX>182</locationX>
+        <locationX>300</locationX>
         <locationY>323</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -491,32 +520,11 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
         <object>Contract</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <recordLookups>
-        <name>Get_Related_Quote</name>
-        <label>Get Related Quote</label>
-        <locationX>50</locationX>
-        <locationY>1055</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Get_Quote_Lines</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>SBQQ__Opportunity2__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Get_Parent_Opportunity.Id</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>SBQQ__Quote__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
     <recordUpdates>
         <name>Update_Contract_Subscriptions_As_Cycle_Invoiced</name>
         <label>Update Contract Subscriptions As Cycle Invoiced</label>
-        <locationX>50</locationX>
-        <locationY>2087</locationY>
+        <locationX>158</locationX>
+        <locationY>2471</locationY>
         <filterLogic>and</filterLogic>
         <filters>
             <field>SBQQ__Contract__c</field>
@@ -541,19 +549,19 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
         <object>SBQQ__Subscription__c</object>
     </recordUpdates>
     <recordUpdates>
-        <name>Update_QuoteLines_as_Invoiced</name>
-        <label>Update QuoteLines as Invoiced</label>
-        <locationX>50</locationX>
-        <locationY>1979</locationY>
+        <name>Update_Multi_Quote_Asset_Lines_as_Invoiced</name>
+        <label>Update Multi Quote Asset Lines as Invoiced</label>
+        <locationX>138</locationX>
+        <locationY>2195</locationY>
         <connector>
-            <targetReference>Update_Contract_Subscriptions_As_Cycle_Invoiced</targetReference>
+            <targetReference>Loop_Multi_Quote_Asset_Lines</targetReference>
         </connector>
-        <filterLogic>1 AND 2 AND 3</filterLogic>
+        <filterLogic>and</filterLogic>
         <filters>
             <field>SBQQ__Quote__c</field>
-            <operator>EqualTo</operator>
+            <operator>In</operator>
             <value>
-                <elementReference>Get_Related_Quote.Id</elementReference>
+                <elementReference>AllQuoteIdsFromSubscriptions</elementReference>
             </value>
         </filters>
         <filters>
@@ -579,7 +587,7 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
         <object>SBQQ__QuoteLine__c</object>
     </recordUpdates>
     <start>
-        <locationX>56</locationX>
+        <locationX>174</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Get_Related_Contract</targetReference>
@@ -592,17 +600,20 @@ IF(NOT(ISBLANK({!Loop_Quote_Line_Items.Expected_End_Date__c})),
     <status>Active</status>
     <triggerOrder>50</triggerOrder>
     <variables>
-        <name>ActiveSubscriptionQuoteLineIds</name>
+        <name>AllQuoteIdsFromSubscriptions</name>
         <dataType>String</dataType>
         <isCollection>true</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <name>CurrentSubscriptionId</name>
-        <dataType>String</dataType>
+        <name>InvoiceRequestCreated</name>
+        <dataType>Boolean</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
     </variables>
 </Flow>

@@ -11,11 +11,11 @@
             <assignToReference>TotalOverageAmount</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Get_Related_Subscription.Overage_Amount__c</elementReference>
+                <elementReference>Loop_Through_Returned_Subscriptions.Overage_Amount__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_QuoteLines_as_Invoiced</targetReference>
+            <targetReference>Trigger_Skyvia_Reprocessing</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -43,27 +43,11 @@
             <assignToReference>TotalOverageAmount</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Get_Related_Subscription.Overage_Amount__c</elementReference>
+                <elementReference>Loop_Through_Returned_Subscriptions.Overage_Amount__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Update_QuoteLines_as_Invoiced</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>Assign_Each_SubscriptionId</name>
-        <label>Assign Each SubscriptionId</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>ContractRelatedSubscriptionIds</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Loop_Each_SubscriptionId.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Loop_Each_SubscriptionId</targetReference>
+            <targetReference>Trigger_Skyvia_Reprocessing</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -106,6 +90,22 @@
         </connector>
     </assignments>
     <assignments>
+        <name>Set_Invoice_Created_Flag</name>
+        <label>Set Invoice Created Flag</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>InvoiceRequestCreated</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Return_Invoice_Request</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Set_Overage_Invoice_Flag</name>
         <label>Set Overage Invoice Flag</label>
         <locationX>0</locationX>
@@ -137,7 +137,7 @@
             <assignToReference>CurrentSubscriptionStatus</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Get_Related_Subscription.Status__c</elementReference>
+                <elementReference>Loop_Through_Returned_Subscriptions.Status__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -151,6 +151,78 @@
         </value>
     </customProperties>
     <decisions>
+        <name>Asset_Lines_Validation</name>
+        <label>Asset Lines Validation</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Final_Decision_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Assets to Process</defaultConnectorLabel>
+        <rules>
+            <name>Has_Assets_to_Process</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Asset_Quote_Lines</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Through_Asset_Quote_Lines</targetReference>
+            </connector>
+            <label>Has_Assets_to_Process</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Bypass_Permission</name>
+        <label>Check Bypass Permission</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>True</defaultConnectorLabel>
+        <rules>
+            <name>False</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Permission.Bypass_Subscription_Flow</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetContract</targetReference>
+            </connector>
+            <label>False</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Invoice_Request_Created</name>
+        <label>Check Invoice Request Created</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Store_Current_Subscription_Status</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Invoice Already Created</defaultConnectorLabel>
+        <rules>
+            <name>Create_Invoice_Request</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>InvoiceRequestCreated</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Invoice_Created_Flag</targetReference>
+            </connector>
+            <label>Create Invoice Request</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Check_Overage_Amount_Exists</name>
         <label>Check Overage Amount Exists</label>
         <locationX>0</locationX>
@@ -163,14 +235,14 @@
             <name>Overage</name>
             <conditionLogic>or</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Related_Subscription.Overage_Amount__c</leftValueReference>
+                <leftValueReference>Loop_Through_Returned_Subscriptions.Overage_Amount__c</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
                 </rightValue>
             </conditions>
             <conditions>
-                <leftValueReference>Get_Related_Subscription.Overage_Amount__c</leftValueReference>
+                <leftValueReference>Loop_Through_Returned_Subscriptions.Overage_Amount__c</leftValueReference>
                 <operator>IsBlank</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -195,7 +267,7 @@
             <name>Quote_Cycle_Already_Invoiced</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Related_Subscription.X28_Days_Cycle_Invoiced__c</leftValueReference>
+                <leftValueReference>Loop_Through_Returned_Subscriptions.X28_Days_Cycle_Invoiced__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -205,6 +277,31 @@
                 <targetReference>Update_Related_Quote</targetReference>
             </connector>
             <label>Quote Cycle Already Invoiced</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_QuoteLine_Found</name>
+        <label>Check QuoteLine Found</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Trigger_Skyvia_Reprocessing</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Skip This Subscription</defaultConnectorLabel>
+        <rules>
+            <name>Process_This_Subscription</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Subscription_Quote_Line.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Invoice_Request_Created</targetReference>
+            </connector>
+            <label>Process This Subscription</label>
         </rules>
     </decisions>
     <decisions>
@@ -220,15 +317,14 @@
             <name>Subscription_Cycle_Already_Invoiced</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Related_Subscription.X28_Days_Cycle_Invoiced__c</leftValueReference>
+                <leftValueReference>Loop_Through_Returned_Subscriptions.X28_Days_Cycle_Invoiced__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <isGoTo>true</isGoTo>
-                <targetReference>Loop_through_Quote_Line_Items</targetReference>
+                <targetReference>Trigger_Skyvia_Reprocessing</targetReference>
             </connector>
             <label>Subscription Cycle Already Invoiced</label>
         </rules>
@@ -296,7 +392,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>Loop_Each_SubscriptionId</targetReference>
+            <targetReference>Loop_Through_Returned_Subscriptions</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -335,7 +431,7 @@
             <name>Cycle_Invoiced</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Get_Related_Subscription.X28_Days_Cycle_Invoiced__c</leftValueReference>
+                <leftValueReference>Loop_Through_Returned_Subscriptions.X28_Days_Cycle_Invoiced__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -351,89 +447,89 @@
     <formulas>
         <name>CycleOverageDescription</name>
         <dataType>String</dataType>
-        <expression>&quot;Overage for the: &quot; + {!Loop_through_Quote_Line_Items.SBQQ__Description__c} + 
+        <expression>&quot;Overage for the: &quot; + {!Get_Subscription_Quote_Line.SBQQ__Description__c} + 
 IF(NOT(ISBLANK({!CurrentSubscriptionStatus})), 
    &quot; | Status: &quot; + {!CurrentSubscriptionStatus}, 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c})), 
-   &quot; | Return Date: &quot; + {!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c}, 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.Related_Subscription_Return_Date__c})), 
+   &quot; | Return Date: &quot; + {!Get_Subscription_Quote_Line.Related_Subscription_Return_Date__c}, 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c})), 
-   &quot; | Start Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c}), 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.SBQQ__StartDate__c})), 
+   &quot; | Start Date: &quot; + TEXT({!Get_Subscription_Quote_Line.SBQQ__StartDate__c}), 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})), 
-   &quot; | End Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.Expected_End_Date__c}), 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.Expected_End_Date__c})), 
+   &quot; | End Date: &quot; + TEXT({!Get_Subscription_Quote_Line.Expected_End_Date__c}), 
    &quot;&quot;)</expression>
     </formulas>
     <formulas>
         <name>EnhancedStandardDescription</name>
         <dataType>String</dataType>
-        <expression>{!Loop_through_Quote_Line_Items.SBQQ__Description__c} + 
+        <expression>{!Get_Subscription_Quote_Line.SBQQ__Description__c} + 
 IF(NOT(ISBLANK({!CurrentSubscriptionStatus})), 
    &quot; | Status: &quot; + {!CurrentSubscriptionStatus}, 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c})), 
-   &quot; | Return Date: &quot; + {!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c}, 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.Related_Subscription_Return_Date__c})), 
+   &quot; | Return Date: &quot; + {!Get_Subscription_Quote_Line.Related_Subscription_Return_Date__c}, 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c})), 
-   &quot; | Start Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c}), 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.SBQQ__StartDate__c})), 
+   &quot; | Start Date: &quot; + TEXT({!Get_Subscription_Quote_Line.SBQQ__StartDate__c}), 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})), 
-   &quot; | End Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.Expected_End_Date__c}), 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.Expected_End_Date__c})), 
+   &quot; | End Date: &quot; + TEXT({!Get_Subscription_Quote_Line.Expected_End_Date__c}), 
    &quot;&quot;)</expression>
     </formulas>
     <formulas>
         <name>OverageDescription</name>
         <dataType>String</dataType>
-        <expression>{!Loop_through_Quote_Line_Items.SBQQ__Description__c} + 
+        <expression>{!Get_Subscription_Quote_Line.SBQQ__Description__c} + 
 IF(NOT(ISBLANK({!CurrentSubscriptionStatus})), 
    &quot; | Status: &quot; + {!CurrentSubscriptionStatus}, 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c})), 
-   &quot; | Return Date: &quot; + {!Loop_through_Quote_Line_Items.Related_Subscription_Return_Date__c}, 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.Related_Subscription_Return_Date__c})), 
+   &quot; | Return Date: &quot; + {!Get_Subscription_Quote_Line.Related_Subscription_Return_Date__c}, 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c})), 
-   &quot; | Start Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.SBQQ__StartDate__c}), 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.SBQQ__StartDate__c})), 
+   &quot; | Start Date: &quot; + TEXT({!Get_Subscription_Quote_Line.SBQQ__StartDate__c}), 
    &quot;&quot;) +
-IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})), 
-   &quot; | End Date: &quot; + TEXT({!Loop_through_Quote_Line_Items.Expected_End_Date__c}), 
+IF(NOT(ISBLANK({!Get_Subscription_Quote_Line.Expected_End_Date__c})), 
+   &quot; | End Date: &quot; + TEXT({!Get_Subscription_Quote_Line.Expected_End_Date__c}), 
    &quot;&quot;) + 
-&quot; + Overage Amount of: $&quot; + TEXT(ROUND({!Get_Related_Subscription.Overage_Amount__c}, 2))</expression>
+&quot; + Overage Amount of: $&quot; + TEXT(ROUND({!Loop_Through_Returned_Subscriptions.Overage_Amount__c}, 2))</expression>
     </formulas>
     <formulas>
         <name>TotalOverage</name>
         <dataType>Currency</dataType>
-        <expression>{!Loop_through_Quote_Line_Items.SBQQ__NetTotal__c} + {!Get_Related_Subscription.Overage_Amount__c}</expression>
+        <expression>{!Get_Subscription_Quote_Line.SBQQ__NetTotal__c} + {!Loop_Through_Returned_Subscriptions.Overage_Amount__c}</expression>
         <scale>2</scale>
     </formulas>
     <interviewLabel>[Contract][Screen Flow] - Generate Quickbooks Invoice V2 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>[Contract][Screen Flow] - Generate Quickbooks Invoice V2</label>
     <loops>
-        <name>Loop_Each_SubscriptionId</name>
-        <label>Loop Each SubscriptionId</label>
+        <name>Loop_Through_Asset_Quote_Lines</name>
+        <label>Loop Through Asset Quote Lines</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>Get_Asset_Quote_Lines</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Create_Asset_Invoice_Line</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Final_Decision_Check</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_Through_Returned_Subscriptions</name>
+        <label>Loop Through Returned Subscriptions</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <collectionReference>Get_Subscription</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>Assign_Each_SubscriptionId</targetReference>
+            <targetReference>Get_Subscription_Quote_Line</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>Get_Uninvoiced_Quote_Lines</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
-        <name>Loop_through_Quote_Line_Items</name>
-        <label>Loop through Quote Line Items</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <collectionReference>Get_Uninvoiced_Quote_Lines</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Get_Related_Subscription</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>Final_Decision_Check</targetReference>
+            <targetReference>Get_Asset_Quote_Lines</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -455,6 +551,71 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Asset_Invoice_Line</name>
+        <label>Create Asset Invoice Line</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Asset_Quote_Line_as_Invoiced</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Description__c</field>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.SBQQ__Description__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Invoice_Request__c</field>
+            <value>
+                <elementReference>Create_Return_Invoice_Request</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Net_Price__c</field>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.SBQQ__NetTotal__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Original_Quote_Line_Product_Family_code__c</field>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.Product_Family_Code__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Pricebook_Entry_Id__c</field>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.SBQQ__PricebookEntryId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Quantity__c</field>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.SBQQ__Quantity__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Expected_End_Date__c</field>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.Expected_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>QuoteLine_Start_Date__c</field>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.SBQQ__StartDate__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subscription_Product_Type__c</field>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Invoice_Request_Line__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
     <recordCreates>
         <name>Create_Cycle_Overage_Invoice_Item</name>
         <label>Create Cycle Overage Invoice Item</label>
@@ -478,13 +639,13 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <inputAssignments>
             <field>Net_Price__c</field>
             <value>
-                <elementReference>Get_Related_Subscription.Overage_Amount__c</elementReference>
+                <elementReference>Loop_Through_Returned_Subscriptions.Overage_Amount__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Original_Quote_Line_Product_Family_code__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.Product_Family_Code__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.Product_Family_Code__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -493,25 +654,25 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <inputAssignments>
             <field>Quantity__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__Quantity__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>QuoteLine_Expected_End_Date__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.Expected_End_Date__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.Expected_End_Date__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>QuoteLine_Start_Date__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__StartDate__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Subscription_Product_Type__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
             </value>
         </inputAssignments>
         <object>Invoice_Request_Line__c</object>
@@ -523,7 +684,7 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Loop_through_Quote_Line_Items</targetReference>
+            <targetReference>Store_Current_Subscription_Status</targetReference>
         </connector>
         <inputAssignments>
             <field>Contract__c</field>
@@ -558,7 +719,7 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Update_QuoteLines_as_Invoiced</targetReference>
+            <targetReference>Trigger_Skyvia_Reprocessing</targetReference>
         </connector>
         <inputAssignments>
             <field>Description__c</field>
@@ -575,43 +736,43 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <inputAssignments>
             <field>Net_Price__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__NetTotal__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__NetTotal__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Original_Quote_Line_Product_Family_code__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.Product_Family_Code__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.Product_Family_Code__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Pricebook_Entry_Id__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__PricebookEntryId__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__PricebookEntryId__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Quantity__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__Quantity__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>QuoteLine_Expected_End_Date__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.Expected_End_Date__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.Expected_End_Date__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>QuoteLine_Start_Date__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__StartDate__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Subscription_Product_Type__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
             </value>
         </inputAssignments>
         <object>Invoice_Request_Line__c</object>
@@ -646,42 +807,77 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <inputAssignments>
             <field>Original_Quote_Line_Product_Family_code__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.Product_Family_Code__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.Product_Family_Code__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Pricebook_Entry_Id__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__PricebookEntryId__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__PricebookEntryId__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Quantity__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__Quantity__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__Quantity__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>QuoteLine_Expected_End_Date__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.Expected_End_Date__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.Expected_End_Date__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>QuoteLine_Start_Date__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__StartDate__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__StartDate__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Subscription_Product_Type__c</field>
             <value>
-                <elementReference>Loop_through_Quote_Line_Items.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
+                <elementReference>Get_Subscription_Quote_Line.SBQQ__Product__r.Subscription_Type_Formula__c</elementReference>
             </value>
         </inputAssignments>
         <object>Invoice_Request_Line__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
+    <recordLookups>
+        <name>Get_Asset_Quote_Lines</name>
+        <label>Get Asset Quote Lines</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Asset_Lines_Validation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>SBQQ__Quote__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetContract.SBQQ__Quote__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SBQQ__ProductSubscriptionType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>One-time</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>OneTime_Invoiced__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>SBQQ__QuoteLine__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordLookups>
         <name>Get_Invoice</name>
         <label>Get Invoice</label>
@@ -727,34 +923,6 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>Get_Related_Subscription</name>
-        <label>Get Related Subscription</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Store_Current_Subscription_Status</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>SBQQ__QuoteLine__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>Loop_through_Quote_Line_Items.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>SBQQ__TerminatedDate__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>SBQQ__Subscription__c</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
         <name>Get_Subscription</name>
         <label>Get Subscription</label>
         <locationX>0</locationX>
@@ -797,20 +965,20 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>Get_Uninvoiced_Quote_Lines</name>
-        <label>Get Uninvoiced Quote Lines</label>
+        <name>Get_Subscription_Quote_Line</name>
+        <label>Get Subscription Quote Line</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Create_Return_Invoice_Request</targetReference>
+            <targetReference>Check_QuoteLine_Found</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>SBQQ__Quote__c</field>
+            <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>GetContract.SBQQ__Quote__c</elementReference>
+                <elementReference>Loop_Through_Returned_Subscriptions.SBQQ__QuoteLine__c</elementReference>
             </value>
         </filters>
         <filters>
@@ -820,7 +988,7 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
                 <booleanValue>false</booleanValue>
             </value>
         </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>SBQQ__QuoteLine__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
@@ -851,14 +1019,14 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Loop_through_Quote_Line_Items</targetReference>
+            <targetReference>Loop_Through_Returned_Subscriptions</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
-            <operator>In</operator>
+            <operator>EqualTo</operator>
             <value>
-                <elementReference>ContractRelatedSubscriptionIds</elementReference>
+                <elementReference>Loop_Through_Returned_Subscriptions.Id</elementReference>
             </value>
         </filters>
         <inputAssignments>
@@ -868,6 +1036,30 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
             </value>
         </inputAssignments>
         <object>SBQQ__Subscription__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Asset_Quote_Line_as_Invoiced</name>
+        <label>Update Asset Quote Line as Invoiced</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Loop_Through_Asset_Quote_Lines</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Loop_Through_Asset_Quote_Lines.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>OneTime_Invoiced__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SBQQ__QuoteLine__c</object>
     </recordUpdates>
     <recordUpdates>
         <name>Update_Contract</name>
@@ -892,37 +1084,6 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
             </value>
         </inputAssignments>
         <object>Contract</object>
-    </recordUpdates>
-    <recordUpdates>
-        <name>Update_QuoteLines_as_Invoiced</name>
-        <label>Update QuoteLines as Invoiced</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <connector>
-            <targetReference>Trigger_Skyvia_Reprocessing</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>SBQQ__Quote__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>GetContract.SBQQ__Quote__c</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>OneTime_Invoiced__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <inputAssignments>
-            <field>OneTime_Invoiced__c</field>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </inputAssignments>
-        <object>SBQQ__QuoteLine__c</object>
     </recordUpdates>
     <recordUpdates>
         <name>Update_Related_Quote</name>
@@ -1048,7 +1209,7 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>GetContract</targetReference>
+            <targetReference>Check_Bypass_Permission</targetReference>
         </connector>
     </start>
     <status>Active</status>
@@ -1078,6 +1239,16 @@ IF(NOT(ISBLANK({!Loop_through_Quote_Line_Items.Expected_End_Date__c})),
     </variables>
     <variables>
         <name>HasInvoicesCreated</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>InvoiceRequestCreated</name>
         <dataType>Boolean</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>

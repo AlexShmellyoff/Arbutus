@@ -3,7 +3,7 @@
     <fullName>Quickbooks_URL__c</fullName>
     <externalId>false</externalId>
     <formula>HYPERLINK(
-  &quot;https://sandbox.qbo.intuit.com/app/customerdetail?nameId=&quot; &amp; Account.Quickbooks_Id__c,
+  &quot;https://qbo.intuit.com/app/invoice?txnId=&quot; &amp; Account.Quickbooks_Id__c,
   &quot;Quickbooks Account Link&quot;
 )</formula>
     <label>Quickbooks URL</label>

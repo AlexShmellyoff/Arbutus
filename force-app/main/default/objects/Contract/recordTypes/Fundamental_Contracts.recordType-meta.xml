@@ -4,6 +4,47 @@
     <active>true</active>
     <label>Fundamental Contracts</label>
     <picklistValues>
+        <picklist>Quickbooks_Invoice_Path__c</picklist>
+        <values>
+            <fullName>Invoice Fully Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Generated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Partly Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__AmendmentRenewalBehavior__c</picklist>
+        <values>
+            <fullName>Earliest End Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latest End Date</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SBQQ__MDQRenewalBehavior__c</picklist>
+        <values>
+            <fullName>De-segmented</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Status</picklist>
         <values>
             <fullName>Activated</fullName>

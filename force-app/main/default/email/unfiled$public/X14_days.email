@@ -1,0 +1,10 @@
+Dear {!Opportunity.OwnerFullName},
+
+Your opportunity "{!Opportunity.Name}" (Opportunity ID: {!Opportunity.Id}) has been in the "Quote Issued" stage for 14 days. Please follow up with the prospect to move the opportunity forward.
+
+If the deal is finalized, kindly update the stage to Closed-Won or Closed-Lost to prevent further reminders.
+
+📅 Last Updated: {!Opportunity.LastModifiedDate}
+
+
+View Opportunity : {!Opportunity.Link}

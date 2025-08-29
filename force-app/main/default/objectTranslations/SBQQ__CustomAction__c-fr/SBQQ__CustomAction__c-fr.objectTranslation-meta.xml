@@ -11,12 +11,4 @@
     <gender>Feminine</gender>
     <nameFieldLabel>Nom</nameFieldLabel>
     <startsWith>Vowel</startsWith>
-    <validationRules>
-        <errorMessage><!-- URL can&apos;t be empty for Custom Action &quot;Save and Navigate&quot; --></errorMessage>
-        <name>SBQQ__Non_empty_URL_for_Save_and_Navigate</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- URL target needs to be Replace Page for Custom Action &quot;Save and Navigate&quot; --></errorMessage>
-        <name>SBQQ__URLTarget_for_Save_and_Navigate</name>
-    </validationRules>
 </CustomObjectTranslation>

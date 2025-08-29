@@ -364,6 +364,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -374,6 +378,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -414,6 +422,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -505,9 +517,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -518,6 +532,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -802,6 +817,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -812,6 +831,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -852,6 +875,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -943,9 +970,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -956,6 +985,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1244,6 +1274,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -1254,6 +1288,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -1294,6 +1332,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -1386,9 +1428,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -1399,6 +1443,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1683,6 +1728,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -1693,6 +1742,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -1733,6 +1786,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -1824,9 +1881,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -1837,6 +1896,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2125,6 +2185,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -2135,6 +2199,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -2175,6 +2243,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -2267,9 +2339,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -2280,6 +2354,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2564,6 +2639,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -2574,6 +2653,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -2614,6 +2697,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -2705,9 +2792,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -2718,6 +2807,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3006,6 +3096,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -3016,6 +3110,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -3056,6 +3154,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -3148,9 +3250,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -3161,6 +3265,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3445,6 +3550,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -3455,6 +3564,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -3495,6 +3608,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -3586,9 +3703,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -3599,6 +3718,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3887,6 +4007,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -3897,6 +4021,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -3937,6 +4065,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -4029,9 +4161,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -4042,6 +4176,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -4326,6 +4461,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -4336,6 +4475,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -4376,6 +4519,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -4467,9 +4614,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -4480,6 +4629,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -4768,6 +4918,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -4778,6 +4932,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -4818,6 +4976,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -4910,9 +5072,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -4923,6 +5087,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -5207,6 +5372,10 @@
             <label>Opp Integer Fundamentals</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00NDK00000Qv70r</field>
+            <label>Opportunity Red Flag</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00NDK00000JUa5Z</field>
             <label>Ordered</label>
         </opportunityListFieldsLabelMappings>
@@ -5217,6 +5386,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MEQ8f</field>
             <label>Original CSSP Opportunity</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuXYW</field>
+            <label>Paid Upfront</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000MGkKt</field>
@@ -5257,6 +5430,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00NDK00000P2nrS</field>
             <label>Today Closed Date</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NDK00000QuPg9</field>
+            <label>Year</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
@@ -5348,9 +5525,11 @@
             <field>00NDK00000ONoe0</field>
             <field>00NDK00000LkAOi</field>
             <field>00NDK00000LkAOj</field>
+            <field>00NDK00000Qv70r</field>
             <field>00NDK00000JUa5Z</field>
             <field>00NDK00000JUa5Y</field>
             <field>00NDK00000MEQ8f</field>
+            <field>00NDK00000QuXYW</field>
             <field>00NDK00000MGkKt</field>
             <field>00NDK00000JUa5a</field>
             <field>00NDK00000P1aPp</field>
@@ -5361,6 +5540,7 @@
             <field>00NDK00000KfBXq</field>
             <field>00NKj00000jYtnm</field>
             <field>00NDK00000P2nrS</field>
+            <field>00NDK00000QuPg9</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>

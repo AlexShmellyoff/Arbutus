@@ -29,7 +29,7 @@
         <name>Create_Opportunity</name>
         <label>Create Opportunity</label>
         <locationX>397</locationX>
-        <locationY>1481</locationY>
+        <locationY>1482</locationY>
         <assignmentItems>
             <assignToReference>Var_Opportunity.Name</assignToReference>
             <operator>Assign</operator>
@@ -91,6 +91,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.SBQQ__Order__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Var_Opportunity.Year__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Var_Count</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -299,7 +306,7 @@
     <formulas>
         <name>PaidUpfrontOppName</name>
         <dataType>String</dataType>
-        <expression>{!$Record.SBQQ__Opportunity__r.Name}+ &apos;-&apos; + &apos;Service Contract&apos; + &apos;-&apos; + &apos;1&apos;</expression>
+        <expression>{!$Record.SBQQ__Opportunity__r.Name}+ &apos;-&apos; + &apos;Service Contract&apos; + &apos;-&apos; + &apos;Paid Upfront&apos;</expression>
     </formulas>
     <formulas>
         <name>Var_NumberofOpps</name>
@@ -352,6 +359,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>CSSP_Order__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__Order__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>CloseDate</field>
             <value>
                 <elementReference>$Record.StartDate</elementReference>
@@ -367,6 +380,12 @@
             <field>Original_CSSP_Opportunity__c</field>
             <value>
                 <elementReference>$Record.SBQQ__Opportunity__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Paid_Upfront__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </inputAssignments>
         <inputAssignments>

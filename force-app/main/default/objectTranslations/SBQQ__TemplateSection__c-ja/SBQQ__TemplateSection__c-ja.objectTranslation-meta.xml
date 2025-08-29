@@ -5,8 +5,4 @@
         <value>テンプレートセクション</value>
     </caseValues>
     <nameFieldLabel>セクション名</nameFieldLabel>
-    <webLinks>
-        <label><!-- IncludeDocument --></label>
-        <name>SBQQ__IncludeDocument</name>
-    </webLinks>
 </CustomObjectTranslation>

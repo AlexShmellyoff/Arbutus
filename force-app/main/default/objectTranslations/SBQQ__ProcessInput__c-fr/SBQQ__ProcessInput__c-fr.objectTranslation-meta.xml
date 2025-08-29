@@ -11,8 +11,4 @@
     <gender>Feminine</gender>
     <nameFieldLabel>Nom de l&apos;entrée</nameFieldLabel>
     <startsWith>Vowel</startsWith>
-    <validationRules>
-        <errorMessage><!-- Both Product Field and Operator must be set if either are set. --></errorMessage>
-        <name>SBQQ__ProductFieldAndOperatorSet</name>
-    </validationRules>
 </CustomObjectTranslation>

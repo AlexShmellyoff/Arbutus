@@ -10,12 +10,4 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>Nº da condição</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- You may not select both field and variable to test. Create separate conditions to test against field and variable. --></errorMessage>
-        <name>SBQQ__Field_and_Variable</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You must select either field or variable to test. --></errorMessage>
-        <name>SBQQ__Field_or_Variable</name>
-    </validationRules>
 </CustomObjectTranslation>

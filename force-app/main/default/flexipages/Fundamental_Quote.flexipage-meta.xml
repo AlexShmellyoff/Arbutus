@@ -214,10 +214,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Tax_Code_1__c</fieldItem>
-                <identifier>RecordTax_Code_1_cField</identifier>
+                <fieldItem>Record.Tax_Code_1GC__c</fieldItem>
+                <identifier>RecordTax_Code_1GC_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -234,10 +234,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Tax_Code_2__c</fieldItem>
-                <identifier>RecordTax_Code_2_cField</identifier>
+                <fieldItem>Record.Tax_Code_2GC__c</fieldItem>
+                <identifier>RecordTax_Code_2GC_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>

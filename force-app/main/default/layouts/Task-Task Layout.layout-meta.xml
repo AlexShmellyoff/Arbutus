@@ -127,6 +127,17 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <miniLayout>
+        <fields>Subject</fields>
+        <fields>OwnerId</fields>
+        <fields>WhoId</fields>
+        <fields>CurrencyIsoCode</fields>
+        <fields>ActivityDate</fields>
+        <fields>WhatId</fields>
+        <fields>Priority</fields>
+        <fields>Status</fields>
+        <fields>Description</fields>
+    </miniLayout>
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>

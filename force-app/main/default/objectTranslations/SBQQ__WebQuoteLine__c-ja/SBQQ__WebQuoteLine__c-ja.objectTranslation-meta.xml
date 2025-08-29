@@ -4,17 +4,5 @@
         <plural>false</plural>
         <value>Web 見積品目</value>
     </caseValues>
-    <fieldSets>
-        <label><!-- LineEditor --></label>
-        <name>SBQQ__LineEditor</name>
-    </fieldSets>
-    <fieldSets>
-        <label><!-- Segmented Line Editor --></label>
-        <name>SBQQ__SegmentedLineEditor</name>
-    </fieldSets>
-    <fieldSets>
-        <label><!-- Segmented Line Editor Summary --></label>
-        <name>SBQQ__SegmentedLineEditorSummary</name>
-    </fieldSets>
     <nameFieldLabel>見積品目番号</nameFieldLabel>
 </CustomObjectTranslation>

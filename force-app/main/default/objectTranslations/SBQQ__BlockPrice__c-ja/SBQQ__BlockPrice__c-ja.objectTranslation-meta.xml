@@ -5,8 +5,4 @@
         <value>ブロック価格</value>
     </caseValues>
     <nameFieldLabel>価格名</nameFieldLabel>
-    <webLinks>
-        <label><!-- EditAll --></label>
-        <name>SBQQ__EditAll</name>
-    </webLinks>
 </CustomObjectTranslation>

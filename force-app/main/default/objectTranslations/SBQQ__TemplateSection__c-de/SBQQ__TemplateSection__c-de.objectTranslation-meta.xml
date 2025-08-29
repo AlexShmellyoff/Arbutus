@@ -42,8 +42,4 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>Abschnittsname</nameFieldLabel>
-    <webLinks>
-        <label><!-- IncludeDocument --></label>
-        <name>SBQQ__IncludeDocument</name>
-    </webLinks>
 </CustomObjectTranslation>

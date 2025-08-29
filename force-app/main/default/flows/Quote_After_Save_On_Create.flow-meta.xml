@@ -345,9 +345,21 @@
             <targetReference>Type</targetReference>
         </connector>
         <inputAssignments>
+            <field>Tax_Code_1GC__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__Account__r.Tax_Code_1__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Tax_Code_1_Rate__c</field>
             <value>
                 <elementReference>$Record.SBQQ__Account__r.Tax_Code_1Percent__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Tax_Code_2GC__c</field>
+            <value>
+                <elementReference>$Record.SBQQ__Account__r.Tax_code_2__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>

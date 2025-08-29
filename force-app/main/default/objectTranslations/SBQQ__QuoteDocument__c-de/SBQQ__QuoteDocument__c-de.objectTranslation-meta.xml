@@ -42,12 +42,4 @@
     </caseValues>
     <gender>Neuter</gender>
     <nameFieldLabel>Dokumentname</nameFieldLabel>
-    <webLinks>
-        <label><!-- Email --></label>
-        <name>SBQQ__Email</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- View --></label>
-        <name>SBQQ__View</name>
-    </webLinks>
 </CustomObjectTranslation>

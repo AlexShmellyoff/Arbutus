@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Consultant/Engineer</fullName>
+        <default>false</default>
+        <label>Consultant/Engineer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contractor (Electrical or Mechanical)</fullName>
+        <default>true</default>
+        <label>Contractor (Electrical or Mechanical)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>End user</fullName>
+        <default>false</default>
+        <label>End user</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Contractor</fullName>
+        <default>false</default>
+        <label>General Contractor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manufacturer</fullName>
+        <default>false</default>
+        <label>Manufacturer</label>
+    </standardValue>
+</StandardValueSet>

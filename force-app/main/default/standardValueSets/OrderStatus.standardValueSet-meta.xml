@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groupingStringEnum>OrderStatusCode</groupingStringEnum>
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Draft</fullName>
+        <default>false</default>
+        <label>Order Confirmation</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>PO Issued to Supplier</fullName>
+        <default>false</default>
+        <label>PO Issued to Supplier</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Milestones/Schedule required</fullName>
+        <default>false</default>
+        <label>Project Milestones/Schedule required</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Drawings Issued to Customer</fullName>
+        <default>false</default>
+        <label>Drawings Issued to Customer</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>ESD/Tracking Issued to Customer</fullName>
+        <default>false</default>
+        <label>ESD/Tracking Issued to Customer</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Delivered</fullName>
+        <default>false</default>
+        <label>Product Delivered</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Delivered/Services Complete</fullName>
+        <default>false</default>
+        <label>Product Delivered/Services Complete</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Invoiced</fullName>
+        <default>false</default>
+        <label>Customer Invoiced</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Invoiced Issued</fullName>
+        <default>false</default>
+        <label>Invoiced Issued</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Partly Paid</fullName>
+        <default>false</default>
+        <label>Partly Paid</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Revenue recognition/Closed Archived</fullName>
+        <default>false</default>
+        <label>Revenue recognition/Closed Archived</label>
+        <groupingString>Activated</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Invoice Paid</fullName>
+        <default>false</default>
+        <label>Invoice Paid</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+    <standardValue>
+        <fullName>Released into Production</fullName>
+        <default>false</default>
+        <label>Released into Production</label>
+        <groupingString>Draft</groupingString>
+    </standardValue>
+</StandardValueSet>

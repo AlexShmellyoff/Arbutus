@@ -5,8 +5,4 @@
         <value>追加ドキュメント</value>
     </caseValues>
     <nameFieldLabel>追加ドキュメント</nameFieldLabel>
-    <webLinks>
-        <label><!-- NewQuoteRelatedContent --></label>
-        <name>SBQQ__NewQuoteRelatedContent</name>
-    </webLinks>
 </CustomObjectTranslation>

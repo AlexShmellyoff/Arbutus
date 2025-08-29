@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Arbutus West Agency Ltd</fullName>
+        <default>false</default>
+        <label>Arbutus West Agency Ltd</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fundamentals Power Group</fullName>
+        <default>false</default>
+        <label>Fundamentals Power Group</label>
+    </standardValue>
+</StandardValueSet>

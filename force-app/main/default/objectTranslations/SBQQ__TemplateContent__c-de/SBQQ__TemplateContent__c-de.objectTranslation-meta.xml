@@ -42,8 +42,4 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>Inhaltsname</nameFieldLabel>
-    <webLinks>
-        <label><!-- Translate --></label>
-        <name>SBQQ__Translate</name>
-    </webLinks>
 </CustomObjectTranslation>

@@ -5,8 +5,4 @@
         <value>プロセス入力</value>
     </caseValues>
     <nameFieldLabel>入力名</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- Both Product Field and Operator must be set if either are set. --></errorMessage>
-        <name>SBQQ__ProductFieldAndOperatorSet</name>
-    </validationRules>
 </CustomObjectTranslation>

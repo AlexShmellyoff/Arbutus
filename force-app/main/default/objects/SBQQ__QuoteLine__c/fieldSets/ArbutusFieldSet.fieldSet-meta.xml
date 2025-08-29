@@ -3,6 +3,11 @@
     <fullName>ArbutusFieldSet</fullName>
     <description>Arbutus Line Field Set</description>
     <displayedFields>
+        <field>New_Renewal_Product__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>SBQQ__ProductName__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>

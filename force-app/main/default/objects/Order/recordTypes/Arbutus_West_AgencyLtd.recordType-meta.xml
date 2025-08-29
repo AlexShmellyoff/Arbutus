@@ -72,10 +72,6 @@
     <picklistValues>
         <picklist>Status</picklist>
         <values>
-            <fullName>Documentation Review</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Draft</fullName>
             <default>false</default>
         </values>
@@ -88,19 +84,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Equipment Released into Production</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Invoice Paid</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Partly Paid</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Product Delivered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Released into Production</fullName>
             <default>false</default>
         </values>
         <values>

@@ -1,0 +1,8 @@
+Hi ,
+
+This is to inform you that Contract: {!Contract.ContractNumber} ends in 30 days. A renewal opportunity has been created
+
+View Contract: {!Contract.Link}
+View Renewal Opportunity: {!Contract.SBQQ__RenewalOpportunity__c}
+
+Thank you

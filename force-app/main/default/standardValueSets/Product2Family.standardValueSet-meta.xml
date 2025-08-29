@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Center Operation</fullName>
+        <default>false</default>
+        <label>Data Center Operation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Preventative Maintenance Visit</fullName>
+        <default>false</default>
+        <label>Preventative Maintenance Visit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Center Operation: IT Optimize</fullName>
+        <default>false</default>
+        <label>Data Center Operation: IT Optimize</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rental The Re-Rental Class</fullName>
+        <default>false</default>
+        <label>Rental The Re-Rental Class</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Center Operation: Change</fullName>
+        <default>false</default>
+        <label>Data Center Operation: Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoStruxure Service Plan for 3-Phase UPS</fullName>
+        <default>false</default>
+        <label>EcoStruxure Service Plan for 3-Phase UPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>On Site Service</fullName>
+        <default>false</default>
+        <label>On Site Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Training Services</fullName>
+        <default>false</default>
+        <label>Training Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoStruxureâ„¢ IT Data Center Expert</fullName>
+        <default>false</default>
+        <label>EcoStruxureâ„¢ IT Data Center Expert</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Spare Parts Kits for UPS</fullName>
+        <default>false</default>
+        <label>Spare Parts Kits for UPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Out of Warranty Service</fullName>
+        <default>false</default>
+        <label>Out of Warranty Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advantage Service Plan for Cooling</fullName>
+        <default>false</default>
+        <label>Advantage Service Plan for Cooling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Managed Maintenance Services</fullName>
+        <default>false</default>
+        <label>Managed Maintenance Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor Management Services</fullName>
+        <default>false</default>
+        <label>Vendor Management Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Critical Facility Operations</fullName>
+        <default>false</default>
+        <label>Critical Facility Operations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoCare for Modular Data Centers</fullName>
+        <default>false</default>
+        <label>EcoCare for Modular Data Centers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoStruxure Asset Advisor</fullName>
+        <default>false</default>
+        <label>EcoStruxure Asset Advisor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Extended Warranties - Critical Power &amp; Cooling</fullName>
+        <default>false</default>
+        <label>Extended Warranties - Critical Power &amp; Cooling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Start-Up Service</fullName>
+        <default>false</default>
+        <label>Start-Up Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Third Party Hardware Procurement</fullName>
+        <default>false</default>
+        <label>Third Party Hardware Procurement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Center University</fullName>
+        <default>false</default>
+        <label>Data Center University</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoFitâ„¢ Life Extension Essential for UPS</fullName>
+        <default>false</default>
+        <label>EcoFitâ„¢ Life Extension Essential for UPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoFitâ„¢ Replacement for Cooling</fullName>
+        <default>false</default>
+        <label>EcoFitâ„¢ Replacement for Cooling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NetworkAIR Accessories</fullName>
+        <default>false</default>
+        <label>NetworkAIR Accessories</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dispatch Services</fullName>
+        <default>false</default>
+        <label>Dispatch Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Center Assessment Services</fullName>
+        <default>false</default>
+        <label>Data Center Assessment Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Monitoring and Dispatch Services</fullName>
+        <default>false</default>
+        <label>Monitoring and Dispatch Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoStruxureâ„¢ IT Expert</fullName>
+        <default>false</default>
+        <label>EcoStruxureâ„¢ IT Expert</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rental Load Bank Manual</fullName>
+        <default>false</default>
+        <label>Rental Load Bank Manual</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rental Load Bank Auto</fullName>
+        <default>false</default>
+        <label>Rental Load Bank Auto</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rental Accessories</fullName>
+        <default>false</default>
+        <label>Rental Accessories</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rental Parts</fullName>
+        <default>false</default>
+        <label>Rental Parts</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rental Trailer</fullName>
+        <default>false</default>
+        <label>Rental Trailer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MGE Galaxy</fullName>
+        <default>false</default>
+        <label>MGE Galaxy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoStruxureâ„¢ IT SmartConnect</fullName>
+        <default>false</default>
+        <label>EcoStruxureâ„¢ IT SmartConnect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoFitâ„¢ Life Extension Advanced for UPS</fullName>
+        <default>false</default>
+        <label>EcoFitâ„¢ Life Extension Advanced for UPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EcoCare for Single-Phase UPS</fullName>
+        <default>false</default>
+        <label>EcoCare for Single-Phase UPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advantage Service Plan for 3-Phase UPS</fullName>
+        <default>false</default>
+        <label>Advantage Service Plan for 3-Phase UPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>On-demand Services</fullName>
+        <default>false</default>
+        <label>On-demand Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Installation Services for Critical Power &amp; Cooling</fullName>
+        <default>false</default>
+        <label>Installation Services for Critical Power &amp; Cooling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Battery Replacement Services</fullName>
+        <default>false</default>
+        <label>Battery Replacement Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Network Integration</fullName>
+        <default>false</default>
+        <label>Network Integration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Center Operation: Energy Efficiency</fullName>
+        <default>false</default>
+        <label>Data Center Operation: Energy Efficiency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MGE Accessories</fullName>
+        <default>false</default>
+        <label>MGE Accessories</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Network Management Cards</fullName>
+        <default>false</default>
+        <label>Network Management Cards</label>
+    </standardValue>
+    <standardValue>
+        <fullName>MGE EPS</fullName>
+        <default>false</default>
+        <label>MGE EPS</label>
+    </standardValue>
+</StandardValueSet>

@@ -344,8 +344,8 @@
             <!-- field from quote var -->
             <table-row background-color="#E6E1E1" border="solid 2px #F7F2F2">
                 <table-cell padding-left="5pt" padding-top="3pt" padding-bottom="3pt">
-                    <block>{!quote.Tax_Code_1__c}</block>
-                    <block>{!quote.Tax_Code_2__c}</block>
+                    <block>{!quote.Tax_Code_1GC__c}</block>
+                    <block>{!quote.Tax_Code_2GC__c}</block>
                 </table-cell>
 
                 <table-cell padding-top="3pt" padding-bottom="3pt" text-align="right">

@@ -11,8 +11,4 @@
     <gender>Feminine</gender>
     <nameFieldLabel>Nom de la section</nameFieldLabel>
     <startsWith>Consonant</startsWith>
-    <webLinks>
-        <label><!-- IncludeDocument --></label>
-        <name>SBQQ__IncludeDocument</name>
-    </webLinks>
 </CustomObjectTranslation>

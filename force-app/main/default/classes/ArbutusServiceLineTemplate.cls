@@ -199,69 +199,7 @@ public class ArbutusServiceLineTemplate {
             }
         }
 
-        //     groupedLinesByYears.put(yearKey, new Map<String, Object>{
-        //         'quoteLines' => currentGroupedLines,
-        //         'periodInfo' => new Map<String, Object>{
-        //             'startDate' => formattedStart,
-        //             'endDate' => formattedEnd,
-        //             'duration' => String.valueOf(year)
-        //         },
-        //         'subTotal' => groupedLinesSubTotalAmount
-        //     } ); // Replace with filtered groupedLines if needed
-        //     groupedLinesByYearsKeys.add(yearKey);
 
-
-
-        // System.debug('[VDO] Grouped Lines: ' + JSON.serialize(groupedLines));
-        // Calculate Quote Line Totals')
-        // make for using durationYears and year++
-        // groupedLinesByYears = new Map<String, Map<String, Object>>();
-        // groupedLinesByYearsKeys = new List<String>();
-        // overallTotal = 0;
-
-        // Date currentStart = startDate;
-        // for (Integer year = 1; year <= durationYears.intValue(); year++) {
-        //     // Create a deep copy of groupedLines for this year
-        //     List<Map<String, Object>> currentGroupedLines = new List<Map<String, Object>>();
-        //     for (Map<String, Object> groupL : groupedLines) {
-        //         Map<String, Object> clonedGroup = new Map<String, Object>();
-        //         clonedGroup.putAll(groupL);
-        //         currentGroupedLines.add(clonedGroup);
-        //     }
-            
-
-        //     Date calculatedEnd = currentStart.addYears(1).addDays(-1); // 1 year span
-
-        //     // If last year and calculated end exceeds actual endDate
-        //     Date actualEnd = (calculatedEnd > endDate) ? endDate : calculatedEnd;
-
-        //     // Use DateTime to format the Date as MM/dd/yyyy
-        //     String formattedStart = DateTime.newInstance(currentStart, Time.newInstance(0, 0, 0, 0)).format('MM/dd/yyyy');
-        //     String formattedEnd = DateTime.newInstance(actualEnd, Time.newInstance(0, 0, 0, 0)).format('MM/dd/yyyy');
-
-        //     String yearKey = 'year ' + year + ' - ' + formattedStart + ' - ' + formattedEnd;
-
-        //     overallTotal += groupedLinesSubTotalAmount;
-        //     groupedLinesByYears.put(yearKey, new Map<String, Object>{
-        //         'quoteLines' => currentGroupedLines,
-        //         'periodInfo' => new Map<String, Object>{
-        //             'startDate' => formattedStart,
-        //             'endDate' => formattedEnd,
-        //             'duration' => String.valueOf(year)
-        //         },
-        //         'subTotal' => groupedLinesSubTotalAmount
-        //     } ); // Replace with filtered groupedLines if needed
-        //     groupedLinesByYearsKeys.add(yearKey);
-
-        //     System.debug('[VDO] Group Key: ' + yearKey);
-
-        //     currentStart = currentStart.addYears(1);
-        //     if(year == 1 ){
-        //         quoteStartAndEndDate = formattedStart;
-        //     } else if (year == durationYears.intValue()) {
-        //         quoteStartAndEndDate += ' - ' + formattedEnd;
-        //     }
-        // }
 
         System.debug('[VDO] Grouped Lines: ' + JSON.serialize(groupedLinesByYears));
         

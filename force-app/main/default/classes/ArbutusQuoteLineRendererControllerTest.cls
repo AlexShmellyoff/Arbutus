@@ -57,7 +57,9 @@ private class ArbutusQuoteLineRendererControllerTest {
                 SBQQ__ListPrice__c = 100,
                 SBQQ__CustomerPrice__c = 100,
                 SBQQ__NetPrice__c = 100,
-                Parent_product__c = true
+                Parent_product__c = true,
+                SBQQ__Number__c = 1,
+                SBQQ__Description__c = '<div>This is the <b>parent</b> product description.<br/>With a second line.</div>'
             );
             insert parentLine;
 
@@ -71,7 +73,9 @@ private class ArbutusQuoteLineRendererControllerTest {
                 SBQQ__CustomerPrice__c = 25,
                 SBQQ__NetPrice__c = 25,
                 SBQQ__Optional__c = true,
-                Parent_product__c = false
+                Parent_product__c = false,
+                SBQQ__Number__c = 2,
+                SBQQ__Description__c = '<div>This is the <i>adder</i> line description.<br/>Another line here.</div>'
             );
             insert childLine;
 
@@ -79,7 +83,7 @@ private class ArbutusQuoteLineRendererControllerTest {
             Test.setCurrentPageReference(new PageReference('/apex/ArbutusRenderer'));
             ApexPages.currentPage().getParameters().put('qid', quote.Id);
             ApexPages.currentPage().getParameters().put('tid', 'fakeTemplateId');
-
+            
             ArbutusQuoteLineRendererController controller = new ArbutusQuoteLineRendererController(new ApexPages.StandardController(quote));
         }
 

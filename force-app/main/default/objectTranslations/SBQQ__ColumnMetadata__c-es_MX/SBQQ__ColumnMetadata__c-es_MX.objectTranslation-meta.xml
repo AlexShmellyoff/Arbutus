@@ -10,8 +10,4 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>Número de metadatos de columna</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- Field Column Size cannot be less than 67. --></errorMessage>
-        <name>SBQQ__ValidateMinimumPixelSize</name>
-    </validationRules>
 </CustomObjectTranslation>

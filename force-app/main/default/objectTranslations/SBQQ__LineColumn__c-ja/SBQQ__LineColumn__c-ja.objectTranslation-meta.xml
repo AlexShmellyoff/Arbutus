@@ -5,8 +5,4 @@
         <value>品目列</value>
     </caseValues>
     <nameFieldLabel>列ヘッダー</nameFieldLabel>
-    <webLinks>
-        <label><!-- Translate --></label>
-        <name>SBQQ__Translate</name>
-    </webLinks>
 </CustomObjectTranslation>

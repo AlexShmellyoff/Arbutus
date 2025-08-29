@@ -10,12 +10,4 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel>Nombre de dimensión</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- Can’t create MDQ price dimensions for evergreen or renewable/evergreen products. --></errorMessage>
-        <name>SBQQ__Cannot_Create_PriceDimension_Evergreen</name>
-    </validationRules>
-    <webLinks>
-        <label><!-- Translate --></label>
-        <name>SBQQ__Translate</name>
-    </webLinks>
 </CustomObjectTranslation>

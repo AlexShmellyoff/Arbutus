@@ -11,8 +11,4 @@
     <gender>Feminine</gender>
     <nameFieldLabel>N° de clause</nameFieldLabel>
     <startsWith>Consonant</startsWith>
-    <webLinks>
-        <label><!-- Translate --></label>
-        <name>SBQQ__Translate</name>
-    </webLinks>
 </CustomObjectTranslation>

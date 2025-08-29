@@ -13,6 +13,7 @@
     <columns>Estimated_Ship_Date_ESD__c</columns>
     <columns>ORDERS.ORDER_NUMBER</columns>
     <columns>ORDERS.CREATED_DATE</columns>
+    <columns>Quickbooks_Invoice_Balance__c</columns>
     <filterScope>Everything</filterScope>
     <label>All Orders</label>
 </ListView>

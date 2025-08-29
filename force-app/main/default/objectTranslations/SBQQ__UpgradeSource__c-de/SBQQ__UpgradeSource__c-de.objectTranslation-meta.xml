@@ -42,8 +42,4 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel>Name der Quelle</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- Conversion Rate must be represented as a ratio of the format &quot;Upgrade Source:Upgrade Product&quot;. --></errorMessage>
-        <name>SBQQ__Conversion_Rate_Must_Fit_Ratio_Format</name>
-    </validationRules>
 </CustomObjectTranslation>

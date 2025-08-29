@@ -76,10 +76,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Documentation Review %E2%80%93 Waiting for Release</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Draft</fullName>
             <default>false</default>
         </values>
@@ -92,7 +88,19 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Invoice Paid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoiced Issued</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>PO Issued to Supplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partly Paid</fullName>
             <default>false</default>
         </values>
         <values>
@@ -104,7 +112,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Project Released - Product%2FServices Scheduled</fullName>
+            <fullName>Released into Production</fullName>
             <default>false</default>
         </values>
         <values>

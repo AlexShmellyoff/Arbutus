@@ -10,8 +10,4 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel>Nº de ação do produto</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- Value Attribute required since the Value Field is a global Configuration Attribute field. --></errorMessage>
-        <name>SBQQ__Value_attr_required_if_global_field</name>
-    </validationRules>
 </CustomObjectTranslation>

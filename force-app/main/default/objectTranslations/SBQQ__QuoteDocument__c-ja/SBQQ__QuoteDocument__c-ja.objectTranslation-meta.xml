@@ -5,12 +5,4 @@
         <value>見積ドキュメント</value>
     </caseValues>
     <nameFieldLabel>ドキュメント名</nameFieldLabel>
-    <webLinks>
-        <label><!-- Email --></label>
-        <name>SBQQ__Email</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- View --></label>
-        <name>SBQQ__View</name>
-    </webLinks>
 </CustomObjectTranslation>

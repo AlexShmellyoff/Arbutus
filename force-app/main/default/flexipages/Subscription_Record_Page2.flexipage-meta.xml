@@ -399,7 +399,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Expected_End_Date__c</fieldItem>
                 <identifier>RecordExpected_End_Date_cField</identifier>
@@ -453,6 +453,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.SBQQ__NetPrice__c</fieldItem>
                 <identifier>RecordSBQQ_NetPrice_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Total_Net_Price__c</fieldItem>
+                <identifier>RecordTotal_Net_Price_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-a69d9342-607a-48f9-938f-307220ee8415</name>

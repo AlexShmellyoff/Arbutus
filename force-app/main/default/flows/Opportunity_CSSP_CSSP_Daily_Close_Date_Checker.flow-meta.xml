@@ -3,6 +3,22 @@
     <apiVersion>64.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
+        <name>Assign_RecordType_Id_to_Variable</name>
+        <label>Assign RecordType Id to Variable</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Opportunity_Record_Type_Id.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_CSSP_Opportunities_Closing_Today</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Collect_Opportunity_IDs</name>
         <label>Collect Opportunity IDs</label>
         <locationX>0</locationX>
@@ -18,6 +34,35 @@
             <targetReference>Loop_Through_CSSP_Opportunities</targetReference>
         </connector>
     </assignments>
+    <constants>
+        <name>RECORD_TYPE_DEVELOPER_NAME</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>CSSP_Service_Contract</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Check_RecordType_Found</name>
+        <label>Check_RecordType_Found</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>False</defaultConnectorLabel>
+        <rules>
+            <name>True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Opportunity_Record_Type_Id.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_RecordType_Id_to_Variable</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <interviewLabel>[Opportunity][CSSP] CSSP Daily Close Date Checker {!$Flow.CurrentDateTime}</interviewLabel>
     <label>[Opportunity][CSSP] CSSP Daily Close Date Checker</label>
@@ -82,11 +127,39 @@
             <field>RecordTypeId</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>012DK000002HYXhYAO</stringValue>
+                <elementReference>RecordTypeId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Opportunity_Record_Type_Id</name>
+        <label>Get Opportunity Record Type Id</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_RecordType_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RECORD_TYPE_DEVELOPER_NAME</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>SobjectType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Opportunity</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>RecordType</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
@@ -114,12 +187,12 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Get_CSSP_Opportunities_Closing_Today</targetReference>
+            <targetReference>Get_Opportunity_Record_Type_Id</targetReference>
         </connector>
         <schedule>
             <frequency>Daily</frequency>
-            <startDate>2025-07-21</startDate>
-            <startTime>00:15:00.000Z</startTime>
+            <startDate>2025-08-12</startDate>
+            <startTime>01:47:00.000Z</startTime>
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
@@ -128,6 +201,13 @@
         <name>OpportunityIDsToUpdate</name>
         <dataType>String</dataType>
         <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>RecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>

@@ -11,12 +11,4 @@
     <gender>Feminine</gender>
     <nameFieldLabel>Nom de la règle de prix</nameFieldLabel>
     <startsWith>Consonant</startsWith>
-    <webLinks>
-        <label><!-- CloneWithRelated --></label>
-        <name>SBQQ__CloneWithRelated</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- CloneWithRelatedClassic --></label>
-        <name>SBQQ__CloneWithRelatedClassic</name>
-    </webLinks>
 </CustomObjectTranslation>

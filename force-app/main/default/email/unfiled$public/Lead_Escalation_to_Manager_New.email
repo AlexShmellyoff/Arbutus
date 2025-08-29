@@ -1,0 +1,16 @@
+Hi ,
+
+This is to inform you that the following lead requires your immediate attention:
+
+Lead Details
+Lead Created Date - {!Lead.CreatedDate}
+Lead ID -{!Lead.Id}
+Lead Name -{!Lead.Name}
+Lead Status:** {!Lead.Status}
+
+View Lead: {!Lead.Link}
+
+
+Please review and follow up with the lead as soon as possible.
+
+Thank you

@@ -10,12 +10,4 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel>Nº da ação</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- To use Quote Line Pricing Guidance as the Target Object, select After Calculate from the Calculator Evaluation Event dropdown list. --></errorMessage>
-        <name>SBQQ__Event_Evaluation_Pricing_Guidance</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Price Action Target Object does not match Evaluation Scope --></errorMessage>
-        <name>SBQQ__Target_Object_Validation</name>
-    </validationRules>
 </CustomObjectTranslation>

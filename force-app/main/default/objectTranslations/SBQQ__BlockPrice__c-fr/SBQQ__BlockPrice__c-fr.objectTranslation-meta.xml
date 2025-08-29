@@ -11,8 +11,4 @@
     <gender>Masculine</gender>
     <nameFieldLabel>Nom du prix</nameFieldLabel>
     <startsWith>Consonant</startsWith>
-    <webLinks>
-        <label><!-- EditAll --></label>
-        <name>SBQQ__EditAll</name>
-    </webLinks>
 </CustomObjectTranslation>

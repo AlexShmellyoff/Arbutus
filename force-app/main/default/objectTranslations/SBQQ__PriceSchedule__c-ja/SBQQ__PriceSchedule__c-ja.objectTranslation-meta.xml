@@ -5,8 +5,4 @@
         <value>価格表</value>
     </caseValues>
     <nameFieldLabel>表名</nameFieldLabel>
-    <webLinks>
-        <label><!-- EditTiers --></label>
-        <name>SBQQ__EditTiers</name>
-    </webLinks>
 </CustomObjectTranslation>

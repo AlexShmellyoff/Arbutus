@@ -42,8 +42,4 @@
     </caseValues>
     <gender>Neuter</gender>
     <nameFieldLabel>Zusätzliches Dokument</nameFieldLabel>
-    <webLinks>
-        <label><!-- NewQuoteRelatedContent --></label>
-        <name>SBQQ__NewQuoteRelatedContent</name>
-    </webLinks>
 </CustomObjectTranslation>

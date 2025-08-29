@@ -4,7 +4,7 @@
         <name>Copy_1_of_RemoveHTMLTag</name>
         <label>Copy 1 of RemoveHTMLTag</label>
         <locationX>50</locationX>
-        <locationY>1139</locationY>
+        <locationY>1739</locationY>
         <actionName>RemoveHTMLTags</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -28,7 +28,7 @@
         <name>RemoveHTMLTag</name>
         <label>RemoveHTMLTag</label>
         <locationX>490</locationX>
-        <locationY>1139</locationY>
+        <locationY>1739</locationY>
         <actionName>RemoveHTMLTags</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -54,7 +54,7 @@
         <name>Copy_1_of_Return_Date_Verification</name>
         <label>Copy 1 of Return Date Verification</label>
         <locationX>490</locationX>
-        <locationY>1247</locationY>
+        <locationY>1847</locationY>
         <defaultConnector>
             <targetReference>Set_Return_Date_0</targetReference>
         </defaultConnector>
@@ -88,7 +88,7 @@
         <locationX>446</locationX>
         <locationY>323</locationY>
         <defaultConnector>
-            <targetReference>Return_Date_Populated</targetReference>
+            <targetReference>Net_Price_Update</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
@@ -115,10 +115,35 @@
         </rules>
     </decisions>
     <decisions>
+        <name>Net_Price_Update</name>
+        <label>Net Price Update</label>
+        <locationX>446</locationX>
+        <locationY>731</locationY>
+        <defaultConnector>
+            <targetReference>Terminated_Date_Populated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes123</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__NetPrice__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Total_Net_Price</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Rental_or_Not_Rental_Accessory</name>
         <label>Rental or Not Rental Accessory - Status</label>
         <locationX>446</locationX>
-        <locationY>1031</locationY>
+        <locationY>1631</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Rental</name>
@@ -171,7 +196,7 @@
         <name>Return_Date_Populated</name>
         <label>Return Date Populated</label>
         <locationX>446</locationX>
-        <locationY>731</locationY>
+        <locationY>1331</locationY>
         <defaultConnector>
             <targetReference>Rental_or_Not_Rental_Accessory</targetReference>
         </defaultConnector>
@@ -203,7 +228,7 @@
         <name>Return_Date_Verification</name>
         <label>Return Date Verification</label>
         <locationX>50</locationX>
-        <locationY>1247</locationY>
+        <locationY>1847</locationY>
         <defaultConnector>
             <targetReference>Set_Return_Date</targetReference>
         </defaultConnector>
@@ -229,6 +254,32 @@
                 <targetReference>Create_Maintenance_Set_Status_Closed</targetReference>
             </connector>
             <label>Populated Return Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Terminated_Date_Populated</name>
+        <label>Terminated Date Populated</label>
+        <locationX>446</locationX>
+        <locationY>1031</locationY>
+        <defaultConnector>
+            <targetReference>Return_Date_Populated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes12</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SBQQ__TerminatedDate__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status1</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Yes</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -311,12 +362,6 @@
         <scale>2</scale>
     </formulas>
     <formulas>
-        <name>OverageAmountMultiplyQuantity</name>
-        <dataType>Currency</dataType>
-        <expression>{!OverageAmountFormula}*{!$Record.SBQQ__Quantity__c}</expression>
-        <scale>2</scale>
-    </formulas>
-    <formulas>
         <name>PricingCalculation</name>
         <dataType>Currency</dataType>
         <expression>IF({!$Record.Duration__c} &lt;= 1, {!$Record.Daily__c},
@@ -359,6 +404,25 @@ IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
 )</expression>
         <scale>2</scale>
     </formulas>
+    <formulas>
+        <name>TotalNetPrice</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.SBQQ__NetPrice__c}*{!$Record.SBQQ__Quantity__c}</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>TotalNetPricePlusOverage</name>
+        <dataType>Currency</dataType>
+        <expression>IF(
+    OR(
+        ISBLANK({!$Record.Overage_Charge__c}),
+        {!$Record.Overage_Charge__c} = 0
+    ),
+    {!$Record.Total_Net_Price__c},
+    {!$Record.Overage_Charge__c} + {!$Record.Total_Net_Price__c}
+)</expression>
+        <scale>2</scale>
+    </formulas>
     <interviewLabel>[Subscription] [After-Save] - On Update {!$Flow.CurrentDateTime}</interviewLabel>
     <label>[Subscription] [After-Save] - On Update</label>
     <processMetadataValues>
@@ -384,7 +448,7 @@ IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
         <name>Create_Maintenance_Set_Status_Closed</name>
         <label>Create Maintenance - Set Status = Closed</label>
         <locationX>50</locationX>
-        <locationY>1547</locationY>
+        <locationY>2147</locationY>
         <inputAssignments>
             <field>Contract__c</field>
             <value>
@@ -422,7 +486,7 @@ IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
         <name>Create_Maintenance_Set_Status_Closed_0</name>
         <label>Create Maintenance - Set Status = Closed</label>
         <locationX>490</locationX>
-        <locationY>1547</locationY>
+        <locationY>2147</locationY>
         <inputAssignments>
             <field>Contract__c</field>
             <value>
@@ -460,7 +524,7 @@ IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
         <name>Change_Status_to_Returned</name>
         <label>Change Status to Returned</label>
         <locationX>314</locationX>
-        <locationY>839</locationY>
+        <locationY>1439</locationY>
         <connector>
             <targetReference>Rental_or_Not_Rental_Accessory</targetReference>
         </connector>
@@ -488,7 +552,7 @@ IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
         <name>Set_Return_Date</name>
         <label>Set Return Date</label>
         <locationX>138</locationX>
-        <locationY>1355</locationY>
+        <locationY>1955</locationY>
         <connector>
             <targetReference>Create_Maintenance_Set_Status_Closed</targetReference>
         </connector>
@@ -504,7 +568,7 @@ IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
         <name>Set_Return_Date_0</name>
         <label>Set Return Date</label>
         <locationX>578</locationX>
-        <locationY>1355</locationY>
+        <locationY>1955</locationY>
         <connector>
             <targetReference>Create_Maintenance_Set_Status_Closed_0</targetReference>
         </connector>
@@ -522,7 +586,7 @@ IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
         <locationX>314</locationX>
         <locationY>539</locationY>
         <connector>
-            <targetReference>Return_Date_Populated</targetReference>
+            <targetReference>Net_Price_Update</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -588,6 +652,38 @@ IF({!$Record.Duration__c} = 59, ({!$Record.Month_28_DAY__c} / 20) * 41, 0
             <field>Updated_Expected_End_Date__c</field>
             <value>
                 <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Status1</name>
+        <label>Update Status</label>
+        <locationX>314</locationX>
+        <locationY>1139</locationY>
+        <connector>
+            <targetReference>Return_Date_Populated</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Cancelled</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Total_Net_Price</name>
+        <label>Update Total Net Price</label>
+        <locationX>314</locationX>
+        <locationY>839</locationY>
+        <connector>
+            <targetReference>Terminated_Date_Populated</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Total_Net_Price__c</field>
+            <value>
+                <elementReference>TotalNetPrice</elementReference>
             </value>
         </inputAssignments>
         <inputReference>$Record</inputReference>

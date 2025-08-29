@@ -5,8 +5,4 @@
         <value>見積規約</value>
     </caseValues>
     <nameFieldLabel>規約番号</nameFieldLabel>
-    <webLinks>
-        <label><!-- Translate --></label>
-        <name>SBQQ__Translate</name>
-    </webLinks>
 </CustomObjectTranslation>

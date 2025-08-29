@@ -8,18 +8,6 @@
         <plural>true</plural>
         <value>Partidas de presupuestos web</value>
     </caseValues>
-    <fieldSets>
-        <label><!-- LineEditor --></label>
-        <name>SBQQ__LineEditor</name>
-    </fieldSets>
-    <fieldSets>
-        <label><!-- Segmented Line Editor --></label>
-        <name>SBQQ__SegmentedLineEditor</name>
-    </fieldSets>
-    <fieldSets>
-        <label><!-- Segmented Line Editor Summary --></label>
-        <name>SBQQ__SegmentedLineEditorSummary</name>
-    </fieldSets>
     <gender>Feminine</gender>
     <nameFieldLabel>Nº de partida de presupuesto</nameFieldLabel>
 </CustomObjectTranslation>

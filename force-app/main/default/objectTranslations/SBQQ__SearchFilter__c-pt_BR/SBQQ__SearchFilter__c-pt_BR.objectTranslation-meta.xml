@@ -10,12 +10,4 @@
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>Nome do filtro</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- You must select Filter Source Object when Filter Source Field is selected. --></errorMessage>
-        <name>SBQQ__Require_filter_object_for_filter_field</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- You must select Hidden Source Object when Hidden Source Field is selected. --></errorMessage>
-        <name>SBQQ__Require_hidden_object_for_hidden_field</name>
-    </validationRules>
 </CustomObjectTranslation>

@@ -1,5 +1,7 @@
 @isTest
 public with sharing class FundamentalQuoteContractLineTemplateTest {
+
+    public static final String quoteFundamentalRecTypeId = Schema.getGlobalDescribe().get('SBQQ__Quote__c').getDescribe().getRecordTypeInfosByDeveloperName().get('Fundamental_Quotes').getRecordTypeId();
     
     @isTest
     static void testControllerWithQuoteLines() {
@@ -11,7 +13,7 @@ public with sharing class FundamentalQuoteContractLineTemplateTest {
             Account acc = TestDataFactory.createFundamentalTestAccount();
             
             // Create test Quote
-            SBQQ__Quote__c quote = new SBQQ__Quote__c(SBQQ__Account__c = acc.Id, RecordTypeId = TestDataFactory.quoteFundamentalRecTypeId);
+            SBQQ__Quote__c quote = new SBQQ__Quote__c(SBQQ__Account__c = acc.Id, RecordTypeId = quoteFundamentalRecTypeId);
             insert quote;
             
             // Create a Quote Line Group with description

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Follow-Up on Your Opportunity 14 days Quote issued stage</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Opportunity 14 Days Quote issued stage</name>
+    <style>none</style>
+    <subject>Follow-Up on Your Opportunity</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -11,8 +11,4 @@
     <gender>Masculine</gender>
     <nameFieldLabel>Nom du barème</nameFieldLabel>
     <startsWith>Consonant</startsWith>
-    <webLinks>
-        <label><!-- EditTiers --></label>
-        <name>SBQQ__EditTiers</name>
-    </webLinks>
 </CustomObjectTranslation>

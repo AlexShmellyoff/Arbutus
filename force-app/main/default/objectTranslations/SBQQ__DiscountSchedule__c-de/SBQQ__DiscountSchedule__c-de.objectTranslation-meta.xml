@@ -42,8 +42,4 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel>Name der Regelung</nameFieldLabel>
-    <webLinks>
-        <label><!-- EditTiers --></label>
-        <name>SBQQ__EditTiers</name>
-    </webLinks>
 </CustomObjectTranslation>

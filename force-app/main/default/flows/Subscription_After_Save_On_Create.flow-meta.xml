@@ -26,8 +26,8 @@
     <decisions>
         <name>Product_Record_Type</name>
         <label>Product Record Type</label>
-        <locationX>936</locationX>
-        <locationY>995</locationY>
+        <locationX>693</locationX>
+        <locationY>903</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Fundamental</name>
@@ -77,8 +77,8 @@
     <decisions>
         <name>Quoteline_has_Description</name>
         <label>Quoteline has Description</label>
-        <locationX>1321</locationX>
-        <locationY>419</locationY>
+        <locationX>994</locationX>
+        <locationY>518</locationY>
         <defaultConnector>
             <targetReference>Update_Tax_Amount_and_Send_Invoice_Value</targetReference>
         </defaultConnector>
@@ -140,8 +140,15 @@
     <formulas>
         <name>TaxAmount</name>
         <dataType>Currency</dataType>
-        <expression>{!$Record.SBQQ__NetPrice__c}*
-({!$Record.SBQQ__QuoteLine__r.SBQQ__Quote__r.Total_Tax_Rate__c}/100)</expression>
+        <expression>({!$Record.SBQQ__NetPrice__c} * 
+({!$Record.SBQQ__QuoteLine__r.SBQQ__Quote__r.Total_Tax_Rate__c} / 100)
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>TotalNetPrice</name>
+        <dataType>Currency</dataType>
+        <expression>{!$Record.SBQQ__NetPrice__c}*{!$Record.SBQQ__Quantity__c}</expression>
         <scale>2</scale>
     </formulas>
     <interviewLabel>[Subscription] [After-Save] - On Create {!$Flow.CurrentDateTime}</interviewLabel>
@@ -181,10 +188,26 @@
         <inputAssignments>
             <field>Inventory_Out__c</field>
             <value>
-                <elementReference>InventoryOutPlusOne</elementReference>
+                <elementReference>InventoryOutMinusOne</elementReference>
             </value>
         </inputAssignments>
         <object>Product2</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Total_Net_Price</name>
+        <label>Total Net Price</label>
+        <locationX>455</locationX>
+        <locationY>220</locationY>
+        <connector>
+            <targetReference>Terminated_Date_Populated</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Total_Net_Price__c</field>
+            <value>
+                <elementReference>TotalNetPrice</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
     </recordUpdates>
     <recordUpdates>
         <name>Update_Product_Quantity</name>
@@ -271,7 +294,7 @@
         <locationX>810</locationX>
         <locationY>48</locationY>
         <connector>
-            <targetReference>Terminated_Date_Populated</targetReference>
+            <targetReference>Total_Net_Price</targetReference>
         </connector>
         <object>SBQQ__Subscription__c</object>
         <recordTriggerType>Create</recordTriggerType>

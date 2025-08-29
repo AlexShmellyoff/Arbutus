@@ -42,12 +42,4 @@
     </caseValues>
     <gender>Feminine</gender>
     <nameFieldLabel>Name der Preisregel</nameFieldLabel>
-    <webLinks>
-        <label><!-- CloneWithRelated --></label>
-        <name>SBQQ__CloneWithRelated</name>
-    </webLinks>
-    <webLinks>
-        <label><!-- CloneWithRelatedClassic --></label>
-        <name>SBQQ__CloneWithRelatedClassic</name>
-    </webLinks>
 </CustomObjectTranslation>

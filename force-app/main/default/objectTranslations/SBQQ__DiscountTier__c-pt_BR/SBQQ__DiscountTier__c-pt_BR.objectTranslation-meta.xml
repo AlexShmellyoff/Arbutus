@@ -8,10 +8,6 @@
         <plural>true</plural>
         <value>Níveis de desconto</value>
     </caseValues>
-    <fieldSets>
-        <label><!-- Discount Schedule Modal --></label>
-        <name>SBQQ__DiscountScheduleModal</name>
-    </fieldSets>
     <gender>Masculine</gender>
     <nameFieldLabel>Nome do nível</nameFieldLabel>
 </CustomObjectTranslation>

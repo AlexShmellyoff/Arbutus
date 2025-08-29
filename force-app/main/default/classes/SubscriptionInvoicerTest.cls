@@ -6,6 +6,30 @@ private class SubscriptionInvoicerTest {
     
     @testSetup
     static void setup() {
+        // Create a permission set with your custom permission
+        PermissionSet testPS = new PermissionSet(
+            Label = 'Test Bypass Flow',
+            Name = 'Test_Bypass_Flow'
+        );
+        insert testPS;
+        
+        // Add the custom permission to the permission set
+        SetupEntityAccess setupEntity = new SetupEntityAccess(
+            ParentId = testPS.Id,
+            SetupEntityId = [SELECT Id FROM CustomPermission WHERE DeveloperName = 'Bypass_Subscription_Flow'].Id
+        );
+        insert setupEntity;
+        
+        // Assign permission set to current user
+        PermissionSetAssignment psa = new PermissionSetAssignment(
+            AssigneeId = UserInfo.getUserId(),
+            PermissionSetId = testPS.Id
+        );
+        insert psa;
+    }
+
+
+    static void createTestData() {
         List<SBQQ__Subscription__c> testSubscriptions = new List<SBQQ__Subscription__c>();
         
         testSubscriptions.add(new SBQQ__Subscription__c(
@@ -56,6 +80,7 @@ private class SubscriptionInvoicerTest {
     
     @isTest
     static void testBatchExecution() {
+        createTestData();
         Test.startTest();
         
         SubscriptionInvoicerBatchable batch = new SubscriptionInvoicerBatchable();

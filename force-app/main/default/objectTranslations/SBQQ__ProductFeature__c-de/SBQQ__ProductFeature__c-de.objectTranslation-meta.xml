@@ -40,22 +40,6 @@
         <plural>true</plural>
         <value>Produktfunktionen</value>
     </caseValues>
-    <fieldSets>
-        <label><!-- Configurator --></label>
-        <name>SBQQ__Configurator</name>
-    </fieldSets>
     <gender>Feminine</gender>
     <nameFieldLabel>Name der Funktion</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- Can’t create dynamic bundles for evergreen or renewable/evergreen products --></errorMessage>
-        <name>SBQQ__Dynamic_OptionSelectionMethod_Validation</name>
-    </validationRules>
-    <validationRules>
-        <errorMessage><!-- Min Options cannot be negative. --></errorMessage>
-        <name>SBQQ__MinOptionValidation</name>
-    </validationRules>
-    <webLinks>
-        <label><!-- Translate --></label>
-        <name>SBQQ__Translate</name>
-    </webLinks>
 </CustomObjectTranslation>

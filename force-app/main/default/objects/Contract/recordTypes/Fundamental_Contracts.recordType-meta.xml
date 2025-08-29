@@ -51,15 +51,11 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Contract Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Draft</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>In Approval Process</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Invoice Paid</fullName>
             <default>false</default>
         </values>
     </picklistValues>

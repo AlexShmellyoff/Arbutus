@@ -1,6 +1,8 @@
 @isTest
 public with sharing class PredefinedQuoteNotesControllerTest {
 
+    public static final String quoteFundamentalRecTypeId = Schema.getGlobalDescribe().get('SBQQ__Quote__c').getDescribe().getRecordTypeInfosByDeveloperName().get('Fundamental_Quotes').getRecordTypeId();
+
     @TestSetup
     static void makeData(){
         List<Pre_Defined_Quote_Notes__c> predefinedNotes = new List<Pre_Defined_Quote_Notes__c>();
@@ -18,7 +20,7 @@ public with sharing class PredefinedQuoteNotesControllerTest {
 
         Account account = TestDataFactory.createFundamentalTestAccount();
         SBQQ__Quote__c quote = new SBQQ__Quote__c(
-            RecordTypeId = TestDataFactory.quoteFundamentalRecTypeId,
+            RecordTypeId = quoteFundamentalRecTypeId,
             SBQQ__Account__c = account.Id
         );
         insert quote;

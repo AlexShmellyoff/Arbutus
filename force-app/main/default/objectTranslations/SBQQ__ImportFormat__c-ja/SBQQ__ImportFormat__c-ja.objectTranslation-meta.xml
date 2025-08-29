@@ -5,8 +5,4 @@
         <value>インポート形式</value>
     </caseValues>
     <nameFieldLabel>インポート形式番号</nameFieldLabel>
-    <validationRules>
-        <errorMessage><!-- More than 1 unique key defined in Import Column. --></errorMessage>
-        <name>SBQQ__Num_Unique_Key_is_not_one</name>
-    </validationRules>
 </CustomObjectTranslation>

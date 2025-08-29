@@ -2,9 +2,13 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Quickbooks_URL__c</fullName>
     <externalId>false</externalId>
-    <formula>HYPERLINK(
-  &quot;https://qbo.intuit.com/app/invoice?txnId=&quot; &amp; Account.Quickbooks_Id__c,
-  &quot;Quickbooks Account Link&quot;
+    <formula>IF(
+  NOT(ISBLANK(Quickbooks_Id__c)),
+  HYPERLINK(
+    &quot;https://sandbox.qbo.intuit.com/app/invoice?txnId=&quot; &amp; Quickbooks_Id__c,
+    &quot;Quickbooks Invoice Link&quot;
+  ),
+  &quot;&quot;
 )</formula>
     <label>Quickbooks URL</label>
     <required>false</required>
